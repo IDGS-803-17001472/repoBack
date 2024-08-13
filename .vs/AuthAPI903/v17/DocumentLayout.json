@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\nano_\\Desktop\\Auth-App\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\desktop\\auth-app\\authapi903\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\desktop\\auth-app\\authapi903\\models\\profesional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\models\\profesional.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\desktop\\auth-app\\authapi903\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\models\\usuario.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\desktop\\auth-app\\authapi903\\dtos\\registerdto2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\dtos\\registerdto2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 301,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RegisterDto2.cs",
+              "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\Dtos\\RegisterDto2.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Dtos\\RegisterDto2.cs",
+              "ToolTip": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\Dtos\\RegisterDto2.cs",
+              "RelativeToolTip": "AuthAPI903\\Dtos\\RegisterDto2.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T22:23:52.775Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Usuario.cs",
+              "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\Models\\Usuario.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Models\\Usuario.cs",
+              "ToolTip": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\Models\\Usuario.cs",
+              "RelativeToolTip": "AuthAPI903\\Models\\Usuario.cs",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAowA4AAABEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T22:23:48.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Profesional.cs",
+              "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\Models\\Profesional.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Models\\Profesional.cs",
+              "ToolTip": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\Models\\Profesional.cs",
+              "RelativeToolTip": "AuthAPI903\\Models\\Profesional.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-12T22:23:44.784Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "AuthAPI903\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAHAAAAAAAAAAAAAAAH0AAAANAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-23T01:58:13.243Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
