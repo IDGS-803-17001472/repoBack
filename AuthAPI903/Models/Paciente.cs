@@ -11,6 +11,7 @@
         public virtual Persona? Persona { get; set; }
         public virtual ICollection<AsignacionPaciente> AsignacionPacientes { get; set; }
         public virtual ICollection<PadecimientoPaciente> PadecimientoPacientes { get; set; }
+        public virtual ICollection<Entrada>? Entradas { get; set; }
 
     }
 }

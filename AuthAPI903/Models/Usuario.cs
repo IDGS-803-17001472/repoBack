@@ -15,7 +15,6 @@
         public virtual Rol Rol { get; set; }
         public virtual AppUser AuthUser { get; set; }
         public virtual ICollection<Paciente> Pacientes { get; set; }
-        public virtual ICollection<Entrada> Entradas { get; set; }
         public virtual ICollection<Profesional> Profesionales { get; set; }
         public virtual ICollection<Notificacion> Notificaciones { get; set; }
 
