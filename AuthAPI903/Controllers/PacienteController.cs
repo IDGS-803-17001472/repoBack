@@ -89,6 +89,30 @@ namespace AuthAPI903.Controllers
         }
 
 
+        [Authorize]
+        [HttpGet("paciente/{id}/profesionales")]
+        public async Task<ActionResult<List<Profesional>>> ObtenerProfesionalesPorPaciente(int id)
+        {
+            // Busca las asignaciones de profesionales para el paciente dado
+            var asignaciones = await _context.AsignacionPacientes
+                .Where(ap => ap.IdPaciente == id)
+                .Include(ap => ap.Profesional) // Incluye la información de los profesionales
+                .ThenInclude(p => p.Usuario) // Incluye la información de Usuario si es necesario
+                .ThenInclude(u => u.Persona) // Incluye la información de Persona si es necesario
+                .ToListAsync();
+
+            if (asignaciones == null || !asignaciones.Any())
+            {
+                return NotFound("No se encontraron profesionales asignados a este paciente.");
+            }
+
+            // Extraer la lista de profesionales a partir de las asignaciones
+            var profesionales = asignaciones.Select(ap => ap.Profesional).Where(p => p.Estatus == true).ToList();
+
+            return Ok(profesionales);
+        }
+
+
         // api/account/register
 
         [AllowAnonymous]
@@ -190,8 +214,7 @@ namespace AuthAPI903.Controllers
             }
 
             // Elimina el paciente y la persona relacionada
-            _context.Pacientes.Remove(paciente);
-            _context.Personas.Remove(paciente.Persona);
+            paciente.Estatus = false;
 
             // Guarda los cambios en la base de datos
             await _context.SaveChangesAsync();
