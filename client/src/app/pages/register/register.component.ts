@@ -72,6 +72,11 @@ export class RegisterComponent implements OnInit {
         validator: this.passwordMatchValidator,
       }
     );
+    // Subscribe to value changes if needed
+    this.registerForm.valueChanges.subscribe(value => {
+      console.log('Form value changed:', value);
+    });
+
 
     this.roles$ = this.roleService.getRoles();
   }

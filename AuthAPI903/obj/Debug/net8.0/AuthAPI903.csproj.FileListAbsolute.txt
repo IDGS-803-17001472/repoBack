@@ -346,7 +346,6 @@ C:\Users\nano_\Desktop\Auth-App\AuthAPI903\bin\Debug\net8.0\System.Memory.Data.d
 C:\Users\nano_\Desktop\Auth-App\AuthAPI903\bin\Debug\net8.0\System.Runtime.Caching.dll
 C:\Users\nano_\Desktop\Auth-App\AuthAPI903\bin\Debug\net8.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\nano_\Desktop\Auth-App\AuthAPI903\bin\Debug\net8.0\System.Security.Permissions.dll
-C:\Users\nano_\Desktop\Auth-App\AuthAPI903\bin\Debug\net8.0\System.Text.Json.dll
 C:\Users\nano_\Desktop\Auth-App\AuthAPI903\bin\Debug\net8.0\System.Windows.Extensions.dll
 C:\Users\nano_\Desktop\Auth-App\AuthAPI903\bin\Debug\net8.0\cs\Microsoft.CodeAnalysis.resources.dll
 C:\Users\nano_\Desktop\Auth-App\AuthAPI903\bin\Debug\net8.0\de\Microsoft.CodeAnalysis.resources.dll

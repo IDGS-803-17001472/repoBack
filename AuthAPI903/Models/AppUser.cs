@@ -7,6 +7,7 @@ namespace AuthAPI903.Models
         public string? FullName { get; set; }
         public string? RefreshToken { get; set; }
         public DateTime? RefreshTokenExpiryTime { get; set; }
+        public virtual Usuario Usuario { get; set; }
 
     }
 }

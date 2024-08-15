@@ -22,9 +22,10 @@ namespace AuthAPI903.Data
     public DbSet<Persona> Personas { get; set; }
     public DbSet<Profesional> Profesionales { get; set; }
     public DbSet<Rol> RolesU { get; set; }
-    public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<AppUser> UsuariosAuth { get; set; }
 
- protected override void OnModelCreating(ModelBuilder modelBuilder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<AsignacionPaciente>()
             .HasOne(ap => ap.Paciente)
@@ -110,13 +111,19 @@ namespace AuthAPI903.Data
                 .HasForeignKey <Usuario> (e => e.IdPersona)
             .OnDelete(DeleteBehavior.Restrict);
 
-        modelBuilder.Entity<Usuario>()
-            .HasOne(u => u.Rol)
-            .WithMany(r => r.Usuarios)
-            .HasForeignKey(u => u.IdRol)
-            .OnDelete(DeleteBehavior.Restrict);
+            modelBuilder.Entity<Usuario>()
+                .HasOne(u => u.Rol)
+                .WithMany(r => r.Usuarios)
+                .HasForeignKey(u => u.IdRol)
+                .OnDelete(DeleteBehavior.Restrict);
 
-        base.OnModelCreating(modelBuilder);
+            modelBuilder.Entity<Usuario>()
+                .HasOne(u => u.AuthUser)
+                .WithOne(r => r.Usuario)
+                .HasForeignKey<Usuario>(u => u.IdAppUser)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            base.OnModelCreating(modelBuilder);
     }
 
     }

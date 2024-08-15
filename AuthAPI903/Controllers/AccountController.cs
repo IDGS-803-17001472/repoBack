@@ -3,6 +3,7 @@ using System.Net;
 using System.Security.Claims;
 using System.Security.Cryptography;
 using System.Text;
+using AuthAPI903.Data;
 using AuthAPI903.Dtos;
 using AuthAPI903.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -22,62 +23,18 @@ namespace API.Controllers
         private readonly UserManager<AppUser> _userManager;
         private readonly RoleManager<IdentityRole> _roleManager;
         private readonly IConfiguration _configuration;
-
+        private readonly AppDbContext _context;
 
         public AccountController(UserManager<AppUser> userManager,
         RoleManager<IdentityRole> roleManager,
-        IConfiguration configuration
+        IConfiguration configuration,
+        AppDbContext context
         )
         {
             _userManager = userManager;
             _roleManager = roleManager;
             _configuration = configuration;
-
-        }
-
-        // api/account/register
-
-        [AllowAnonymous]
-        [HttpPost("register")]
-        public async Task<ActionResult<string>> Register(RegisterDto registerDto)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            var user = new AppUser
-            {
-                Email = registerDto.Email,
-                FullName = registerDto.FullName,
-                UserName = registerDto.Email
-            };
-
-            var result = await _userManager.CreateAsync(user, registerDto.Password);
-
-            if (!result.Succeeded)
-            {
-                return BadRequest(result.Errors);
-            }
-
-            if (registerDto.Roles is null)
-            {
-                await _userManager.AddToRoleAsync(user, "User");
-            }
-            else
-            {
-                foreach (var role in registerDto.Roles)
-                {
-                    await _userManager.AddToRoleAsync(user, role);
-                }
-            }
-
-
-            return Ok(new AuthResponseDto
-            {
-                IsSuccess = true,
-                Message = "Account Created Sucessfully!"
-            });
+            this._context = context;
 
         }
 
@@ -85,7 +42,7 @@ namespace API.Controllers
 
         [AllowAnonymous]
         [HttpPost("registerProfesional")]
-        public async Task<ActionResult<string>> RegisterProfesional(RegisterDto registerDto)
+        public async Task<ActionResult<string>> registerProfesional(RegisterDto registerDto)
         {
             if (!ModelState.IsValid)
             {
@@ -118,9 +75,6 @@ namespace API.Controllers
                 }
             }
 
-            //FER: Aquì irà la lógica para recibir los datos, se está intentando
-            //que se validen en front
-
 
             return Ok(new AuthResponseDto
             {
@@ -129,6 +83,91 @@ namespace API.Controllers
             });
 
         }
+
+        // api/account/register
+        [AllowAnonymous]
+[HttpPost("register")]
+public async Task<ActionResult<string>> register(RegisterDto2 registerDto)
+{
+    if (!ModelState.IsValid)
+    {
+        return BadRequest(ModelState);
+    }
+
+    var user = new AppUser
+    {
+        Email = registerDto.Email,
+        FullName = registerDto.Email, // Cambiar por el nombre completo si es necesario
+        UserName = registerDto.Email
+    };
+
+    var result = await _userManager.CreateAsync(user, registerDto.Password);
+
+    if (!result.Succeeded)
+    {
+        return BadRequest(result.Errors);
+    }
+
+    if (registerDto.Roles is null)
+    {
+        await _userManager.AddToRoleAsync(user, "User");
+    }
+    else
+    {
+        foreach (var role in registerDto.Roles)
+        {
+            await _userManager.AddToRoleAsync(user, role);
+        }
+    }
+
+    // AQUII
+    // 1. Crear la entidad Persona
+    var persona = new Persona
+    {
+        Nombre = registerDto.Nombre,
+        ApellidoMaterno = registerDto.ApellidoMaterno,
+        ApellidoPaterno = registerDto.ApellidoPaterno,
+        Telefono = registerDto.Telefono,
+        FechaNacimiento = registerDto.FechaNacimiento,
+        Sexo = registerDto.Sexo,
+        Foto = registerDto.Foto,
+        EstadoCivil = registerDto.EstadoCivil,
+        Ocupacion = registerDto.Ocupacion
+    };
+
+    await _context.Personas.AddAsync(persona);
+    await _context.SaveChangesAsync();
+
+    // 2. Crear la entidad Usuario y vincularla con Persona y AppUser
+    var usuario = new Usuario
+    {
+        IdAppUser = user.Id,
+        Email = registerDto.Email,
+        Contrasena = registerDto.Password, // Nota: Esto no debería almacenarse en texto plano
+        TipoUsuario = "Profesional", // O el tipo que desees definir
+        IdPersona = persona.Id,
+        IdentificadorUnico = Guid.NewGuid().ToString()
+    };
+
+    await _context.Usuarios.AddAsync(usuario);
+    await _context.SaveChangesAsync();
+
+    // 3. Crear la entidad Profesional y vincularla con Usuario
+    var profesional = new Profesional
+    {
+        Titulo = registerDto.Titulo,
+        IdUsuario = usuario.Id
+    };
+
+    await _context.Profesionales.AddAsync(profesional);
+    await _context.SaveChangesAsync();
+
+    return Ok(new AuthResponseDto
+    {
+        IsSuccess = true,
+        Message = "Account Created Successfully!"
+    });
+}
 
         //api/account/login
         [AllowAnonymous]
