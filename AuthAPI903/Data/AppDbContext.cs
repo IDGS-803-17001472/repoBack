@@ -82,9 +82,9 @@ namespace AuthAPI903.Data
             .OnDelete(DeleteBehavior.Restrict);
 
         modelBuilder.Entity<Paciente>()
-            .HasOne(p => p.Usuario)
-            .WithMany(u => u.Pacientes)
-            .HasForeignKey(p => p.IdUsuario)
+            .HasOne(p => p.Persona)
+            .WithOne(u => u.Paciente)
+            .HasForeignKey<Paciente>(p => p.IdPersona)
             .OnDelete(DeleteBehavior.Restrict);
 
         modelBuilder.Entity<PadecimientoPaciente>()

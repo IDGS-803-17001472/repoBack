@@ -1,8 +1,8 @@
-﻿namespace AuthAPI903.Models
+﻿namespace AuthAPI903.Dtos
 {
-    public class Persona
+    public class PacienteDto
     {
-        public int Id { get; set; }
+        public int IdPaciente { get; set; }
         public string Nombre { get; set; }
         public string ApellidoMaterno { get; set; }
         public string ApellidoPaterno { get; set; }
@@ -12,10 +12,8 @@
         public string Foto { get; set; }
         public string EstadoCivil { get; set; }
         public string Ocupacion { get; set; }
-
-        public virtual ICollection<Domicilio> Domicilios { get; set; }
-        public virtual Usuario Usuario { get; set; }
-        public virtual Paciente? Paciente { get; set; }
-
+        public List<string>? Domicilios { get; set; }
+        public DateTime? FechaRegistro { get; set; }
+        public string? NotasAdicionales { get; set; }
     }
 }
