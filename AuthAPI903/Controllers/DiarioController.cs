@@ -30,6 +30,7 @@ namespace AuthAPI903.Controllers
             this._context = context;
 
         }
+
         [Authorize]
         [HttpGet("paciente/{id}/diarios")]
         public async Task<ActionResult<List<Entrada>>> ObtenerDiariosPorPaciente(int id)
