@@ -5,34 +5,18 @@ namespace AuthAPI903.Dtos
 {
     public class RegisterPacienteDto
     {
-        [Required]
-        public string Nombre { get; set; } = string.Empty;
-        [Required]
-        public int? profesionalId { get; set; } = null;
-
-        [Required]
-        public string ApellidoMaterno { get; set; } = string.Empty;
-
-        [Required]
-        public string ApellidoPaterno { get; set; } = string.Empty;
-
-        [Required]
-        public string Telefono { get; set; } = string.Empty;
-
-        [Required]
+        public string Email { get; set; }
+        public string Password { get; set; }
+        public string Nombre { get; set; }
+        public string ApellidoMaterno { get; set; }
+        public string ApellidoPaterno { get; set; }
+        public string Telefono { get; set; }
         public DateTime? FechaNacimiento { get; set; }
-
-        [Required]
-        public string Sexo { get; set; } = string.Empty;
-
-        public string Foto { get; set; } = string.Empty;
-
-        [Required]
-        public string EstadoCivil { get; set; } = string.Empty;
-
-        [Required]
-        public string Ocupacion { get; set; } = string.Empty;
-
-        public List<string>? Domicilios { get; set; } = new List<string>();
+        public string Sexo { get; set; }
+        public string? Foto { get; set; }
+        public string EstadoCivil { get; set; }
+        public string Ocupacion { get; set; }
+        public string NotasAdicionales { get; set; }
     }
+
 }

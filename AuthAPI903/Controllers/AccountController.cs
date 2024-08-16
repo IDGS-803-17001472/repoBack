@@ -168,6 +168,84 @@ public async Task<ActionResult<string>> register(RegisterDto2 registerDto)
         Message = "Account Created Successfully!"
     });
 }
+        [AllowAnonymous]
+        [HttpPost("registerPaciente")]
+        public async Task<ActionResult<string>> RegisterPaciente(RegisterPacienteDto registerDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            // 1. Crear la entidad AppUser
+            var user = new AppUser
+            {
+                Email = registerDto.Email,
+                FullName = $"{registerDto.Nombre} {registerDto.ApellidoPaterno} {registerDto.ApellidoMaterno}",
+                UserName = registerDto.Email
+            };
+
+            var result = await _userManager.CreateAsync(user, registerDto.Password);
+
+            if (!result.Succeeded)
+            {
+                return BadRequest(result.Errors);
+            }
+
+            // Asignar el rol 'Paciente' al usuario recién creado
+            await _userManager.AddToRoleAsync(user, "Paciente");
+
+            // 2. Crear la entidad Persona
+            var persona = new Persona
+            {
+                Nombre = registerDto.Nombre,
+                ApellidoMaterno = registerDto.ApellidoMaterno,
+                ApellidoPaterno = registerDto.ApellidoPaterno,
+                Telefono = registerDto.Telefono,
+                FechaNacimiento = registerDto.FechaNacimiento,
+                Sexo = registerDto.Sexo,
+                Foto = registerDto.Foto,
+                EstadoCivil = registerDto.EstadoCivil,
+                Ocupacion = registerDto.Ocupacion
+            };
+
+            await _context.Personas.AddAsync(persona);
+            await _context.SaveChangesAsync();
+
+            // 3. Crear la entidad Usuario y vincularla con Persona y AppUser
+            var usuario = new Usuario
+            {
+                IdAppUser = user.Id,
+                Email = registerDto.Email,
+                Contrasena = registerDto.Password, // Nota: Esto no debería almacenarse en texto plano
+                TipoUsuario = "Paciente",
+                IdPersona = persona.Id,
+                IdentificadorUnico = Guid.NewGuid().ToString()
+            };
+
+            await _context.Usuarios.AddAsync(usuario);
+            await _context.SaveChangesAsync();
+
+            // 4. Crear la entidad Paciente y vincularla con Usuario
+            var paciente = new Paciente
+            {
+                IdPersona = persona.Id,
+                FechaRegistro = DateTime.UtcNow,
+                NotasAdicionales = registerDto.NotasAdicionales
+            };
+
+            await _context.Pacientes.AddAsync(paciente);
+            await _context.SaveChangesAsync();
+
+            return Ok(new AuthResponseDto
+            {
+                IsSuccess = true,
+                Message = "Paciente registrado exitosamente!"
+            });
+        }
+
+
+
 
         //api/account/login
         [AllowAnonymous]

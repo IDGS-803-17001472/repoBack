@@ -9,7 +9,7 @@ using System.Security.Claims;
 
 namespace AuthAPI903.Controllers
 {
-    [Authorize]
+    [Authorize(Roles = "profesional")]
     [ApiController]
     [Route("api/[controller]")]
     public class PacienteController : Controller
@@ -88,6 +88,38 @@ namespace AuthAPI903.Controllers
             return Ok(pacientes);
         }
 
+        [Authorize]
+        [HttpGet("profesional/{id}/pacientes")]
+        public async Task<ActionResult<List<PersonaPacienteDto>>> ObtenerPacientesPorProfesional(int id)
+        {
+            // Busca las asignaciones de pacientes para el profesional dado
+            var asignaciones = await _context.AsignacionPacientes
+                .Where(ap => ap.IdProfesional == id)
+                .Include(ap => ap.Paciente) // Incluye la información del paciente
+                .ThenInclude(p => p.Persona) // Incluye la información de Persona
+                .ToListAsync();
+
+            if (asignaciones == null || !asignaciones.Any())
+            {
+                return NotFound("No se encontraron pacientes asignados a este profesional.");
+            }
+
+            // Extraer la lista de pacientes a partir de las asignaciones y devolver solo la información de Persona
+            var pacientes = asignaciones.Select(ap => new PersonaPacienteDto
+            {
+                IdPaciente = ap.Paciente.Id,
+                Nombre = ap.Paciente.Persona.Nombre,
+                ApellidoPaterno = ap.Paciente.Persona.ApellidoPaterno,
+                ApellidoMaterno = ap.Paciente.Persona.ApellidoMaterno,
+                Telefono = ap.Paciente.Persona.Telefono,
+                FechaNacimiento = ap.Paciente.Persona.FechaNacimiento,
+                Sexo = ap.Paciente.Persona.Sexo
+            }).ToList();
+
+            return Ok(pacientes);
+        }
+
+
 
         [Authorize]
         [HttpGet("paciente/{id}/profesionales")]
@@ -113,67 +145,66 @@ namespace AuthAPI903.Controllers
         }
 
 
+        //// api/account/register
+
+        //[AllowAnonymous]
+        //[HttpPost("register-pacienteNoUsar")]
+        //public async Task<ActionResult<string>> RegisterPaciente(RegisterPacienteDto registerDto)
+        //{
+        //    if (!ModelState.IsValid)
+        //    {
+        //        return BadRequest(ModelState);
+        //    }
+
+        //    // Crear la entidad Persona
+        //    var persona = new Persona
+        //    {
+        //        Nombre = registerDto.Nombre,
+        //        ApellidoMaterno = registerDto.ApellidoMaterno,
+        //        ApellidoPaterno = registerDto.ApellidoPaterno,
+        //        Telefono = registerDto.Telefono,
+        //        FechaNacimiento = registerDto.FechaNacimiento,
+        //        Sexo = registerDto.Sexo,
+        //        Foto = registerDto.Foto,
+        //        EstadoCivil = registerDto.EstadoCivil,
+        //        Ocupacion = registerDto.Ocupacion,
+        //    };
+
+        //    await _context.Personas.AddAsync(persona);
+        //    await _context.SaveChangesAsync();
+
+        //    // Crear la entidad Paciente y vincularla con Persona
+        //    var paciente = new Paciente
+        //    {
+        //        IdPersona = persona.Id,
+        //        FechaRegistro = DateTime.Now,
+        //        // Otros campos específicos del paciente si existen
+        //    };
+
+        //    await _context.Pacientes.AddAsync(paciente);
+        //    await _context.SaveChangesAsync();
+
+        //    // Crear la relacion entre la entidad paciente y profesional
+        //    var asignacionPaciente = new AsignacionPaciente
+        //    {
+        //        IdPaciente = paciente.Id,
+        //        IdProfesional = registerDto.profesionalId,
+        //        // Otros campos específicos del paciente si existen
+        //    };
+
+        //    await _context.AsignacionPacientes.AddAsync(asignacionPaciente);
+        //    await _context.SaveChangesAsync();
+
+        //    return Ok(new AuthResponseDto
+        //    {
+        //        IsSuccess = true,
+        //        Message = "Paciente registrado exitosamente!"
+        //    });
+        //}
+
         // api/account/register
 
-        [AllowAnonymous]
-        [HttpPost("register-paciente")]
-        public async Task<ActionResult<string>> RegisterPaciente(RegisterPacienteDto registerDto)
-        {
-            if (!ModelState.IsValid)
-            {
-                return BadRequest(ModelState);
-            }
-
-            // Crear la entidad Persona
-            var persona = new Persona
-            {
-                Nombre = registerDto.Nombre,
-                ApellidoMaterno = registerDto.ApellidoMaterno,
-                ApellidoPaterno = registerDto.ApellidoPaterno,
-                Telefono = registerDto.Telefono,
-                FechaNacimiento = registerDto.FechaNacimiento,
-                Sexo = registerDto.Sexo,
-                Foto = registerDto.Foto,
-                EstadoCivil = registerDto.EstadoCivil,
-                Ocupacion = registerDto.Ocupacion,
-            };
-
-            await _context.Personas.AddAsync(persona);
-            await _context.SaveChangesAsync();
-
-            // Crear la entidad Paciente y vincularla con Persona
-            var paciente = new Paciente
-            {
-                IdPersona = persona.Id,
-                FechaRegistro = DateTime.Now,
-                // Otros campos específicos del paciente si existen
-            };
-
-            await _context.Pacientes.AddAsync(paciente);
-            await _context.SaveChangesAsync();
-
-            // Crear la relacion entre la entidad paciente y profesional
-            var asignacionPaciente = new AsignacionPaciente
-            {
-                IdPaciente = paciente.Id,
-                IdProfesional = registerDto.profesionalId,
-                // Otros campos específicos del paciente si existen
-            };
-
-            await _context.AsignacionPacientes.AddAsync(asignacionPaciente);
-            await _context.SaveChangesAsync();
-
-            return Ok(new AuthResponseDto
-            {
-                IsSuccess = true,
-                Message = "Paciente registrado exitosamente!"
-            });
-        }
-
-        // api/account/register
-
-        [AllowAnonymous]
-        [HttpPost("link-paciente")]
+        [HttpPost("link")]
         public async Task<ActionResult<string>> LinkPaciente(AsignarPacienteDto registerDto)
         {
             if (!ModelState.IsValid)
@@ -181,12 +212,32 @@ namespace AuthAPI903.Controllers
                 return BadRequest(ModelState);
             }
 
-            // Crear la relacion entre la entidad paciente y profesional
+            // Obtener el ID del usuario loggeado
+            var userId = _userManager.GetUserId(User);
+
+            // Buscar el profesional asociado al usuario loggeado
+            var profesional = await _context.Profesionales
+                                            .FirstOrDefaultAsync(p => p.Usuario.IdAppUser == userId);
+
+            if (profesional == null)
+            {
+                return BadRequest("El profesional no fue encontrado.");
+            }
+
+            // Verificar si el paciente existe
+            var pacienteExiste = await _context.Pacientes
+                                               .AnyAsync(p => p.Id == registerDto.pacienteId);
+
+            if (!pacienteExiste)
+            {
+                return NotFound("El paciente no fue encontrado.");
+            }
+
+            // Crear la relación entre la entidad paciente y profesional
             var asignacionPaciente = new AsignacionPaciente
             {
                 IdPaciente = registerDto.pacienteId,
-                IdProfesional = registerDto.profesionalId,
-                // Otros campos específicos del paciente si existen
+                IdProfesional = profesional.Id
             };
 
             await _context.AsignacionPacientes.AddAsync(asignacionPaciente);
@@ -198,6 +249,7 @@ namespace AuthAPI903.Controllers
                 Message = "Paciente asignado exitosamente!"
             });
         }
+
 
         [Authorize]
         [HttpDelete("eliminar-paciente/{id}")]

@@ -9,7 +9,7 @@
         public string Telefono { get; set; }
         public DateTime? FechaNacimiento { get; set; }
         public string Sexo { get; set; }
-        public string Foto { get; set; }
+        public string? Foto { get; set; }
         public string EstadoCivil { get; set; }
         public string Ocupacion { get; set; }
 
