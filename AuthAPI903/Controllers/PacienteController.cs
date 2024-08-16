@@ -89,12 +89,24 @@ namespace AuthAPI903.Controllers
         }
 
         [Authorize]
-        [HttpGet("profesional/{id}/pacientes")]
-        public async Task<ActionResult<List<PersonaPacienteDto>>> ObtenerPacientesPorProfesional(int id)
+        [HttpGet("profesional/pacientes")]
+        public async Task<ActionResult<List<PersonaPacienteDto>>> ObtenerPacientesPorProfesional()
         {
+            // Obtener el ID del usuario loggeado
+            var userId = _userManager.GetUserId(User);
+
+            // Buscar el profesional asociado al usuario loggeado
+            var profesional = await _context.Profesionales
+                                            .FirstOrDefaultAsync(p => p.Usuario.IdAppUser == userId);
+            if (profesional == null)
+            {
+                return BadRequest("El profesional no fue encontrado.");
+            }
+
+            int id = profesional.Id;
             // Busca las asignaciones de pacientes para el profesional dado
             var asignaciones = await _context.AsignacionPacientes
-                .Where(ap => ap.IdProfesional == id)
+                .Where(ap => ap.IdProfesional == id && ap.Paciente.Estatus == true)
                 .Include(ap => ap.Paciente) // Incluye la información del paciente
                 .ThenInclude(p => p.Persona) // Incluye la información de Persona
                 .ToListAsync();
@@ -113,7 +125,7 @@ namespace AuthAPI903.Controllers
                 ApellidoMaterno = ap.Paciente.Persona.ApellidoMaterno,
                 Telefono = ap.Paciente.Persona.Telefono,
                 FechaNacimiento = ap.Paciente.Persona.FechaNacimiento,
-                Sexo = ap.Paciente.Persona.Sexo
+                Sexo = ap.Paciente.Persona.Sexo,
             }).ToList();
 
             return Ok(pacientes);
@@ -127,7 +139,7 @@ namespace AuthAPI903.Controllers
         {
             // Busca las asignaciones de profesionales para el paciente dado
             var asignaciones = await _context.AsignacionPacientes
-                .Where(ap => ap.IdPaciente == id)
+                .Where(ap => ap.IdPaciente == id && ap.Paciente.Estatus == true)
                 .Include(ap => ap.Profesional) // Incluye la información de los profesionales
                 .ThenInclude(p => p.Usuario) // Incluye la información de Usuario si es necesario
                 .ThenInclude(u => u.Persona) // Incluye la información de Persona si es necesario
@@ -202,7 +214,6 @@ namespace AuthAPI903.Controllers
         //    });
         //}
 
-        // api/account/register
 
         [HttpPost("link")]
         public async Task<ActionResult<string>> LinkPaciente(AsignarPacienteDto registerDto)
@@ -224,13 +235,27 @@ namespace AuthAPI903.Controllers
                 return BadRequest("El profesional no fue encontrado.");
             }
 
-            // Verificar si el paciente existe
-            var pacienteExiste = await _context.Pacientes
-                                               .AnyAsync(p => p.Id == registerDto.pacienteId);
+            // Verificar si el paciente existe y su estatus
+            var paciente = await _context.Pacientes
+                                         .FirstOrDefaultAsync(p => p.Id == registerDto.pacienteId);
 
-            if (!pacienteExiste)
+            if (paciente == null)
             {
                 return NotFound("El paciente no fue encontrado.");
+            }
+
+            if (!paciente.Estatus)
+            {
+                return BadRequest("El estatus del paciente debe ser activo para asignarlo.");
+            }
+
+            // Verificar si la asignación ya existe
+            var asignacionExiste = await _context.AsignacionPacientes
+                                                  .AnyAsync(ap => ap.IdPaciente == registerDto.pacienteId && ap.IdProfesional == profesional.Id);
+
+            if (asignacionExiste)
+            {
+                return Conflict("El paciente ya está asignado a este profesional.");
             }
 
             // Crear la relación entre la entidad paciente y profesional
@@ -251,7 +276,7 @@ namespace AuthAPI903.Controllers
         }
 
 
-        [Authorize]
+
         [HttpDelete("eliminar-paciente/{id}")]
         public async Task<ActionResult> EliminarPaciente(int id)
         {
@@ -264,9 +289,11 @@ namespace AuthAPI903.Controllers
             {
                 return NotFound("Paciente no encontrado.");
             }
-
             // Elimina el paciente y la persona relacionada
             paciente.Estatus = false;
+
+            _context.Entry(paciente).State = EntityState.Modified;
+
 
             // Guarda los cambios en la base de datos
             await _context.SaveChangesAsync();
