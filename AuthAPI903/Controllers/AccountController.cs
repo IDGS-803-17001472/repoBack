@@ -222,6 +222,97 @@ public async Task<ActionResult<string>> register(RegisterDto2 registerDto)
 
         }
 
+
+        [HttpPut("update/{id}")]
+        public async Task<ActionResult> UpdatePsychologist(int id, UpdatePsychologistDto updateDto)
+        {
+
+
+            var profesional = await _context.Profesionales
+                .FirstOrDefaultAsync(p => p.Id == id);
+
+
+            // Encuentra el usuario asociado al id
+            var user = await _userManager.FindByIdAsync(profesional.Usuario.IdAppUser);
+
+            
+
+            if (user == null)
+            {
+                return NotFound(new { message = "Usuario no encontrado" });
+            }
+
+            if (profesional == null)
+            {
+                return NotFound("Profesional no encontrado.");
+            }
+
+            // Validar si el profesional está activo
+            if (!profesional.Estatus)
+            {
+                return BadRequest("El profesional está inactivo.");
+            }
+
+
+            // Actualiza los datos de AppUser
+            user.Email = updateDto.Email;
+            user.FullName = updateDto.Nombre + " " + updateDto.ApellidoPaterno + " " + updateDto.ApellidoMaterno;
+            user.UserName = updateDto.Email;
+
+            var result = await _userManager.UpdateAsync(user);
+
+            if (!result.Succeeded)
+            {
+                return BadRequest(result.Errors);
+            }
+
+            // Encuentra la entidad Usuario relacionada y actualiza
+            var usuario = await _context.Usuarios.FirstOrDefaultAsync(u => u.IdAppUser == profesional.Usuario.IdAppUser);
+            if (usuario == null)
+            {
+                return NotFound(new { message = "Usuario asociado no encontrado" });
+            }
+            usuario.Email = updateDto.Email;
+            usuario.Contrasena = updateDto.Password;
+
+            _context.Usuarios.Update(usuario);
+
+            // Encuentra la entidad Persona relacionada y actualiza
+            var persona = await _context.Personas.FindAsync(usuario.IdPersona);
+            if (persona == null)
+            {
+                return NotFound(new { message = "Información de persona no encontrada" });
+            }
+            persona.Nombre = updateDto.Nombre;
+            persona.ApellidoMaterno = updateDto.ApellidoMaterno;
+            persona.ApellidoPaterno = updateDto.ApellidoPaterno;
+            persona.Telefono = updateDto.Telefono;
+            persona.FechaNacimiento = updateDto.FechaNacimiento;
+            persona.Sexo = updateDto.Sexo;
+            persona.Foto = updateDto.Foto;
+            persona.EstadoCivil = updateDto.EstadoCivil;
+            persona.Ocupacion = updateDto.Ocupacion;
+
+            _context.Personas.Update(persona);
+
+            // Encuentra la entidad Profesional relacionada y actualiza
+             profesional = await _context.Profesionales.FirstOrDefaultAsync(p => p.IdUsuario == usuario.Id);
+            if (profesional == null)
+            {
+                return NotFound(new { message = "Profesional no encontrado" });
+            }
+            profesional.Titulo = updateDto.Titulo;
+
+            _context.Profesionales.Update(profesional);
+
+            // Guarda los cambios en la base de datos
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Datos del profesional actualizados correctamente" });
+        }
+
+
+
         //api/account/login
         [AllowAnonymous]
         [HttpPost("login2")]
@@ -553,15 +644,72 @@ public async Task<ActionResult<string>> register(RegisterDto2 registerDto)
         [HttpGet]
         public async Task<ActionResult<IEnumerable<UserDetailDto>>> GetUsers()
         {
+            // Primero obtenemos la lista de usuarios con los datos básicos
             var users = await _userManager.Users.Select(u => new UserDetailDto
             {
                 Id = u.Id,
                 Email = u.Email,
                 FullName = u.FullName,
-                Roles = _userManager.GetRolesAsync(u).Result.ToArray()
+                PhoneNumber = u.PhoneNumber,
+                PhoneNumberConfirmed = u.PhoneNumberConfirmed,
+                AccessFailedCount = u.AccessFailedCount,
+                // Los roles se añadirán en el siguiente paso
             }).ToListAsync();
 
+            // Luego, añadimos los roles para cada usuario
+            foreach (var user in users)
+            {
+                var appUser = await _userManager.FindByIdAsync(user.Id);
+                user.Roles = (await _userManager.GetRolesAsync(appUser)).ToList();
+            }
+
             return Ok(users);
+        }
+
+        [HttpGet("profesionalDetail")]
+        public async Task<ActionResult<UserDetailDto>> GetProfesionalDetail()
+        {
+            var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var user = await _userManager.Users
+                .Include(u => u.Usuario)
+                .ThenInclude(p => p.Profesional)
+                .Include(u => u.Usuario.Persona)
+                .FirstOrDefaultAsync(u => u.Id == currentUserId);
+
+            if (user == null)
+            {
+                return NotFound(new AuthResponseDto
+                {
+                    IsSuccess = false,
+                    Message = "User not found"
+                });
+            }
+
+            var personaDto = user.Usuario.Persona == null ? null : new PersonaDto
+            {
+                Id = user.Usuario.Persona.Id,
+                Nombre = user.Usuario.Persona.Nombre,
+                Apellido = user.Usuario.Persona.ApellidoPaterno + " " + user.Usuario.Persona.ApellidoMaterno,
+            };
+
+            var profesionalDto = user.Usuario.Profesional == null ? null : new ProfesionalDto
+            {
+                Id = user.Usuario.Profesional.Id,
+                Titulo = user.Usuario.Profesional.Titulo
+            };
+
+            return Ok(new UserDetailDto
+            {
+                Id = user.Id,
+                Email = user.Email,
+                FullName = user.FullName,
+                Roles = (await _userManager.GetRolesAsync(user)).ToList(),
+                PhoneNumber = user.PhoneNumber,
+                PhoneNumberConfirmed = user.PhoneNumberConfirmed,
+                AccessFailedCount = user.AccessFailedCount,
+                Persona = personaDto,
+                Profesional = profesionalDto
+            });
         }
 
 

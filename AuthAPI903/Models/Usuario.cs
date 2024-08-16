@@ -14,6 +14,7 @@
         public virtual Persona Persona { get; set; }
         public virtual Rol Rol { get; set; }
         public virtual AppUser AuthUser { get; set; }
+        public virtual Profesional? Profesional { get; set; }
         public virtual ICollection<Paciente> Pacientes { get; set; }
         public virtual ICollection<Profesional> Profesionales { get; set; }
         public virtual ICollection<Notificacion> Notificaciones { get; set; }
