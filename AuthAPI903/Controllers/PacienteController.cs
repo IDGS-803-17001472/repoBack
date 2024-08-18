@@ -105,30 +105,29 @@ namespace AuthAPI903.Controllers
 
             int id = profesional.Id;
             // Busca las asignaciones de pacientes para el profesional dado
-            var asignaciones = await _context.AsignacionPacientes
-                .Where(ap => ap.IdProfesional == id && ap.Paciente.Estatus == true)
-                .Include(ap => ap.Paciente) // Incluye la información del paciente
-                .ThenInclude(p => p.Persona) // Incluye la información de Persona
+            var pacientes = await _context.Pacientes
+                .Where(p=> p.Estatus == true)
+                .Include(p => p.Persona) // Incluye la información de Persona
                 .ToListAsync();
 
-            if (asignaciones == null || !asignaciones.Any())
+            if (pacientes == null || !pacientes.Any())
             {
                 return NotFound("No se encontraron pacientes asignados a este profesional.");
             }
 
             // Extraer la lista de pacientes a partir de las asignaciones y devolver solo la información de Persona
-            var pacientes = asignaciones.Select(ap => new PersonaPacienteDto
+            var pacientes2 = pacientes.Select(ap => new PersonaPacienteDto
             {
-                IdPaciente = ap.Paciente.Id,
-                Nombre = ap.Paciente.Persona.Nombre,
-                ApellidoPaterno = ap.Paciente.Persona.ApellidoPaterno,
-                ApellidoMaterno = ap.Paciente.Persona.ApellidoMaterno,
-                Telefono = ap.Paciente.Persona.Telefono,
-                FechaNacimiento = ap.Paciente.Persona.FechaNacimiento,
-                Sexo = ap.Paciente.Persona.Sexo,
+                IdPaciente = ap.Id,
+                Nombre = ap.Persona.Nombre,
+                ApellidoPaterno = ap.Persona.ApellidoPaterno,
+                ApellidoMaterno = ap.Persona.ApellidoMaterno,
+                Telefono = ap.Persona.Telefono,
+                FechaNacimiento = ap.Persona.FechaNacimiento,
+                Sexo = ap.Persona.Sexo,
             }).ToList();
 
-            return Ok(pacientes);
+            return Ok(pacientes2);
         }
 
 

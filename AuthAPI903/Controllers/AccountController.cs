@@ -237,6 +237,9 @@ public async Task<ActionResult<string>> register(RegisterDto2 registerDto)
             await _context.Pacientes.AddAsync(paciente);
             await _context.SaveChangesAsync();
 
+
+
+
             return Ok(new AuthResponseDto
             {
                 IsSuccess = true,

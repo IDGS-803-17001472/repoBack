@@ -5,7 +5,7 @@ namespace AuthAPI903.Dtos
 {
     public class PersonaPacienteDto
     {
-        public int IdPaciente { get; set; }
+        public int? IdPaciente { get; set; }
         public string? Nombre { get; set; }
         public string? ApellidoPaterno { get; set; }
         public string? ApellidoMaterno { get; set; }
