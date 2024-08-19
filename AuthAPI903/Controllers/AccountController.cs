@@ -167,8 +167,9 @@ public async Task<ActionResult<string>> register(RegisterDto2 registerDto)
         IsSuccess = true,
         Message = "Account Created Successfully!"
     });
-}
-        [AllowAnonymous]
+        }
+
+        [Authorize(Roles = "profesional")]
         [HttpPost("registerPaciente")]
         public async Task<ActionResult<string>> RegisterPaciente(RegisterPacienteDto registerDto)
         {
@@ -176,6 +177,27 @@ public async Task<ActionResult<string>> register(RegisterDto2 registerDto)
             {
                 return BadRequest(ModelState);
             }
+
+
+
+            // Obtener el ID del usuario loggeado
+            var userId = _userManager.GetUserId(User);
+
+            // Buscar el profesional asociado al usuario loggeado
+            var profesional = await _context.Profesionales
+                                            .FirstOrDefaultAsync(p => p.Usuario.IdAppUser == userId);
+
+            if (profesional == null)
+            {
+                return BadRequest("El profesional no fue encontrado.");
+            }
+
+
+
+
+
+
+
 
             // 1. Crear la entidad AppUser
             var user = new AppUser
@@ -237,6 +259,29 @@ public async Task<ActionResult<string>> register(RegisterDto2 registerDto)
             await _context.Pacientes.AddAsync(paciente);
             await _context.SaveChangesAsync();
 
+
+
+
+
+
+            // Verificar si la asignación ya existe
+            var asignacionExiste = await _context.AsignacionPacientes
+                                                  .AnyAsync(ap => ap.IdPaciente == paciente.Id && ap.IdProfesional == profesional.Id);
+
+            if (asignacionExiste)
+            {
+                return Conflict("El paciente ya está asignado a este profesional.");
+            }
+
+            // Crear la relación entre la entidad paciente y profesional
+            var asignacionPaciente = new AsignacionPaciente
+            {
+                IdPaciente = paciente.Id,
+                IdProfesional = profesional.Id
+            };
+
+            await _context.AsignacionPacientes.AddAsync(asignacionPaciente);
+            await _context.SaveChangesAsync();
 
 
 

@@ -105,9 +105,9 @@ namespace AuthAPI903.Controllers
 
             int id = profesional.Id;
             // Busca las asignaciones de pacientes para el profesional dado
-            var pacientes = await _context.Pacientes
-                .Where(p=> p.Estatus == true)
-                .Include(p => p.Persona) // Incluye la información de Persona
+            var pacientes = await _context.AsignacionPacientes
+                .Where(p=> p.Paciente.Estatus == true && p.IdProfesional == profesional.Id)
+                .Include(p => p.Paciente.Persona) // Incluye la información de Persona
                 .ToListAsync();
 
             if (pacientes == null || !pacientes.Any())
@@ -118,13 +118,13 @@ namespace AuthAPI903.Controllers
             // Extraer la lista de pacientes a partir de las asignaciones y devolver solo la información de Persona
             var pacientes2 = pacientes.Select(ap => new PersonaPacienteDto
             {
-                IdPaciente = ap.Id,
-                Nombre = ap.Persona.Nombre,
-                ApellidoPaterno = ap.Persona.ApellidoPaterno,
-                ApellidoMaterno = ap.Persona.ApellidoMaterno,
-                Telefono = ap.Persona.Telefono,
-                FechaNacimiento = ap.Persona.FechaNacimiento,
-                Sexo = ap.Persona.Sexo,
+                IdPaciente = ap.Paciente.Id,
+                Nombre = ap.Paciente.Persona.Nombre,
+                ApellidoPaterno = ap.Paciente.Persona.ApellidoPaterno,
+                ApellidoMaterno = ap.Paciente.Persona.ApellidoMaterno,
+                Telefono = ap.Paciente.Persona.Telefono,
+                FechaNacimiento = ap.Paciente.Persona.FechaNacimiento,
+                Sexo = ap.Paciente.Persona.Sexo,
             }).ToList();
 
             return Ok(pacientes2);
@@ -281,7 +281,6 @@ namespace AuthAPI903.Controllers
         {
             // Busca el paciente por su ID
             var paciente = await _context.Pacientes
-                .Include(p => p.Persona) // Incluir la entidad Persona relacionada
                 .FirstOrDefaultAsync(p => p.Id == id);
 
             if (paciente == null)
@@ -291,8 +290,9 @@ namespace AuthAPI903.Controllers
             // Elimina el paciente y la persona relacionada
             paciente.Estatus = false;
 
+           
+            // Marca las entidades como modificadas
             _context.Entry(paciente).State = EntityState.Modified;
-
 
             // Guarda los cambios en la base de datos
             await _context.SaveChangesAsync();
@@ -321,16 +321,8 @@ namespace AuthAPI903.Controllers
             paciente.Persona.Telefono = updatePacienteDto.Telefono;
             paciente.Persona.FechaNacimiento = updatePacienteDto.FechaNacimiento;
             paciente.Persona.Sexo = updatePacienteDto.Sexo;
-            paciente.Persona.Foto = updatePacienteDto.Foto;
             paciente.Persona.EstadoCivil = updatePacienteDto.EstadoCivil;
             paciente.Persona.Ocupacion = updatePacienteDto.Ocupacion;
-
-            // Actualiza la lista de domicilios (si aplica)
-            if (updatePacienteDto.Domicilios != null)
-            {
-                // Aquí puedes implementar la lógica para actualizar los domicilios asociados
-                // Ejemplo: borrar los existentes y agregar los nuevos
-            }
 
             // Marca las entidades como modificadas
             _context.Entry(paciente.Persona).State = EntityState.Modified;
@@ -338,7 +330,7 @@ namespace AuthAPI903.Controllers
             // Guarda los cambios en la base de datos
             await _context.SaveChangesAsync();
 
-            return Ok("Paciente modificado exitosamente.");
+            return Ok(new { mensaje = "Paciente modificado exitosamente." });
         }
 
 

@@ -33,25 +33,33 @@ namespace AuthAPI903.Controllers
         }
 
         [Authorize]
-        [HttpGet("profesional/{id}/citas")]
-        public async Task<ActionResult<List<Cita>>> ObtenerCitasPorProfesional()
+        [HttpGet("profesional/citas")]
+        public async Task<ActionResult<List<CitaDto>>> ObtenerCitasPorProfesional()
         {
-            // Busca las citas asociadas al profesional dado
-
             var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            var user = await _userManager.FindByIdAsync(currentUserId!);
+            var profesional = await _context.Profesionales
+                                             .Include(p => p.Usuario)
+                                             .FirstOrDefaultAsync(p => p.Usuario.IdAppUser == currentUserId);
 
+            if (profesional == null)
+            {
+                return NotFound("Profesional no encontrado.");
+            }
 
             var citas = await _context.Citas
-                .Where(c => c.AsignacionPaciente.IdProfesional == user.Usuario.Profesional.Id)
-                .Include(c => c.AsignacionPaciente)
-                    .ThenInclude(ap => ap.Paciente)
-                        .ThenInclude(p => p.Persona) // Incluye la información de la persona si es necesario
+                .Where(c => c.AsignacionPaciente.IdProfesional == profesional.Id)
+                .Select(c => new CitaDto
+                {
+                    Id = c.Id,
+                    Title = "Cita con " + c.AsignacionPaciente.Paciente.Persona.Nombre,
+                    Date = c.Fecha,
+                    Status = c.Estatus,
+                })
                 .ToListAsync();
 
-            if (citas == null || !citas.Any())
+            if (!citas.Any())
             {
-                return NotFound("No se encontraron citas asociadas a este profesional.");
+                return NotFound("No se encontraron citas.");
             }
 
             return Ok(citas);
@@ -67,7 +75,28 @@ namespace AuthAPI903.Controllers
                 .Include(c => c.AsignacionPaciente)
                     .ThenInclude(ap => ap.Paciente)
                         .ThenInclude(p => p.Persona)
-                .FirstOrDefaultAsync(c => c.Id == id);
+                        .Select(c => new
+                        {
+                            c.Id,
+                            c.Horario,
+                            c.Fecha,
+                            AsignacionPaciente = new
+                            {
+                                c.AsignacionPaciente.Id,
+                                Paciente = new
+                                {
+                                    Persona = new
+                                    {
+                                        c.AsignacionPaciente.Paciente.Persona.Nombre,
+                                    }
+                                }
+                            }
+                        }).FirstOrDefaultAsync(c => c.Id == id);
+
+
+
+
+
 
             if (cita == null)
             {
@@ -145,6 +174,50 @@ namespace AuthAPI903.Controllers
             }
 
             return Ok("La cita ha sido aceptada exitosamente.");
+        }
+
+
+        [Authorize]
+        [HttpPost("registrar-cita")]
+        public async Task<ActionResult> RegistrarCita([FromBody] RegistrarCitaDto citaDto)
+        {
+            var currentUserId = _userManager.GetUserId(User);
+
+            // Buscar el profesional asociado al usuario loggeado
+            var profesional = await _context.Profesionales
+                                            .FirstOrDefaultAsync(p => p.Usuario.IdAppUser == currentUserId);
+            if (profesional == null)
+            {
+                return BadRequest("El profesional no fue encontrado.");
+            }
+
+            // Buscar la asignación de paciente para el profesional dado
+            var asignacionPaciente = await _context.AsignacionPacientes
+                .FirstOrDefaultAsync(ap => ap.IdPaciente == citaDto.IdPaciente && ap.IdProfesional == profesional.Id);
+
+            if (asignacionPaciente == null)
+            {
+                return BadRequest("El paciente no está asignado a este profesional.");
+            }
+
+            if (!TimeSpan.TryParse(citaDto.Horario, out var horarioTimeSpan))
+            {
+                return BadRequest("Formato de hora inválido.");
+            }
+
+            var cita = new Cita
+            {
+                IdAsignacion = asignacionPaciente.Id,
+                Fecha = citaDto.Fecha,
+                Horario = horarioTimeSpan,
+                Notas = citaDto.Notas,
+                Estatus = "Pendiente"
+            };
+
+            _context.Citas.Add(cita);
+            await _context.SaveChangesAsync();
+
+            return Ok(new { message = "Cita registrada exitosamente", citaId = cita.Id });
         }
 
 

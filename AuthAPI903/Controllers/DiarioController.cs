@@ -33,13 +33,27 @@ namespace AuthAPI903.Controllers
 
         [Authorize]
         [HttpGet("paciente/{id}/diarios")]
-        public async Task<ActionResult<List<Entrada>>> ObtenerDiariosPorPaciente(int id)
+        public async Task<ActionResult<List<object>>> ObtenerDiariosPorPaciente(int id)
         {
-            // Busca los diarios asociados al paciente dado
             var diarios = await _context.Entradas
                 .Where(e => e.IdPaciente == id)
-                .Include(e => e.Paciente) // Incluye la información del usuario si es necesario
-                .ThenInclude(u => u.Persona) // Incluye la información de Persona si es necesario
+                .Select(e => new {
+                    e.Id,
+                    e.Contenido,
+                    e.Fecha,
+                    Paciente = new
+                    {
+                        e.Paciente.Id,
+                        Persona = new
+                        {
+                            e.Paciente.Persona.Nombre,
+                        }
+                    },
+                    Medicion = new
+                    {
+                        e.Mediciones
+                    }
+                })
                 .ToListAsync();
 
             if (diarios == null || !diarios.Any())
@@ -49,16 +63,35 @@ namespace AuthAPI903.Controllers
 
             return Ok(diarios);
         }
-
         [Authorize]
         [HttpGet("diario/{id}")]
-        public async Task<ActionResult<Entrada>> ObtenerDiarioPorId(int id)
+        public async Task<ActionResult<object>> ObtenerDiarioPorId(int id)
         {
             // Busca el diario por ID e incluye la emoción asociada
             var diario = await _context.Entradas
-                .Include(e => e.Mediciones) // Incluye la emoción asociada
-                .ThenInclude(a => a.Emocion)
-                .FirstOrDefaultAsync(e => e.Id == id);
+                .Where(e => e.Id == id)
+                .Include(e => e.Mediciones) // Incluir las mediciones
+                .ThenInclude(e => e.Emocion)
+                .Select(e => new
+                {
+                    e.Id,
+                    e.Contenido,
+                    e.Fecha,
+                    Paciente = new
+                    {
+                        e.Paciente.Id,
+                        Persona = new
+                        {
+                            e.Paciente.Persona.Nombre,
+                        }
+                    },
+                    Mediciones = e.Mediciones.Select(m => new
+                    {
+                        m.Emocion.EmocionName,
+                        m.Nivel
+                    }).ToList() // Proyectar las mediciones en el DTO
+                })
+                .FirstOrDefaultAsync();
 
             if (diario == null)
             {
@@ -67,7 +100,6 @@ namespace AuthAPI903.Controllers
 
             return Ok(diario);
         }
-
 
         [Authorize]
         [HttpGet("emociones-semana/{idPaciente}")]
