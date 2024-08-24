@@ -80,6 +80,7 @@ namespace AuthAPI903.Controllers
                             c.Id,
                             c.Horario,
                             c.Fecha,
+                            c.Estatus,
                             AsignacionPaciente = new
                             {
                                 c.AsignacionPaciente.Id,

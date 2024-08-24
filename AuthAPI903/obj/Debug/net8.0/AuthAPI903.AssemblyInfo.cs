@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AuthAPI903")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ad7e70daf3a17aae9d31fbdce8ab0b37c8db7168")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e68f1bef09f18b378f530aa5554381dd70334f58")]
 [assembly: System.Reflection.AssemblyProductAttribute("AuthAPI903")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AuthAPI903")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
