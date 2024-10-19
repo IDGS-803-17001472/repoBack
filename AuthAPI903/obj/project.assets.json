@@ -4476,19 +4476,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\nano_\\.nuget\\packages\\": {}
+    "C:\\Users\\Javier\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\AuthAPI903.csproj",
+      "projectUniqueName": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\AuthAPI903.csproj",
       "projectName": "AuthAPI903",
-      "projectPath": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\AuthAPI903.csproj",
-      "packagesPath": "C:\\Users\\nano_\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\obj\\",
+      "projectPath": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\AuthAPI903.csproj",
+      "packagesPath": "C:\\Users\\Javier\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\nano_\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Javier\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4496,7 +4496,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4576,8 +4575,20 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "El paquete \"RestSharp\" 111.4.0 tiene una vulnerabilidad de gravedad moderada conocida, https://github.com/advisories/GHSA-4rr6-2v9v-wcpc",
+      "libraryId": "RestSharp",
+      "targetGraphs": [
+        "net8.0"
+      ]
+    }
+  ]
 }
