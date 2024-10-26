@@ -63,6 +63,8 @@ namespace AuthAPI903.Controllers
 
             return Ok(diarios);
         }
+
+
         [Authorize]
         [HttpGet("diario/{id}")]
         public async Task<ActionResult<object>> ObtenerDiarioPorId(int id)

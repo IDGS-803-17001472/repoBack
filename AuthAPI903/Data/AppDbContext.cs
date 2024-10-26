@@ -150,7 +150,7 @@ namespace AuthAPI903.Data
 
             modelBuilder.Entity<PlanSuscripcion>()
                 .Property(p => p.DuracionMeses)
-                .IsRequired();  // DuracionMeses configurado como requerido
+                .IsRequired();  
 
             modelBuilder.Entity<PlanSuscripcion>()
                 .HasMany(p => p.Suscripciones)
