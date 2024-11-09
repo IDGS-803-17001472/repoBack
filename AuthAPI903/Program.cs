@@ -6,8 +6,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Models;
 using System.Text;
+using Microsoft.AspNetCore.Authentication;
+using Microsoft.Identity.Web;
 
 var builder = WebApplication.CreateBuilder(args);
+
 
 // Add services to the container.
 
@@ -17,9 +20,12 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 //Obtenemos la cadena de conexion.
-var connectionString = builder.Configuration.GetConnectionString("cadenaSQL");
+var connectionString = builder.Configuration.GetConnectionString("cadenaSQL2");
 
-builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString));
+builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(connectionString, builder =>
+{
+    builder.EnableRetryOnFailure(5, TimeSpan.FromSeconds(10), null);
+}));
 
 var JWTSettings = builder.Configuration.GetSection("JWTSetting");
 
@@ -88,6 +94,12 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+app.UseDefaultFiles();  // Esto busca automáticamente index.html u otros archivos predeterminados
+app.UseStaticFiles();   // Esto permite servir archivos estáticos desde wwwroot
+
+
+
 
 app.UseHttpsRedirection();
 

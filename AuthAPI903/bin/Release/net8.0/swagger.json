@@ -1,0 +1,2092 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "AuthAPI903, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/Account/registerProfesional": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/RegisterDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/api/Account/register": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/RegisterDto2"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/api/Account/registerPaciente": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/RegisterPacienteDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/api/Account/login": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/LoginDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/AuthResponseDto"
+            }
+          }
+        }
+      }
+    },
+    "/api/Account/update/{id}": {
+      "put": {
+        "tags": [
+          "Account"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdatePsychologistDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Account/login2": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/LoginDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/AuthResponseDto"
+            }
+          }
+        }
+      }
+    },
+    "/api/Account/refresh-token": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/TokenDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/AuthResponseDto"
+            }
+          }
+        }
+      }
+    },
+    "/api/Account/forgot-password": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ForgotPasswordDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Account/reset-password": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ResetPasswordDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Account/change-password": {
+      "post": {
+        "tags": [
+          "Account"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ChangePasswordDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Account/detail": {
+      "get": {
+        "tags": [
+          "Account"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/UserDetailDto"
+            }
+          }
+        }
+      }
+    },
+    "/api/Account": {
+      "get": {
+        "tags": [
+          "Account"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/UserDetailDto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Account/profesionalDetail": {
+      "get": {
+        "tags": [
+          "Account"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/UserDetailDto"
+            }
+          }
+        }
+      }
+    },
+    "/api/Cita/profesional/citas": {
+      "get": {
+        "tags": [
+          "Cita"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/CitaDto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Cita/cita/{id}": {
+      "get": {
+        "tags": [
+          "Cita"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/Cita"
+            }
+          }
+        }
+      }
+    },
+    "/api/Cita/cita/{id}/reagendar": {
+      "put": {
+        "tags": [
+          "Cita"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/ReagendarCitaDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Cita/cita/{id}/aceptar": {
+      "put": {
+        "tags": [
+          "Cita"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Cita/registrar-cita": {
+      "post": {
+        "tags": [
+          "Cita"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/RegistrarCitaDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Diario/paciente/{id}/diarios": {
+      "get": {
+        "tags": [
+          "Diario"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": { }
+            }
+          }
+        }
+      }
+    },
+    "/api/Diario/diario/{id}": {
+      "get": {
+        "tags": [
+          "Diario"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Diario/emociones-semana/{idPaciente}": {
+      "get": {
+        "tags": [
+          "Diario"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "idPaciente",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/EmocionSemanaDto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Paciente/pacientes/{id}": {
+      "get": {
+        "tags": [
+          "Paciente"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "$ref": "#/definitions/PacienteDto"
+            }
+          }
+        }
+      }
+    },
+    "/api/Paciente/pacientes": {
+      "get": {
+        "tags": [
+          "Paciente"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/PacienteDto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Paciente/profesional/pacientes": {
+      "get": {
+        "tags": [
+          "Paciente"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/PersonaPacienteDto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Paciente/paciente/{id}/profesionales": {
+      "get": {
+        "tags": [
+          "Paciente"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/Profesional"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Paciente/link": {
+      "post": {
+        "tags": [
+          "Paciente"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/AsignarPacienteDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    },
+    "/api/Paciente/eliminar-paciente/{id}": {
+      "delete": {
+        "tags": [
+          "Paciente"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Paciente/modificar-paciente/{id}": {
+      "put": {
+        "tags": [
+          "Paciente"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          },
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/UpdatePacienteDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Roles": {
+      "post": {
+        "tags": [
+          "Roles"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/CreateRoleDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Roles"
+        ],
+        "produces": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "schema": {
+              "type": "array",
+              "items": {
+                "$ref": "#/definitions/RoleResponseDto"
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Roles/{id}": {
+      "delete": {
+        "tags": [
+          "Roles"
+        ],
+        "parameters": [
+          {
+            "in": "path",
+            "name": "id",
+            "required": true,
+            "type": "string"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Roles/assign": {
+      "post": {
+        "tags": [
+          "Roles"
+        ],
+        "consumes": [
+          "application/json",
+          "text/json",
+          "application/*+json"
+        ],
+        "parameters": [
+          {
+            "in": "body",
+            "name": "body",
+            "schema": {
+              "$ref": "#/definitions/RoleAssignDto"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    }
+  },
+  "definitions": {
+    "AppUser": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "userName": {
+          "type": "string"
+        },
+        "normalizedUserName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "normalizedEmail": {
+          "type": "string"
+        },
+        "emailConfirmed": {
+          "type": "boolean"
+        },
+        "passwordHash": {
+          "type": "string"
+        },
+        "securityStamp": {
+          "type": "string"
+        },
+        "concurrencyStamp": {
+          "type": "string"
+        },
+        "phoneNumber": {
+          "type": "string"
+        },
+        "phoneNumberConfirmed": {
+          "type": "boolean"
+        },
+        "twoFactorEnabled": {
+          "type": "boolean"
+        },
+        "lockoutEnd": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "lockoutEnabled": {
+          "type": "boolean"
+        },
+        "accessFailedCount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "fullName": {
+          "type": "string"
+        },
+        "refreshToken": {
+          "type": "string"
+        },
+        "refreshTokenExpiryTime": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "usuario": {
+          "$ref": "#/definitions/Usuario"
+        }
+      },
+      "additionalProperties": false
+    },
+    "AsignacionPaciente": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "idProfesional": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "idPaciente": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "paciente": {
+          "$ref": "#/definitions/Paciente"
+        },
+        "profesional": {
+          "$ref": "#/definitions/Profesional"
+        }
+      },
+      "additionalProperties": false
+    },
+    "AsignarPacienteDto": {
+      "required": [
+        "pacienteId"
+      ],
+      "type": "object",
+      "properties": {
+        "pacienteId": {
+          "format": "int32",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "AuthResponseDto": {
+      "type": "object",
+      "properties": {
+        "token": {
+          "type": "string"
+        },
+        "isSuccess": {
+          "type": "boolean"
+        },
+        "message": {
+          "type": "string"
+        },
+        "refreshToken": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ChangePasswordDto": {
+      "required": [
+        "currentPassword",
+        "email",
+        "newPassword"
+      ],
+      "type": "object",
+      "properties": {
+        "email": {
+          "format": "email",
+          "minLength": 1,
+          "type": "string"
+        },
+        "currentPassword": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "newPassword": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Cita": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "fecha": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "estatus": {
+          "type": "string"
+        },
+        "notas": {
+          "type": "string"
+        },
+        "horario": {
+          "format": "date-span",
+          "type": "string"
+        },
+        "idAsignacion": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "asignacionPaciente": {
+          "$ref": "#/definitions/AsignacionPaciente"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CitaDto": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "title": {
+          "type": "string"
+        },
+        "date": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "status": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "CreateRoleDto": {
+      "required": [
+        "roleName"
+      ],
+      "type": "object",
+      "properties": {
+        "roleName": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "DocumentoProfesional": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "estudios": {
+          "type": "string"
+        },
+        "url": {
+          "type": "string"
+        },
+        "idProfesional": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "profesional": {
+          "$ref": "#/definitions/Profesional"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Domicilio": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "colonia": {
+          "type": "string"
+        },
+        "calle": {
+          "type": "string"
+        },
+        "numeroInterior": {
+          "type": "string"
+        },
+        "numeroExterior": {
+          "type": "string"
+        },
+        "codigoPostal": {
+          "type": "string"
+        },
+        "idPersona": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "persona": {
+          "$ref": "#/definitions/Persona"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Emocion": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "emocionName": {
+          "type": "string"
+        },
+        "factores": {
+          "type": "string"
+        },
+        "descripcion": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EmocionDto": {
+      "type": "object",
+      "properties": {
+        "descripcion": {
+          "type": "string"
+        },
+        "valor": {
+          "format": "double",
+          "type": "number"
+        }
+      },
+      "additionalProperties": false
+    },
+    "EmocionSemanaDto": {
+      "type": "object",
+      "properties": {
+        "anio": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "semana": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "emociones": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/EmocionDto"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Entrada": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "fecha": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "contenido": {
+          "type": "string"
+        },
+        "idPaciente": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "paciente": {
+          "$ref": "#/definitions/Paciente"
+        },
+        "mediciones": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Medicion"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "ForgotPasswordDto": {
+      "required": [
+        "email"
+      ],
+      "type": "object",
+      "properties": {
+        "email": {
+          "format": "email",
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "LoginDto": {
+      "required": [
+        "email",
+        "password"
+      ],
+      "type": "object",
+      "properties": {
+        "email": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "password": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Medicion": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "nivel": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "idEmocion": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "idEntrada": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "emocion": {
+          "$ref": "#/definitions/Emocion"
+        },
+        "entrada": {
+          "$ref": "#/definitions/Entrada"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Notificacion": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "idUsuario": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "tipo": {
+          "type": "string"
+        },
+        "estatus": {
+          "type": "string"
+        },
+        "contenido": {
+          "type": "string"
+        },
+        "usuario": {
+          "$ref": "#/definitions/Usuario"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Paciente": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "fechaRegistro": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "notasAdicionales": {
+          "type": "string"
+        },
+        "idPersona": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "estatus": {
+          "type": "boolean"
+        },
+        "persona": {
+          "$ref": "#/definitions/Persona"
+        },
+        "asignacionPacientes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AsignacionPaciente"
+          }
+        },
+        "padecimientoPacientes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PadecimientoPaciente"
+          }
+        },
+        "entradas": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Entrada"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "PacienteDto": {
+      "type": "object",
+      "properties": {
+        "idPaciente": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "nombre": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "apellidoMaterno": {
+          "type": "string"
+        },
+        "apellidoPaterno": {
+          "type": "string"
+        },
+        "telefono": {
+          "type": "string"
+        },
+        "fechaNacimiento": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "sexo": {
+          "type": "string"
+        },
+        "foto": {
+          "type": "string"
+        },
+        "estadoCivil": {
+          "type": "string"
+        },
+        "ocupacion": {
+          "type": "string"
+        },
+        "domicilios": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "fechaRegistro": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "notasAdicionales": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Padecimiento": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "nombrePadecimiento": {
+          "type": "string"
+        },
+        "padecimientoPacientes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/PadecimientoPaciente"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "PadecimientoPaciente": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "idPadecimiento": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "idPaciente": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "padecimiento": {
+          "$ref": "#/definitions/Padecimiento"
+        },
+        "paciente": {
+          "$ref": "#/definitions/Paciente"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Persona": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "nombre": {
+          "type": "string"
+        },
+        "apellidoMaterno": {
+          "type": "string"
+        },
+        "apellidoPaterno": {
+          "type": "string"
+        },
+        "telefono": {
+          "type": "string"
+        },
+        "fechaNacimiento": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "sexo": {
+          "type": "string"
+        },
+        "foto": {
+          "type": "string"
+        },
+        "estadoCivil": {
+          "type": "string"
+        },
+        "ocupacion": {
+          "type": "string"
+        },
+        "domicilios": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Domicilio"
+          }
+        },
+        "usuario": {
+          "$ref": "#/definitions/Usuario"
+        },
+        "paciente": {
+          "$ref": "#/definitions/Paciente"
+        }
+      },
+      "additionalProperties": false
+    },
+    "PersonaDto": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "nombre": {
+          "type": "string"
+        },
+        "apellido": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "PersonaPacienteDto": {
+      "type": "object",
+      "properties": {
+        "idPaciente": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "nombre": {
+          "type": "string"
+        },
+        "apellidoPaterno": {
+          "type": "string"
+        },
+        "apellidoMaterno": {
+          "type": "string"
+        },
+        "telefono": {
+          "type": "string"
+        },
+        "fechaNacimiento": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "sexo": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Profesional": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "titulo": {
+          "type": "string"
+        },
+        "idUsuario": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "estatus": {
+          "type": "boolean"
+        },
+        "usuario": {
+          "$ref": "#/definitions/Usuario"
+        },
+        "asignacionPacientes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/AsignacionPaciente"
+          }
+        },
+        "documentoProfesionales": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/DocumentoProfesional"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "ProfesionalDto": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "titulo": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ReagendarCitaDto": {
+      "type": "object",
+      "properties": {
+        "fecha": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "horario": {
+          "format": "date-span",
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "RegisterDto": {
+      "required": [
+        "email",
+        "fullName"
+      ],
+      "type": "object",
+      "properties": {
+        "email": {
+          "format": "email",
+          "minLength": 1,
+          "type": "string"
+        },
+        "fullName": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "RegisterDto2": {
+      "required": [
+        "apellidoMaterno",
+        "apellidoPaterno",
+        "email",
+        "estadoCivil",
+        "fechaNacimiento",
+        "nombre",
+        "ocupacion",
+        "sexo",
+        "telefono",
+        "titulo"
+      ],
+      "type": "object",
+      "properties": {
+        "email": {
+          "format": "email",
+          "minLength": 1,
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "nombre": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "apellidoMaterno": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "apellidoPaterno": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "telefono": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "fechaNacimiento": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "sexo": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "foto": {
+          "type": "string"
+        },
+        "estadoCivil": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "ocupacion": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "domicilios": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "titulo": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "RegisterPacienteDto": {
+      "type": "object",
+      "properties": {
+        "email": {
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "nombre": {
+          "type": "string"
+        },
+        "apellidoMaterno": {
+          "type": "string"
+        },
+        "apellidoPaterno": {
+          "type": "string"
+        },
+        "telefono": {
+          "type": "string"
+        },
+        "fechaNacimiento": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "sexo": {
+          "type": "string"
+        },
+        "foto": {
+          "type": "string"
+        },
+        "estadoCivil": {
+          "type": "string"
+        },
+        "ocupacion": {
+          "type": "string"
+        },
+        "notasAdicionales": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "RegistrarCitaDto": {
+      "type": "object",
+      "properties": {
+        "idPaciente": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "fecha": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "horario": {
+          "type": "string"
+        },
+        "notas": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "ResetPasswordDto": {
+      "required": [
+        "email",
+        "newPassword",
+        "token"
+      ],
+      "type": "object",
+      "properties": {
+        "email": {
+          "format": "email",
+          "minLength": 1,
+          "type": "string"
+        },
+        "token": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "newPassword": {
+          "minLength": 6,
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Rol": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "rolName": {
+          "type": "string"
+        },
+        "usuarios": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Usuario"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "RoleAssignDto": {
+      "type": "object",
+      "properties": {
+        "userId": {
+          "type": "string"
+        },
+        "roleId": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "RoleResponseDto": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "name": {
+          "type": "string"
+        },
+        "totalUsers": {
+          "format": "int32",
+          "type": "integer"
+        }
+      },
+      "additionalProperties": false
+    },
+    "TokenDto": {
+      "type": "object",
+      "properties": {
+        "refreshToken": {
+          "type": "string"
+        },
+        "token": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UpdatePacienteDto": {
+      "type": "object",
+      "properties": {
+        "nombre": {
+          "type": "string"
+        },
+        "apellidoPaterno": {
+          "type": "string"
+        },
+        "apellidoMaterno": {
+          "type": "string"
+        },
+        "telefono": {
+          "type": "string"
+        },
+        "fechaNacimiento": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "sexo": {
+          "type": "string"
+        },
+        "estadoCivil": {
+          "type": "string"
+        },
+        "ocupacion": {
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UpdatePsychologistDto": {
+      "required": [
+        "apellidoMaterno",
+        "apellidoPaterno",
+        "email",
+        "estadoCivil",
+        "fechaNacimiento",
+        "nombre",
+        "ocupacion",
+        "sexo",
+        "telefono",
+        "titulo"
+      ],
+      "type": "object",
+      "properties": {
+        "email": {
+          "format": "email",
+          "minLength": 1,
+          "type": "string"
+        },
+        "password": {
+          "type": "string"
+        },
+        "nombre": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "apellidoMaterno": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "apellidoPaterno": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "telefono": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "fechaNacimiento": {
+          "format": "date-time",
+          "type": "string"
+        },
+        "sexo": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "foto": {
+          "type": "string"
+        },
+        "estadoCivil": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "ocupacion": {
+          "minLength": 1,
+          "type": "string"
+        },
+        "titulo": {
+          "minLength": 1,
+          "type": "string"
+        }
+      },
+      "additionalProperties": false
+    },
+    "UserDetailDto": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "fullName": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "roles": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "phoneNumber": {
+          "type": "string"
+        },
+        "twoFactorEnabled": {
+          "type": "boolean"
+        },
+        "phoneNumberConfirmed": {
+          "type": "boolean"
+        },
+        "accessFailedCount": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "persona": {
+          "$ref": "#/definitions/PersonaDto"
+        },
+        "profesional": {
+          "$ref": "#/definitions/ProfesionalDto"
+        }
+      },
+      "additionalProperties": false
+    },
+    "Usuario": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "idAppUser": {
+          "type": "string"
+        },
+        "email": {
+          "type": "string"
+        },
+        "contrasena": {
+          "type": "string"
+        },
+        "tipoUsuario": {
+          "type": "string"
+        },
+        "idPersona": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "idRol": {
+          "format": "int32",
+          "type": "integer"
+        },
+        "identificadorUnico": {
+          "type": "string"
+        },
+        "persona": {
+          "$ref": "#/definitions/Persona"
+        },
+        "rol": {
+          "$ref": "#/definitions/Rol"
+        },
+        "authUser": {
+          "$ref": "#/definitions/AppUser"
+        },
+        "profesional": {
+          "$ref": "#/definitions/Profesional"
+        },
+        "pacientes": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Paciente"
+          }
+        },
+        "profesionales": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Profesional"
+          }
+        },
+        "notificaciones": {
+          "type": "array",
+          "items": {
+            "$ref": "#/definitions/Notificacion"
+          }
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "securityDefinitions": {
+    "Bearer": {
+      "type": "apiKey",
+      "name": "Authorization",
+      "in": "header",
+      "description": "JWT Authorization Example : 'Bearer eyeleieieekeieieie"
+    }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
+}

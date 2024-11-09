@@ -25,6 +25,10 @@ namespace AuthAPI903.Data
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<AppUser> UsuariosAuth { get; set; }
 
+        //aun no conectados
+        public DbSet<Empresa> Empresas { get; set; }
+        public DbSet<Queja> Quejas { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.Entity<AsignacionPaciente>()
