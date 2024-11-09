@@ -4476,19 +4476,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Javier\\.nuget\\packages\\": {}
+    "C:\\Users\\yazmi\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\AuthAPI903.csproj",
+      "projectUniqueName": "C:\\backActual\\repoBack\\AuthAPI903\\AuthAPI903.csproj",
       "projectName": "AuthAPI903",
-      "projectPath": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\AuthAPI903.csproj",
-      "packagesPath": "C:\\Users\\Javier\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\obj\\",
+      "projectPath": "C:\\backActual\\repoBack\\AuthAPI903\\AuthAPI903.csproj",
+      "packagesPath": "C:\\Users\\yazmi\\.nuget\\packages\\",
+      "outputPath": "C:\\backActual\\repoBack\\AuthAPI903\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Javier\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\yazmi\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
