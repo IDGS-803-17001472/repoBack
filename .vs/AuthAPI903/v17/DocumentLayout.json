@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\nano_\\Desktop\\Auth-App\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\desktop\\auth-app\\authapi903\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\desktop\\auth-app\\authapi903\\controllers\\quejacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\quejacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -49,8 +53,29 @@
           "SelectedChildIndex": 2,
           "Children": [
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\appsettings.json",
+              "RelativeDocumentMoniker": "AuthAPI903\\appsettings.json",
+              "ToolTip": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\appsettings.json",
+              "RelativeToolTip": "AuthAPI903\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAD3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-11T03:36:59.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "RolesController.cs",
               "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\Controllers\\RolesController.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\RolesController.cs",
@@ -58,12 +83,11 @@
               "RelativeToolTip": "AuthAPI903\\Controllers\\RolesController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T07:21:49.362Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T07:21:49.362Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "Rol.cs",
               "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\Models\\Rol.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Models\\Rol.cs",
@@ -71,12 +95,11 @@
               "RelativeToolTip": "AuthAPI903\\Models\\Rol.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T07:20:55.21Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T07:20:55.21Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "QuejaController.cs",
               "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\Controllers\\QuejaController.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\QuejaController.cs",
@@ -89,7 +112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "PacienteController.cs",
               "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\Controllers\\PacienteController.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\PacienteController.cs",
@@ -97,20 +120,11 @@
               "RelativeToolTip": "AuthAPI903\\Controllers\\PacienteController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABgAAAAUAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T06:42:49.411Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+              "WhenOpened": "2024-11-09T06:42:49.411Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "EmpresaController.cs",
               "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\Controllers\\EmpresaController.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\EmpresaController.cs",
@@ -118,12 +132,11 @@
               "RelativeToolTip": "AuthAPI903\\Controllers\\EmpresaController.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAowA8AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T06:42:24.308Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T06:42:24.308Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Data\\AppDbContext.cs",
@@ -131,12 +144,11 @@
               "RelativeToolTip": "AuthAPI903\\Data\\AppDbContext.cs",
               "ViewState": "AgIAABYAAAAAAAAAAAAUwBsAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T06:40:37.914Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T06:40:37.914Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Persona.cs",
               "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\Models\\Persona.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Models\\Persona.cs",
@@ -144,12 +156,11 @@
               "RelativeToolTip": "AuthAPI903\\Models\\Persona.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T06:38:49.192Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T06:38:49.192Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Queja.cs",
               "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\Models\\Queja.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Models\\Queja.cs",
@@ -157,12 +168,11 @@
               "RelativeToolTip": "AuthAPI903\\Models\\Queja.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T06:17:09.761Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T06:17:09.761Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Empresa.cs",
               "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\Models\\Empresa.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Models\\Empresa.cs",
@@ -170,8 +180,7 @@
               "RelativeToolTip": "AuthAPI903\\Models\\Empresa.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T06:09:33.37Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-09T06:09:33.37Z"
             }
           ]
         }
