@@ -3,24 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\controllers\\plansuscripcioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\plansuscripcioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\dtos\\plansubscripciondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\dtos\\plansubscripciondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\controllers\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\dtos\\suscripciondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\dtos\\suscripciondtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\controllers\\profesionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\profesionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\controllers\\suscripcioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\suscripcioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\dtos\\profesionalpacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\dtos\\profesionalpacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\models\\suscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\models\\suscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\controllers\\diariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\diariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\controllers\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,72 +38,95 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "PlanSuscripcionController.cs",
-              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\PlanSuscripcionController.cs",
-              "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\PlanSuscripcionController.cs",
-              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\PlanSuscripcionController.cs",
-              "RelativeToolTip": "AuthAPI903\\Controllers\\PlanSuscripcionController.cs",
-              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAwAAAAXAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T06:25:02.14Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "PlanSubscripcionDtos.cs",
-              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Dtos\\PlanSubscripcionDtos.cs",
-              "RelativeDocumentMoniker": "AuthAPI903\\Dtos\\PlanSubscripcionDtos.cs",
-              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Dtos\\PlanSubscripcionDtos.cs",
-              "RelativeToolTip": "AuthAPI903\\Dtos\\PlanSubscripcionDtos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T06:23:45.98Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "SuscripcionController.cs",
-              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\SuscripcionController.cs",
-              "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\SuscripcionController.cs",
-              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\SuscripcionController.cs",
-              "RelativeToolTip": "AuthAPI903\\Controllers\\SuscripcionController.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAIEAAAAAAAAA",
+              "Title": "ProfesionalPacienteDto.cs",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Dtos\\ProfesionalPacienteDto.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Dtos\\ProfesionalPacienteDto.cs",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Dtos\\ProfesionalPacienteDto.cs",
+              "RelativeToolTip": "AuthAPI903\\Dtos\\ProfesionalPacienteDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAQAAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T06:20:12.85Z",
+              "WhenOpened": "2024-11-20T05:48:04.001Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SuscripcionDtos.cs",
-              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Dtos\\SuscripcionDtos.cs",
-              "RelativeDocumentMoniker": "AuthAPI903\\Dtos\\SuscripcionDtos.cs",
-              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Dtos\\SuscripcionDtos.cs",
-              "RelativeToolTip": "AuthAPI903\\Dtos\\SuscripcionDtos.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAAAAAA",
+              "Title": "ProfesionalController.cs",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\ProfesionalController.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\ProfesionalController.cs",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\ProfesionalController.cs",
+              "RelativeToolTip": "AuthAPI903\\Controllers\\ProfesionalController.cs",
+              "ViewState": "AQIAABEAAAAAAAAAAAAQwDIAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T06:22:21.985Z",
+              "WhenOpened": "2024-11-19T23:05:31.285Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "PacienteController.cs",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\PacienteController.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\PacienteController.cs",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\PacienteController.cs",
+              "RelativeToolTip": "AuthAPI903\\Controllers\\PacienteController.cs",
+              "ViewState": "AQIAABABAAAAAAAAAAAWwC8BAAAwAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-19T07:07:02.412Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Suscripcion.cs",
-              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Models\\Suscripcion.cs",
-              "RelativeDocumentMoniker": "AuthAPI903\\Models\\Suscripcion.cs",
-              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Models\\Suscripcion.cs",
-              "RelativeToolTip": "AuthAPI903\\Models\\Suscripcion.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Title": "PagoController.cs",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\PagoController.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\PagoController.cs",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\PagoController.cs",
+              "RelativeToolTip": "AuthAPI903\\Controllers\\PagoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-09T06:20:59.299Z",
+              "WhenOpened": "2024-11-19T07:07:01.682Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "AuthAPI903\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAJ4BAAAAAAAAAAAmwLABAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T18:16:20.763Z",
               "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CitaController.cs",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\CitaController.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\CitaController.cs",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\CitaController.cs",
+              "RelativeToolTip": "AuthAPI903\\Controllers\\CitaController.cs",
+              "ViewState": "AQIAALUAAAAAAAAAAAAIwOIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-18T01:28:38.745Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DiarioController.cs",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\DiarioController.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\DiarioController.cs",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\DiarioController.cs",
+              "RelativeToolTip": "AuthAPI903\\Controllers\\DiarioController.cs",
+              "ViewState": "AQIAAA4AAAAAAAAAAAAQwEsAAAAsAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-13T02:20:28.59Z"
             }
           ]
         }

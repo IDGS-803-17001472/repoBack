@@ -178,8 +178,6 @@ public async Task<ActionResult<string>> register(RegisterDto2 registerDto)
                 return BadRequest(ModelState);
             }
 
-
-
             // Obtener el ID del usuario loggeado
             var userId = _userManager.GetUserId(User);
 
@@ -191,13 +189,6 @@ public async Task<ActionResult<string>> register(RegisterDto2 registerDto)
             {
                 return BadRequest("El profesional no fue encontrado.");
             }
-
-
-
-
-
-
-
 
             // 1. Crear la entidad AppUser
             var user = new AppUser
@@ -259,11 +250,6 @@ public async Task<ActionResult<string>> register(RegisterDto2 registerDto)
             await _context.Pacientes.AddAsync(paciente);
             await _context.SaveChangesAsync();
 
-
-
-
-
-
             // Verificar si la asignación ya existe
             var asignacionExiste = await _context.AsignacionPacientes
                                                   .AnyAsync(ap => ap.IdPaciente == paciente.Id && ap.IdProfesional == profesional.Id);
@@ -292,7 +278,143 @@ public async Task<ActionResult<string>> register(RegisterDto2 registerDto)
             });
         }
 
+        [Authorize(Roles = "Paciente")]
+        [HttpPost("asignarProfesional")]
+        public async Task<ActionResult> AsignarProfesional([FromBody] AsignarProfesionalDto asignarDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
+            // Obtener el ID del usuario autenticado
+            var userId = _userManager.GetUserId(User);
+
+            // Buscar el paciente asociado al usuario autenticado
+            var paciente = await _context.Pacientes
+                                         .Include(p => p.Persona)
+                                         .FirstOrDefaultAsync(p => p.Persona.Usuario.IdAppUser == userId);
+
+            if (paciente == null)
+            {
+                return NotFound("Paciente no encontrado.");
+            }
+
+            // Buscar al profesional por correo electrónico
+            var profesional = await _context.Profesionales
+                                             .Include(p => p.Usuario)
+                                             .ThenInclude(u => u.Persona)
+                                             .FirstOrDefaultAsync(p => p.Usuario.Email == asignarDto.CorreoProfesional);
+
+            if (profesional == null)
+            {
+                return NotFound("Profesional no encontrado.");
+            }
+
+            // Verificar si el profesional está activo
+            if (!profesional.Estatus)
+            {
+                return BadRequest("El profesional está inactivo.");
+            }
+
+            // Verificar si ya existe la asignación
+            var asignacionExiste = await _context.AsignacionPacientes
+                                                  .AnyAsync(ap => ap.IdPaciente == paciente.Id && ap.IdProfesional == profesional.Id);
+
+            if (asignacionExiste)
+            {
+                return Conflict("El paciente ya está asignado a este profesional.");
+            }
+
+            // Crear la relación entre el paciente y el profesional
+            var asignacionPaciente = new AsignacionPaciente
+            {
+                IdPaciente = paciente.Id,
+                IdProfesional = profesional.Id
+            };
+
+            _context.AsignacionPacientes.Add(asignacionPaciente);
+            await _context.SaveChangesAsync();
+
+            return Ok("Paciente asignado al profesional exitosamente.");
+        }
+
+
+        [AllowAnonymous]
+        [HttpPost("selfRegisterPaciente")]
+        public async Task<ActionResult<string>> SelfRegisterPaciente(RegisterPacienteDto registerDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            // 1. Crear la entidad AppUser
+            var user = new AppUser
+            {
+                Email = registerDto.Email,
+                FullName = $"{registerDto.Nombre} {registerDto.ApellidoPaterno} {registerDto.ApellidoMaterno}",
+                UserName = registerDto.Email
+            };
+
+            var result = await _userManager.CreateAsync(user, registerDto.Password);
+
+            if (!result.Succeeded)
+            {
+                return BadRequest(result.Errors);
+            }
+
+            // Asignar el rol 'Paciente' al usuario recién creado
+            await _userManager.AddToRoleAsync(user, "Paciente");
+
+            // 2. Crear la entidad Persona
+            var persona = new Persona
+            {
+                Nombre = registerDto.Nombre,
+                ApellidoMaterno = registerDto.ApellidoMaterno,
+                ApellidoPaterno = registerDto.ApellidoPaterno,
+                Telefono = registerDto.Telefono,
+                FechaNacimiento = registerDto.FechaNacimiento,
+                Sexo = registerDto.Sexo,
+                Foto = registerDto.Foto,
+                EstadoCivil = registerDto.EstadoCivil,
+                Ocupacion = registerDto.Ocupacion
+            };
+
+            await _context.Personas.AddAsync(persona);
+            await _context.SaveChangesAsync();
+
+            // 3. Crear la entidad Usuario y vincularla con Persona y AppUser
+            var usuario = new Usuario
+            {
+                IdAppUser = user.Id,
+                Email = registerDto.Email,
+                Contrasena = registerDto.Password, // Nota: Esto no debería almacenarse en texto plano
+                TipoUsuario = "Paciente",
+                IdPersona = persona.Id,
+                IdentificadorUnico = Guid.NewGuid().ToString()
+            };
+
+            await _context.Usuarios.AddAsync(usuario);
+            await _context.SaveChangesAsync();
+
+            // 4. Crear la entidad Paciente y vincularla con Usuario
+            var paciente = new Paciente
+            {
+                IdPersona = persona.Id,
+                FechaRegistro = DateTime.UtcNow,
+                NotasAdicionales = registerDto.NotasAdicionales
+            };
+
+            await _context.Pacientes.AddAsync(paciente);
+            await _context.SaveChangesAsync();
+
+            return Ok(new AuthResponseDto
+            {
+                IsSuccess = true,
+                Message = "Registro exitoso. Bienvenido al sistema!"
+            });
+        }
 
 
         //api/account/login

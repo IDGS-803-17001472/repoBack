@@ -132,29 +132,6 @@ namespace AuthAPI903.Controllers
 
 
 
-        [Authorize]
-        [HttpGet("paciente/{id}/profesionales")]
-        public async Task<ActionResult<List<Profesional>>> ObtenerProfesionalesPorPaciente(int id)
-        {
-            // Busca las asignaciones de profesionales para el paciente dado
-            var asignaciones = await _context.AsignacionPacientes
-                .Where(ap => ap.IdPaciente == id && ap.Paciente.Estatus == true)
-                .Include(ap => ap.Profesional) // Incluye la información de los profesionales
-                .ThenInclude(p => p.Usuario) // Incluye la información de Usuario si es necesario
-                .ThenInclude(u => u.Persona) // Incluye la información de Persona si es necesario
-                .ToListAsync();
-
-            if (asignaciones == null || !asignaciones.Any())
-            {
-                return NotFound("No se encontraron profesionales asignados a este paciente.");
-            }
-
-            // Extraer la lista de profesionales a partir de las asignaciones
-            var profesionales = asignaciones.Select(ap => ap.Profesional).Where(p => p.Estatus == true).ToList();
-
-            return Ok(profesionales);
-        }
-
 
         //// api/account/register
 
@@ -299,6 +276,47 @@ namespace AuthAPI903.Controllers
 
             return Ok("Paciente eliminado exitosamente.");
         }
+
+        [Authorize(Roles = "Paciente")]
+        [HttpGet("profesionales-asignados")]
+        public async Task<ActionResult<List<ProfesionalPacienteDto>>> ObtenerProfesionalesAsignados()
+        {
+            // Obtener el ID del usuario autenticado
+            var userId = _userManager.GetUserId(User);
+
+            // Buscar el paciente asociado al usuario autenticado
+            var paciente = await _context.Pacientes.Include(p => p.AsignacionPacientes)
+                                             .ThenInclude(ap => ap.Profesional)
+                                                 .ThenInclude(prof => prof.Usuario)
+                                         .FirstOrDefaultAsync(p => p.Persona.Usuario.IdAppUser == userId);
+
+            if (paciente == null)
+            {
+                return NotFound("Paciente no encontrado.");
+            }
+
+            // Obtener la lista de profesionales asignados al paciente
+            var profesionales = paciente.AsignacionPacientes
+                                        .Where(ap => ap.Profesional != null)
+                                        .Select(ap => new ProfesionalPacienteDto
+                                        {
+                                            IdProfesional = ap.Profesional.Id,
+                                            Nombre = ap.Profesional.Usuario.Persona.Nombre,
+                                            ApellidoPaterno = ap.Profesional.Usuario.Persona.ApellidoPaterno,
+                                            ApellidoMaterno = ap.Profesional.Usuario.Persona.ApellidoMaterno,
+                                            Titulo = ap.Profesional.Titulo,
+                                            Email = ap.Profesional.Usuario.Email
+                                        })
+                                        .ToList();
+
+            if (!profesionales.Any())
+            {
+                return NotFound("No se encontraron profesionales asignados.");
+            }
+
+            return Ok(profesionales);
+        }
+
 
         [Authorize]
         [HttpPut("modificar-paciente/{id}")]
