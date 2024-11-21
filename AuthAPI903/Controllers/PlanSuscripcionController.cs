@@ -1,8 +1,6 @@
 ﻿using AuthAPI903.Data;
 using AuthAPI903.Dtos;
 using AuthAPI903.Models;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 

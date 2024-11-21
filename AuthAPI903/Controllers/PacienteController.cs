@@ -5,7 +5,6 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Security.Claims;
 
 namespace AuthAPI903.Controllers
 {
@@ -106,7 +105,7 @@ namespace AuthAPI903.Controllers
             int id = profesional.Id;
             // Busca las asignaciones de pacientes para el profesional dado
             var pacientes = await _context.AsignacionPacientes
-                .Where(p=> p.Paciente.Estatus == true && p.IdProfesional == profesional.Id)
+                .Where(p => p.Paciente.Estatus == true && p.IdProfesional == profesional.Id)
                 .Include(p => p.Paciente.Persona) // Incluye la información de Persona
                 .ToListAsync();
 
@@ -267,7 +266,7 @@ namespace AuthAPI903.Controllers
             // Elimina el paciente y la persona relacionada
             paciente.Estatus = false;
 
-           
+
             // Marca las entidades como modificadas
             _context.Entry(paciente).State = EntityState.Modified;
 

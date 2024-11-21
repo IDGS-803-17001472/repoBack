@@ -1,12 +1,8 @@
 ﻿using AuthAPI903.Data;
 using AuthAPI903.Dtos;
 using AuthAPI903.Models;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace AuthAPI903.Controllers
 {
@@ -23,7 +19,7 @@ namespace AuthAPI903.Controllers
         }
 
         [HttpGet]
-        public async Task<ActionResult<List<PagoDto>>> ObtenerPagos() 
+        public async Task<ActionResult<List<PagoDto>>> ObtenerPagos()
         {
             var pagos = await _context.Pagos
                 .Include(p => p.Suscripcion)

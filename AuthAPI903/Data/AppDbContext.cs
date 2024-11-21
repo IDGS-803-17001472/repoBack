@@ -23,7 +23,7 @@ namespace AuthAPI903.Data
         public DbSet<Rol> RolesU { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         public DbSet<AppUser> UsuariosAuth { get; set; }
-        public DbSet<Cliente> Clientes {  get; set; }
+        public DbSet<Cliente> Clientes { get; set; }
         public DbSet<Pago> Pagos { get; set; }
         public DbSet<PlanSuscripcion> PlanesSuscripcion { get; set; }
         public DbSet<Suscripcion> Suscripciones { get; set; }
@@ -113,7 +113,7 @@ namespace AuthAPI903.Data
             modelBuilder.Entity<Usuario>()
                 .HasOne(u => u.Persona)
                 .WithOne(p => p.Usuario)
-                .HasForeignKey <Usuario> (e => e.IdPersona)
+                .HasForeignKey<Usuario>(e => e.IdPersona)
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Usuario>()
@@ -150,7 +150,7 @@ namespace AuthAPI903.Data
 
             modelBuilder.Entity<PlanSuscripcion>()
                 .Property(p => p.DuracionMeses)
-                .IsRequired();  
+                .IsRequired();
 
             modelBuilder.Entity<PlanSuscripcion>()
                 .HasMany(p => p.Suscripciones)

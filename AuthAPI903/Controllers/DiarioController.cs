@@ -37,7 +37,8 @@ namespace AuthAPI903.Controllers
         {
             var diarios = await _context.Entradas
                 .Where(e => e.IdPaciente == id)
-                .Select(e => new {
+                .Select(e => new
+                {
                     e.Id,
                     e.Contenido,
                     e.Fecha,

@@ -1,7 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
-
-
-namespace AuthAPI903.Dtos
+﻿namespace AuthAPI903.Dtos
 {
     public class RegisterPacienteDto
     {
