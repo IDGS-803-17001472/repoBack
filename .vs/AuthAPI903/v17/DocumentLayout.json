@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\dtos\\profesionalpacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\dtos\\profesionalpacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\controllers\\profesionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\profesionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\dtos\\profesionalpacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\dtos\\profesionalpacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\controllers\\pagocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -38,11 +46,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\appsettings.json",
+              "RelativeDocumentMoniker": "AuthAPI903\\appsettings.json",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\appsettings.json",
+              "RelativeToolTip": "AuthAPI903\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAWAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-20T06:16:54.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "AuthAPI903\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Properties\\launchSettings.json",
+              "RelativeToolTip": "AuthAPI903\\Properties\\launchSettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-20T06:16:05.379Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "ProfesionalPacienteDto.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Dtos\\ProfesionalPacienteDto.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Dtos\\ProfesionalPacienteDto.cs",
@@ -55,7 +89,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "ProfesionalController.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\ProfesionalController.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\ProfesionalController.cs",
@@ -63,12 +97,11 @@
               "RelativeToolTip": "AuthAPI903\\Controllers\\ProfesionalController.cs",
               "ViewState": "AQIAABEAAAAAAAAAAAAQwDIAAABGAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T23:05:31.285Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T23:05:31.285Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "PacienteController.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\PacienteController.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\PacienteController.cs",
@@ -76,12 +109,11 @@
               "RelativeToolTip": "AuthAPI903\\Controllers\\PacienteController.cs",
               "ViewState": "AQIAABABAAAAAAAAAAAWwC8BAAAwAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-19T07:07:02.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-19T07:07:02.412Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "PagoController.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\PagoController.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\PagoController.cs",
@@ -93,7 +125,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "AccountController.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\AccountController.cs",
@@ -106,7 +138,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "CitaController.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\CitaController.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\CitaController.cs",
@@ -118,7 +150,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "DiarioController.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\DiarioController.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\DiarioController.cs",
