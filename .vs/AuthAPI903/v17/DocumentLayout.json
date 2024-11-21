@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\",
+  "WorkspaceRootPath": "C:\\backActual\\repoBack\\",
   "Documents": [
     {
       "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\dtos\\profesionalpacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,12 +42,20 @@
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
-      "VerticalTabListWidth": 256,
+      "VerticalTabListWidth": 421,
       "DocumentGroups": [
         {
-          "DockedWidth": 200,
+          "DockedWidth": 301,
           "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0174dea2-fdbe-4ef1-8f99-c0beae78880f}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 1,
@@ -159,6 +167,87 @@
               "ViewState": "AQIAAA4AAAAAAAAAAAAQwEsAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-13T02:20:28.59Z"
+              "Title": "Paciente.cs",
+              "DocumentMoniker": "C:\\backActual\\repoBack\\AuthAPI903\\Models\\Paciente.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Models\\Paciente.cs",
+              "ToolTip": "C:\\backActual\\repoBack\\AuthAPI903\\Models\\Paciente.cs",
+              "RelativeToolTip": "AuthAPI903\\Models\\Paciente.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAA0AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T00:39:33.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "RolesController.cs",
+              "DocumentMoniker": "C:\\backActual\\repoBack\\AuthAPI903\\Controllers\\RolesController.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\RolesController.cs",
+              "ToolTip": "C:\\backActual\\repoBack\\AuthAPI903\\Controllers\\RolesController.cs",
+              "RelativeToolTip": "AuthAPI903\\Controllers\\RolesController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-19T00:57:28.022Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "PacienteDto.cs",
+              "DocumentMoniker": "C:\\backActual\\repoBack\\AuthAPI903\\Dtos\\PacienteDto.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Dtos\\PacienteDto.cs",
+              "ToolTip": "C:\\backActual\\repoBack\\AuthAPI903\\Dtos\\PacienteDto.cs",
+              "RelativeToolTip": "AuthAPI903\\Dtos\\PacienteDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAqwA8AAAAcAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-17T00:24:53.145Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\backActual\\repoBack\\AuthAPI903\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\backActual\\repoBack\\AuthAPI903\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "AuthAPI903\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAB4BAAAAAAAAAAAawPsAAAAYAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T01:48:15.883Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "RegisterPacienteDto.cs",
+              "DocumentMoniker": "C:\\backActual\\repoBack\\AuthAPI903\\Dtos\\RegisterPacienteDto.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Dtos\\RegisterPacienteDto.cs",
+              "ToolTip": "C:\\backActual\\repoBack\\AuthAPI903\\Dtos\\RegisterPacienteDto.cs",
+              "RelativeToolTip": "AuthAPI903\\Dtos\\RegisterPacienteDto.cs",
+              "ViewState": "AQIAAAgAAAAAAAAAAAAxwA4AAAAjAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T01:54:55.967Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "PersonaPacienteDto.cs",
+              "DocumentMoniker": "C:\\backActual\\repoBack\\AuthAPI903\\Dtos\\PersonaPacienteDto.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Dtos\\PersonaPacienteDto.cs",
+              "ToolTip": "C:\\backActual\\repoBack\\AuthAPI903\\Dtos\\PersonaPacienteDto.cs",
+              "RelativeToolTip": "AuthAPI903\\Dtos\\PersonaPacienteDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAuwAUAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T04:13:37.241Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "20240816021303_editarnulls.cs",
+              "DocumentMoniker": "C:\\backActual\\repoBack\\AuthAPI903\\Migrations\\20240816021303_editarnulls.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Migrations\\20240816021303_editarnulls.cs",
+              "ToolTip": "C:\\backActual\\repoBack\\AuthAPI903\\Migrations\\20240816021303_editarnulls.cs",
+              "RelativeToolTip": "AuthAPI903\\Migrations\\20240816021303_editarnulls.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAArAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-16T02:13:03.351Z"
             }
           ]
         }
