@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "apis1": {
+      "type": "apis"
+    },
+    "mssql1": {
+      "type": "mssql",
+      "connectionId": "ConnectionStrings:cadenaSQL",
+      "dynamicId": null
+    },
+    "identityapp1": {
+      "type": "identityapp"
+    }
+  }
+}

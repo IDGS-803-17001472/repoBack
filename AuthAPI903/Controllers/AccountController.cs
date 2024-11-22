@@ -206,7 +206,7 @@ namespace API.Controllers
             }
 
             // Asignar el rol 'Paciente' al usuario recién creado
-            await _userManager.AddToRoleAsync(user, "Paciente");
+            await _userManager.AddToRoleAsync(user, "paciente");
 
             // 2. Crear la entidad Persona
             var persona = new Persona
@@ -231,7 +231,7 @@ namespace API.Controllers
                 IdAppUser = user.Id,
                 Email = registerDto.Email,
                 Contrasena = registerDto.Password, // Nota: Esto no debería almacenarse en texto plano
-                TipoUsuario = "Paciente",
+                TipoUsuario = "paciente",
                 IdPersona = persona.Id,
                 IdentificadorUnico = Guid.NewGuid().ToString()
             };
