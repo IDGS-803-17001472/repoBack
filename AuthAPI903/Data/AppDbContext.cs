@@ -34,6 +34,12 @@ namespace AuthAPI903.Data
         public DbSet<Empresa> Empresas { get; set; }
         public DbSet<Queja> Quejas { get; set; }
 
+        //Ruben
+        public DbSet<Cotizacion> Cotizaciones { get; set; }
+        public DbSet<ListaPrecios> ListaPrecios { get; set; }
+        public DbSet<TableroRendimiento> TableroRendimientos { get; set; }
+        public DbSet<OportunidadVenta> OportunidadesVenta { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<AsignacionPaciente>()
@@ -202,6 +208,33 @@ namespace AuthAPI903.Data
                 .HasForeignKey(mp => mp.TipoDeMetodoId)
                 .OnDelete(DeleteBehavior.Restrict);
 
+            // Configuración de Cotizacion
+            modelBuilder.Entity<Cotizacion>()
+                .HasKey(co => co.Id);
+
+            modelBuilder.Entity<Cotizacion>()
+                .HasMany(co => co.Cotizaciones)
+                .WithOne()
+                .HasForeignKey(co => co.Id)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Configuración de ListaPrecios
+            modelBuilder.Entity<ListaPrecios>()
+                .HasKey(lp => lp.Id);
+
+            modelBuilder.Entity<ListaPrecios>()
+                .HasMany(lp => lp.ListaDePrecios)
+                .WithOne()
+                .HasForeignKey(lp => lp.Id)
+                .OnDelete(DeleteBehavior.Restrict);
+
+            // Configuración de TableroRendimiento
+            modelBuilder.Entity<TableroRendimiento>()
+                .HasKey(tr => tr.Id);
+
+            // Configuración de OportunidadVenta
+            modelBuilder.Entity<OportunidadVenta>()
+                .HasKey(ov => ov.Id);
 
             base.OnModelCreating(modelBuilder);
         }
