@@ -1,7 +1,10 @@
 ﻿using AuthAPI903.Data;
+using AuthAPI903.Dtos;
 using AuthAPI903.Models;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace AuthAPI903.Controllers
 {
@@ -9,10 +12,19 @@ namespace AuthAPI903.Controllers
     [ApiController]
     public class QuejaController : ControllerBase
     {
+        private readonly UserManager<AppUser> _userManager;
+        private readonly RoleManager<IdentityRole> _roleManager;
+        private readonly IConfiguration _configuration;
         private readonly AppDbContext _context;
 
-        public QuejaController(AppDbContext context)
+        public QuejaController(UserManager<AppUser> userManager,
+                               RoleManager<IdentityRole> roleManager,
+                               IConfiguration configuration,
+                               AppDbContext context)
         {
+            _userManager = userManager;
+            _roleManager = roleManager;
+            _configuration = configuration;
             _context = context;
         }
 
@@ -20,13 +32,8 @@ namespace AuthAPI903.Controllers
         [HttpPost("registrar")]
         public async Task<ActionResult<Queja>> RegisterQueja(Queja queja)
         {
-            // Añadir la queja a la base de datos
             _context.Quejas.Add(queja);
-
-            // Guardar los cambios en la base de datos
             await _context.SaveChangesAsync();
-
-            // Retornar la respuesta con el nuevo id autogenerado
             return CreatedAtAction(nameof(GetQuejas), new { id = queja.Id }, queja);
         }
 
@@ -37,7 +44,7 @@ namespace AuthAPI903.Controllers
             return await _context.Quejas.ToListAsync();
         }
 
-        // API para actualizar una queja (cambiar descripción, tipo, estatus)
+        // API para actualizar una queja
         [HttpPut("actualizar/{id}")]
         public async Task<IActionResult> UpdateQueja(int id, [FromBody] Queja queja)
         {
@@ -53,8 +60,57 @@ namespace AuthAPI903.Controllers
             await _context.SaveChangesAsync();
             return NoContent();
         }
+        [HttpGet("profesionales")]
+        public async Task<ActionResult<List<UserDetailDto>>> GetProfesionalesDetails()
+        {
+            // Obtener usuarios con datos relacionados
+            var users = await _userManager.Users
+                .Include(u => u.Usuario)
+                .ThenInclude(p => p.Profesional)
+                .Include(u => u.Usuario.Persona)
+                .AsSplitQuery() // Evitar problemas de concurrencia
+                .ToListAsync();
+
+            if (!users.Any())
+            {
+                return NotFound(new AuthResponseDto
+                {
+                    IsSuccess = false,
+                    Message = "No users found"
+                });
+            }
+
+            var userDetails = new List<UserDetailDto>();
+
+            foreach (var user in users)
+            {
+                var roles = await _userManager.GetRolesAsync(user); // Procesa cada usuario secuencialmente
+
+                userDetails.Add(new UserDetailDto
+                {
+                    Id = user.Id,
+                    Email = user.Email,
+                    FullName = user.FullName,
+                    Roles = roles.ToList(),
+
+
+                    // Validación para evitar referencias nulas en Usuario, Persona, y Profesional
+                    Persona = user.Usuario?.Persona == null ? null : new PersonaDto
+                    {
+                        Id = user.Usuario.Persona.Id,
+                        Nombre = user.Usuario.Persona.Nombre,
+                        Apellido = $"{user.Usuario.Persona.ApellidoPaterno} {user.Usuario.Persona.ApellidoMaterno}"
+                    },
+                    Profesional = user.Usuario?.Profesional == null ? null : new ProfesionalDto
+                    {
+                        Id = user.Usuario.Profesional.Id,
+                        Titulo = user.Usuario.Profesional.Titulo
+                    }
+                });
+            }
+
+            return Ok(userDetails);
+        }
+
     }
-
-
 }
-
