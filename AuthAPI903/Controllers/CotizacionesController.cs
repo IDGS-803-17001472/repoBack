@@ -21,14 +21,16 @@ namespace AuthAPI903.Controladores
         [HttpGet]
         public ActionResult<IEnumerable<CotizacionesDto>> Get()
         {
-            var cotizacionDtos = _context.Cotizaciones.Select(c => new CotizacionesDto
-            {
-                Id = c.Id,
-                Cliente = c.Cliente,
-                Descripcion = c.Descripcion,
-                Precio = c.Precio,
-                Fecha = c.Fecha
-            }).ToList();
+            var cotizacionDtos = _context.Cotizaciones
+                .Select(c => new CotizacionesDto
+                {
+                    Id = c.Id,
+                    ClienteId = c.ClienteId, // Incluye solo el ClienteId
+                    Descripcion = c.Descripcion,
+                    Precio = c.Precio,
+                    Fecha = c.Fecha
+                })
+                .ToList();
 
             return Ok(cotizacionDtos);
         }
@@ -36,30 +38,39 @@ namespace AuthAPI903.Controladores
         [HttpGet("{id}")]
         public ActionResult<CotizacionesDto> Get(int id)
         {
-            var cotizacion = _context.Cotizaciones.FirstOrDefault(c => c.Id == id);
+            var cotizacion = _context.Cotizaciones
+                .Where(c => c.Id == id)
+                .Select(c => new CotizacionesDto
+                {
+                    Id = c.Id,
+                    ClienteId = c.ClienteId,
+                    Descripcion = c.Descripcion,
+                    Precio = c.Precio,
+                    Fecha = c.Fecha
+                })
+                .FirstOrDefault();
+
             if (cotizacion == null)
             {
                 return NotFound();
             }
 
-            var cotizacionDto = new CotizacionesDto
-            {
-                Id = cotizacion.Id,
-                Cliente = cotizacion.Cliente,
-                Descripcion = cotizacion.Descripcion,
-                Precio = cotizacion.Precio,
-                Fecha = cotizacion.Fecha
-            };
-
-            return Ok(cotizacionDto);
+            return Ok(cotizacion);
         }
 
         [HttpPost]
         public IActionResult Post([FromBody] CotizacionesDto cotizacionDto)
         {
+            // Verificar que el cliente exista
+            var cliente = _context.Clientes.FirstOrDefault(c => c.Id == cotizacionDto.ClienteId);
+            if (cliente == null)
+            {
+                return BadRequest("Cliente no encontrado.");
+            }
+
             var cotizacion = new Cotizacion
             {
-                Cliente = cotizacionDto.Cliente,
+                ClienteId = cotizacionDto.ClienteId, // Relaciona el cliente por ID
                 Descripcion = cotizacionDto.Descripcion,
                 Precio = cotizacionDto.Precio,
                 Fecha = cotizacionDto.Fecha
@@ -72,7 +83,7 @@ namespace AuthAPI903.Controladores
         }
 
         [HttpPut("{id}")]
-        public IActionResult Put(int id, [FromBody] CotizacionesDto cotizacionesDto)
+        public IActionResult Put(int id, [FromBody] CotizacionesDto cotizacionDto)
         {
             var cotizacion = _context.Cotizaciones.FirstOrDefault(c => c.Id == id);
             if (cotizacion == null)
@@ -80,10 +91,17 @@ namespace AuthAPI903.Controladores
                 return NotFound();
             }
 
-            cotizacion.Cliente = cotizacionesDto.Cliente;
-            cotizacion.Descripcion = cotizacionesDto.Descripcion;
-            cotizacion.Precio = cotizacionesDto.Precio;
-            cotizacion.Fecha = cotizacionesDto.Fecha;
+            // Verificar que el cliente exista
+            var cliente = _context.Clientes.FirstOrDefault(c => c.Id == cotizacionDto.ClienteId);
+            if (cliente == null)
+            {
+                return BadRequest("Cliente no encontrado.");
+            }
+
+
+            cotizacion.Descripcion = cotizacionDto.Descripcion;
+            cotizacion.Precio = cotizacionDto.Precio;
+            cotizacion.Fecha = cotizacionDto.Fecha;
 
             _context.SaveChanges();
 

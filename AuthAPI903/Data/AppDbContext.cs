@@ -213,10 +213,10 @@ namespace AuthAPI903.Data
                 .HasKey(co => co.Id);
 
             modelBuilder.Entity<Cotizacion>()
-                .HasMany(co => co.Cotizaciones)
-                .WithOne()
-                .HasForeignKey(co => co.Id)
-                .OnDelete(DeleteBehavior.Restrict);
+                 .HasOne(c => c.Cliente) // Relación con Cliente
+                 .WithMany() // Cliente puede tener muchas cotizaciones
+                 .HasForeignKey(c => c.ClienteId) // Clave foránea en Cotizacion
+                 .OnDelete(DeleteBehavior.Cascade); // Elimina cotizaciones al eliminar un cliente
 
             // Configuración de ListaPrecios
             modelBuilder.Entity<ListaPrecios>()
