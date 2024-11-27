@@ -144,7 +144,7 @@ namespace API.Controllers
                 IdAppUser = user.Id,
                 Email = registerDto.Email,
                 Contrasena = registerDto.Password, // Nota: Esto no debería almacenarse en texto plano
-                TipoUsuario = "Profesional", // O el tipo que desees definir
+                TipoUsuario = "profesional", // O el tipo que desees definir
                 IdPersona = persona.Id,
                 IdentificadorUnico = Guid.NewGuid().ToString()
             };
@@ -874,6 +874,34 @@ namespace API.Controllers
                 });
             }
 
+
+
+
+            var usuario = await _context.Usuarios
+                .FirstOrDefaultAsync(p => p.IdAppUser == user.Id);
+
+            if (usuario is null)
+            {
+                return NotFound(new AuthResponseDto
+                {
+                    IsSuccess = false,
+                    Message = "User not found"
+                });
+            }
+
+            var persona = await _context.Personas
+                .FirstOrDefaultAsync(p => p.Id == usuario.IdPersona);
+
+            if (persona is null)
+            {
+                return NotFound(new AuthResponseDto
+                {
+                    IsSuccess = false,
+                    Message = "Persona no encontrada"
+                });
+            }
+
+
             return Ok(new UserDetailDto
             {
                 Id = user.Id,
@@ -883,7 +911,7 @@ namespace API.Controllers
                 PhoneNumber = user.PhoneNumber,
                 PhoneNumberConfirmed = user.PhoneNumberConfirmed,
                 AccessFailedCount = user.AccessFailedCount,
-
+                Foto  = persona.Foto
             });
 
         }

@@ -10,7 +10,9 @@
         public bool TwoFactorEnabled { get; set; }
         public bool PhoneNumberConfirmed { get; set; }
         public int AccessFailedCount { get; set; }
+        public string? Foto { get; set; }
         public PersonaDto? Persona { get; set; }
+
 
 
         public ProfesionalDto? Profesional { get; set; }

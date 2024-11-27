@@ -124,6 +124,7 @@ namespace AuthAPI903.Controllers
                 Telefono = ap.Paciente.Persona.Telefono,
                 FechaNacimiento = ap.Paciente.Persona.FechaNacimiento,
                 Sexo = ap.Paciente.Persona.Sexo,
+                Foto = ap.Paciente.Persona.Foto
             }).ToList();
 
             return Ok(pacientes2);

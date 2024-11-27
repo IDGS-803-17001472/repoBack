@@ -21,6 +21,22 @@
   },
   {
     "ContainingType": "API.Controllers.AccountController",
+    "Method": "AsignarProfesional",
+    "RelativePath": "api/Account/asignarProfesional",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "asignarDto",
+        "Type": "AuthAPI903.Dtos.AsignarProfesionalDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.AccountController",
     "Method": "ChangePassword",
     "RelativePath": "api/Account/change-password",
     "HttpMethod": "POST",
@@ -265,6 +281,32 @@
   },
   {
     "ContainingType": "API.Controllers.AccountController",
+    "Method": "SelfRegisterPaciente",
+    "RelativePath": "api/Account/selfRegisterPaciente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "registerDto",
+        "Type": "AuthAPI903.Dtos.RegisterPacienteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.String",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.AccountController",
     "Method": "UpdatePsychologist",
     "RelativePath": "api/Account/update/{id}",
     "HttpMethod": "PUT",
@@ -384,6 +426,204 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "AuthAPI903.Controllers.ClienteController",
+    "Method": "ObtenerClientes",
+    "RelativePath": "api/Cliente",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AuthAPI903.Dtos.ClienteDto, AuthAPI903, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.ClienteController",
+    "Method": "ObtenerClientePorId",
+    "RelativePath": "api/Cliente/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AuthAPI903.Dtos.ClienteDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.ClienteController",
+    "Method": "ActualizarCliente",
+    "RelativePath": "api/Cliente/{id}/actualizar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "clienteDto",
+        "Type": "AuthAPI903.Dtos.ActualizarClienteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.ClienteController",
+    "Method": "EliminarCliente",
+    "RelativePath": "api/Cliente/{id}/eliminar",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.ClienteController",
+    "Method": "RegistrarCliente",
+    "RelativePath": "api/Cliente/registrar-cliente",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "clienteDto",
+        "Type": "AuthAPI903.Dtos.RegistrarClienteDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controladores.CotizacionController",
+    "Method": "Get",
+    "RelativePath": "api/Cotizacion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AuthAPI903.Dtos.CotizacionesDto, AuthAPI903, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controladores.CotizacionController",
+    "Method": "Post",
+    "RelativePath": "api/Cotizacion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "cotizacionDto",
+        "Type": "AuthAPI903.Dtos.CotizacionesDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controladores.CotizacionController",
+    "Method": "Get",
+    "RelativePath": "api/Cotizacion/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AuthAPI903.Dtos.CotizacionesDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controladores.CotizacionController",
+    "Method": "Put",
+    "RelativePath": "api/Cotizacion/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "cotizacionDto",
+        "Type": "AuthAPI903.Dtos.CotizacionesDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controladores.CotizacionController",
+    "Method": "Delete",
+    "RelativePath": "api/Cotizacion/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AuthAPI903.Controllers.DiarioController",
     "Method": "ObtenerDiarioPorId",
     "RelativePath": "api/Diario/diario/{id}",
@@ -452,6 +692,291 @@
     ]
   },
   {
+    "ContainingType": "AuthAPI903.Controllers.EmpresaController",
+    "Method": "UpdateEstatus",
+    "RelativePath": "api/Empresa/actualizar-estatus/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "estatus",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.EmpresaController",
+    "Method": "GetClientes",
+    "RelativePath": "api/Empresa/clientes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AuthAPI903.Models.Empresa, AuthAPI903, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.EmpresaController",
+    "Method": "RegisterEmpresa",
+    "RelativePath": "api/Empresa/registrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empresa",
+        "Type": "AuthAPI903.Models.Empresa",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AuthAPI903.Models.Empresa",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.EmpresaController",
+    "Method": "GetTodasEmpresas",
+    "RelativePath": "api/Empresa/todas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AuthAPI903.Models.Empresa, AuthAPI903, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controladores.ListaPreciosController",
+    "Method": "Get",
+    "RelativePath": "api/ListaPrecios",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AuthAPI903.Dtos.ListaPreciosDto, AuthAPI903, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controladores.ListaPreciosController",
+    "Method": "Post",
+    "RelativePath": "api/ListaPrecios",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "listaPreciosDto",
+        "Type": "AuthAPI903.Dtos.ListaPreciosDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controladores.ListaPreciosController",
+    "Method": "Get",
+    "RelativePath": "api/ListaPrecios/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AuthAPI903.Dtos.ListaPreciosDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controladores.ListaPreciosController",
+    "Method": "Put",
+    "RelativePath": "api/ListaPrecios/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "listaPreciosDto",
+        "Type": "AuthAPI903.Dtos.ListaPreciosDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controladores.ListaPreciosController",
+    "Method": "Delete",
+    "RelativePath": "api/ListaPrecios/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controladores.OportunidadVentaController",
+    "Method": "Get",
+    "RelativePath": "api/OportunidadVenta",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AuthAPI903.Dtos.OportunidadVentaDto, AuthAPI903, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controladores.OportunidadVentaController",
+    "Method": "Post",
+    "RelativePath": "api/OportunidadVenta",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "oportunidadVentaDto",
+        "Type": "AuthAPI903.Dtos.OportunidadVentaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controladores.OportunidadVentaController",
+    "Method": "Get",
+    "RelativePath": "api/OportunidadVenta/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AuthAPI903.Dtos.OportunidadVentaDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controladores.OportunidadVentaController",
+    "Method": "Put",
+    "RelativePath": "api/OportunidadVenta/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "oportunidadVentaDto",
+        "Type": "AuthAPI903.Dtos.OportunidadVentaDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controladores.OportunidadVentaController",
+    "Method": "Delete",
+    "RelativePath": "api/OportunidadVenta/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AuthAPI903.Controllers.PacienteController",
     "Method": "EliminarPaciente",
     "RelativePath": "api/Paciente/eliminar-paciente/{id}",
@@ -516,32 +1041,6 @@
   },
   {
     "ContainingType": "AuthAPI903.Controllers.PacienteController",
-    "Method": "ObtenerProfesionalesPorPaciente",
-    "RelativePath": "api/Paciente/paciente/{id}/profesionales",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": [
-      {
-        "Type": "System.Collections.Generic.List\u00601[[AuthAPI903.Models.Profesional, AuthAPI903, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
-      }
-    ]
-  },
-  {
-    "ContainingType": "AuthAPI903.Controllers.PacienteController",
     "Method": "GetPacientes",
     "RelativePath": "api/Paciente/pacientes",
     "HttpMethod": "GET",
@@ -597,6 +1096,331 @@
     "ReturnTypes": [
       {
         "Type": "System.Collections.Generic.List\u00601[[AuthAPI903.Dtos.PersonaPacienteDto, AuthAPI903, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.PacienteController",
+    "Method": "ObtenerProfesionalesAsignados",
+    "RelativePath": "api/Paciente/profesionales-asignados",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AuthAPI903.Dtos.ProfesionalPacienteDto, AuthAPI903, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.PagoController",
+    "Method": "ObtenerPagos",
+    "RelativePath": "api/Pago",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AuthAPI903.Dtos.PagoDto, AuthAPI903, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.PagoController",
+    "Method": "ObtenerPagoPorId",
+    "RelativePath": "api/Pago/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AuthAPI903.Dtos.PagoDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.PagoController",
+    "Method": "ActualizarPago",
+    "RelativePath": "api/Pago/{id}/actualizar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "pagoDto",
+        "Type": "AuthAPI903.Dtos.ActualizarPagoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.PagoController",
+    "Method": "EliminarPago",
+    "RelativePath": "api/Pago/{id}/eliminar",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.PagoController",
+    "Method": "RegistrarPago",
+    "RelativePath": "api/Pago/registrar-pago",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "pagoDto",
+        "Type": "AuthAPI903.Dtos.RegistrarPagoDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.PlanSuscripcionController",
+    "Method": "ObtenerPlanes",
+    "RelativePath": "api/PlanSuscripcion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AuthAPI903.Dtos.PlanSuscripcionDto, AuthAPI903, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.PlanSuscripcionController",
+    "Method": "ObtenerPlanPorId",
+    "RelativePath": "api/PlanSuscripcion/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AuthAPI903.Dtos.PlanSuscripcionDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.PlanSuscripcionController",
+    "Method": "ActualizarPlan",
+    "RelativePath": "api/PlanSuscripcion/{id}/actualizar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "planDto",
+        "Type": "AuthAPI903.Dtos.ActualizarPlanSuscripcionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.PlanSuscripcionController",
+    "Method": "EliminarPlan",
+    "RelativePath": "api/PlanSuscripcion/{id}/eliminar",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.PlanSuscripcionController",
+    "Method": "RegistrarPlan",
+    "RelativePath": "api/PlanSuscripcion/registrar-plan",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "planDto",
+        "Type": "AuthAPI903.Dtos.RegistrarPlanSuscripcionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.ProfesionalController",
+    "Method": "ObtenerProfesionalesPorPaciente",
+    "RelativePath": "api/Profesional/paciente/profesionales",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AuthAPI903.Dtos.ProfesionalDto, AuthAPI903, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.QuejaController",
+    "Method": "UpdateQueja",
+    "RelativePath": "api/Queja/actualizar/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "queja",
+        "Type": "AuthAPI903.Models.Queja",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.QuejaController",
+    "Method": "GetProfesionalesDetails",
+    "RelativePath": "api/Queja/profesionales",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AuthAPI903.Dtos.UserDetailDto, AuthAPI903, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.QuejaController",
+    "Method": "RegisterQueja",
+    "RelativePath": "api/Queja/registrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "queja",
+        "Type": "AuthAPI903.Models.Queja",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AuthAPI903.Models.Queja",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.QuejaController",
+    "Method": "GetQuejas",
+    "RelativePath": "api/Queja/todas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[AuthAPI903.Models.Queja, AuthAPI903, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -673,5 +1497,124 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.SuscripcionController",
+    "Method": "ObtenerSuscripciones",
+    "RelativePath": "api/Suscripcion",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.List\u00601[[AuthAPI903.Dtos.SuscripcionDto, AuthAPI903, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.SuscripcionController",
+    "Method": "ObtenerSuscripcionPorId",
+    "RelativePath": "api/Suscripcion/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AuthAPI903.Dtos.SuscripcionDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.SuscripcionController",
+    "Method": "ActualizarSuscripcion",
+    "RelativePath": "api/Suscripcion/{id}/actualizar",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "suscripcionDto",
+        "Type": "AuthAPI903.Dtos.ActualizarSuscripcionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.SuscripcionController",
+    "Method": "EliminarSuscripcion",
+    "RelativePath": "api/Suscripcion/{id}/eliminar",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.SuscripcionController",
+    "Method": "RegistrarSuscripcion",
+    "RelativePath": "api/Suscripcion/registrar-suscripcion",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "suscripcionDto",
+        "Type": "AuthAPI903.Dtos.RegistrarSuscripcionDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.TableroRendimientoController",
+    "Method": "Get",
+    "RelativePath": "api/TableroRendimiento",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "AuthAPI903.Models.TableroRendimiento",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   }
 ]
