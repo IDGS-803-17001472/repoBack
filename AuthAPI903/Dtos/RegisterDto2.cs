@@ -1,5 +1,4 @@
-﻿using AuthAPI903.Models;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace AuthAPI903.Dtos
 {

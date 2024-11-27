@@ -13,7 +13,9 @@ namespace AuthAPI903.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20240806013637_inicial")]
+#pragma warning disable CS8981 // El nombre de tipo solo contiene caracteres ASCII en minúsculas. Estos nombres pueden reservarse para el idioma.
     partial class inicial
+#pragma warning restore CS8981 // El nombre de tipo solo contiene caracteres ASCII en minúsculas. Estos nombres pueden reservarse para el idioma.
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

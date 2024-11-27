@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "AE0sgpP2lm/9qUHIceLpV8caaXZ1YJ7trkOWirC2OQg=",
+  "Hash": "Zsv1ryWQOOqKFDGs8cvp91J1ZpBhVkchggHef7KT4Ko=",
   "Source": "AuthAPI903",
   "BasePath": "_content/AuthAPI903",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "AuthAPI903\\wwwroot",
       "Source": "AuthAPI903",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\1.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\1.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/1.png",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\1.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\10.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\10.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/10.png",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\10.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\11.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\11.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/11.png",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\11.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\12.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\12.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/12.png",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\12.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\13.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\13.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/13.png",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\13.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\14.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\14.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/14.png",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\14.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\15.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\15.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/15.png",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\15.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\16.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\16.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/16.png",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\16.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\17.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\17.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/17.png",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\17.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\18.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\18.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/18.png",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\18.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\19.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\19.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/19.png",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\19.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\2.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\2.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/2.png",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\2.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\20.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\20.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/20.png",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\20.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\3.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\3.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/3.png",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\3.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\4.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\4.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/4.png",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\4.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\5.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\5.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/5.png",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\5.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\6.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\6.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/6.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\6.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\7.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\7.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/7.png",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\7.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\8.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\8.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/8.png",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\8.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\9.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\9.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/9.png",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\9.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\banner.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\banner.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/banner.png",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\banner.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\assets\\imagen\\logo.png",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\logo.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "assets/imagen/logo.png",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\chunk-5VVV3HHE.js",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\chunk-5VVV3HHE.js",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "chunk-5VVV3HHE.js",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\chunk-5VVV3HHE.js"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\chunk-UHHJFPUF.js",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\chunk-UHHJFPUF.js",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "chunk-UHHJFPUF.js",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\chunk-UHHJFPUF.js"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\favicon.ico",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\index.html",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\main-H2EU7BPN.js",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\main-H2EU7BPN.js",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "main-H2EU7BPN.js",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\main-H2EU7BPN.js"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\media\\bootstrap-icons-OCU552PF.woff",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\media\\bootstrap-icons-OCU552PF.woff",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "media/bootstrap-icons-OCU552PF.woff",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\media\\bootstrap-icons-OCU552PF.woff"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\media\\bootstrap-icons-X6UQXWUS.woff2",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\media\\bootstrap-icons-X6UQXWUS.woff2",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "media/bootstrap-icons-X6UQXWUS.woff2",
       "AssetKind": "All",
@@ -568,10 +568,10 @@
       "OriginalItemSpec": "wwwroot\\media\\bootstrap-icons-X6UQXWUS.woff2"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\polyfills-N6LQB2YD.js",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\polyfills-N6LQB2YD.js",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "polyfills-N6LQB2YD.js",
       "AssetKind": "All",
@@ -587,10 +587,10 @@
       "OriginalItemSpec": "wwwroot\\polyfills-N6LQB2YD.js"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\scripts-EEEIPNC3.js",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\scripts-EEEIPNC3.js",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "scripts-EEEIPNC3.js",
       "AssetKind": "All",
@@ -606,10 +606,10 @@
       "OriginalItemSpec": "wwwroot\\scripts-EEEIPNC3.js"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\styles-IXBXBCXN.css",
+      "Identity": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\styles-IXBXBCXN.css",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\Auth-App\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "RelativePath": "styles-IXBXBCXN.css",
       "AssetKind": "All",

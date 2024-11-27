@@ -1,6 +1,4 @@
-﻿using AuthAPI903.Models;
-
-namespace AuthAPI903.Dtos
+﻿namespace AuthAPI903.Dtos
 {
     public class UserDetailDto
     {

@@ -150,6 +150,62 @@ namespace AuthAPI903.Migrations
                     b.ToTable("Citas");
                 });
 
+            modelBuilder.Entity("AuthAPI903.Models.Cliente", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Apellido")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CorreoElectronico")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaDeRegistro")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Clientes");
+                });
+
+            modelBuilder.Entity("AuthAPI903.Models.Cotizacion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ClienteId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("Fecha")
+                        .HasColumnType("datetime2");
+
+                    b.Property<double>("Precio")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClienteId");
+
+                    b.ToTable("Cotizaciones");
+                });
+
             modelBuilder.Entity("AuthAPI903.Models.DocumentoProfesional", b =>
                 {
                     b.Property<int>("Id")
@@ -299,6 +355,39 @@ namespace AuthAPI903.Migrations
                     b.ToTable("Entradas");
                 });
 
+            modelBuilder.Entity("AuthAPI903.Models.ListaPrecios", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CantidadLicencias")
+                        .HasColumnType("int");
+
+                    b.Property<int>("DuracionContrato")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Empresa")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("PrecioFinal")
+                        .HasColumnType("float");
+
+                    b.Property<double>("PrecioPlan")
+                        .HasColumnType("float");
+
+                    b.Property<string>("TipoPlan")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("ListaPrecios");
+                });
+
             modelBuilder.Entity("AuthAPI903.Models.Medicion", b =>
                 {
                     b.Property<int>("Id")
@@ -330,6 +419,33 @@ namespace AuthAPI903.Migrations
                     b.ToTable("Mediciones");
                 });
 
+            modelBuilder.Entity("AuthAPI903.Models.MetodoPago", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ClienteId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("NumeroCuentaUltimos4")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("TipoDeMetodoId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClienteId");
+
+                    b.HasIndex("TipoDeMetodoId");
+
+                    b.ToTable("MetodosPago");
+                });
+
             modelBuilder.Entity("AuthAPI903.Models.Notificacion", b =>
                 {
                     b.Property<int>("Id")
@@ -358,6 +474,37 @@ namespace AuthAPI903.Migrations
                     b.HasIndex("IdUsuario");
 
                     b.ToTable("Notificaciones");
+                });
+
+            modelBuilder.Entity("AuthAPI903.Models.OportunidadVenta", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaCierre")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("NombreCliente")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<double>("ValorEstimado")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("OportunidadesVenta");
                 });
 
             modelBuilder.Entity("AuthAPI903.Models.Paciente", b =>
@@ -434,6 +581,30 @@ namespace AuthAPI903.Migrations
                     b.ToTable("PadecimientoPacientes");
                 });
 
+            modelBuilder.Entity("AuthAPI903.Models.Pago", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("Cantidad")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<DateTime>("FechaDePago")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("SuscripcionId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("SuscripcionId");
+
+                    b.ToTable("Pagos");
+                });
+
             modelBuilder.Entity("AuthAPI903.Models.Persona", b =>
                 {
                     b.Property<int>("Id")
@@ -479,6 +650,33 @@ namespace AuthAPI903.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Personas");
+                });
+
+            modelBuilder.Entity("AuthAPI903.Models.PlanSuscripcion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Descripcion")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<int>("DuracionMeses")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Precio")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("PlanesSuscripcion");
                 });
 
             modelBuilder.Entity("AuthAPI903.Models.Profesional", b =>
@@ -550,6 +748,78 @@ namespace AuthAPI903.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("RolesU");
+                });
+
+            modelBuilder.Entity("AuthAPI903.Models.Suscripcion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ClienteId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Estado")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("FechaDeFin")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("FechaDeInicio")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("PlanId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ClienteId");
+
+                    b.HasIndex("PlanId");
+
+                    b.ToTable("Suscripciones");
+                });
+
+            modelBuilder.Entity("AuthAPI903.Models.TableroRendimiento", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("LeadsCerrados")
+                        .HasColumnType("int");
+
+                    b.Property<int>("LeadsConcretados")
+                        .HasColumnType("int");
+
+                    b.Property<double>("TasaConversion")
+                        .HasColumnType("float");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TableroRendimientos");
+                });
+
+            modelBuilder.Entity("AuthAPI903.Models.TipoMetodoPago", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Nombre")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("TiposMetodoPago");
                 });
 
             modelBuilder.Entity("AuthAPI903.Models.Usuario", b =>
@@ -765,6 +1035,17 @@ namespace AuthAPI903.Migrations
                     b.Navigation("AsignacionPaciente");
                 });
 
+            modelBuilder.Entity("AuthAPI903.Models.Cotizacion", b =>
+                {
+                    b.HasOne("AuthAPI903.Models.Cliente", "Cliente")
+                        .WithMany()
+                        .HasForeignKey("ClienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Cliente");
+                });
+
             modelBuilder.Entity("AuthAPI903.Models.DocumentoProfesional", b =>
                 {
                     b.HasOne("AuthAPI903.Models.Profesional", "Profesional")
@@ -795,6 +1076,15 @@ namespace AuthAPI903.Migrations
                     b.Navigation("Paciente");
                 });
 
+            modelBuilder.Entity("AuthAPI903.Models.ListaPrecios", b =>
+                {
+                    b.HasOne("AuthAPI903.Models.ListaPrecios", null)
+                        .WithMany("ListaDePrecios")
+                        .HasForeignKey("Id")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("AuthAPI903.Models.Medicion", b =>
                 {
                     b.HasOne("AuthAPI903.Models.Entrada", null)
@@ -814,6 +1104,25 @@ namespace AuthAPI903.Migrations
                     b.Navigation("Emocion");
 
                     b.Navigation("Entrada");
+                });
+
+            modelBuilder.Entity("AuthAPI903.Models.MetodoPago", b =>
+                {
+                    b.HasOne("AuthAPI903.Models.Cliente", "Cliente")
+                        .WithMany("MetodosPago")
+                        .HasForeignKey("ClienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AuthAPI903.Models.TipoMetodoPago", "TipoMetodoPago")
+                        .WithMany("MetodosPago")
+                        .HasForeignKey("TipoDeMetodoId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Cliente");
+
+                    b.Navigation("TipoMetodoPago");
                 });
 
             modelBuilder.Entity("AuthAPI903.Models.Notificacion", b =>
@@ -857,6 +1166,17 @@ namespace AuthAPI903.Migrations
                     b.Navigation("Padecimiento");
                 });
 
+            modelBuilder.Entity("AuthAPI903.Models.Pago", b =>
+                {
+                    b.HasOne("AuthAPI903.Models.Suscripcion", "Suscripcion")
+                        .WithMany("Pagos")
+                        .HasForeignKey("SuscripcionId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Suscripcion");
+                });
+
             modelBuilder.Entity("AuthAPI903.Models.Profesional", b =>
                 {
                     b.HasOne("AuthAPI903.Models.Usuario", "Usuario")
@@ -865,6 +1185,25 @@ namespace AuthAPI903.Migrations
                         .OnDelete(DeleteBehavior.Restrict);
 
                     b.Navigation("Usuario");
+                });
+
+            modelBuilder.Entity("AuthAPI903.Models.Suscripcion", b =>
+                {
+                    b.HasOne("AuthAPI903.Models.Cliente", "Cliente")
+                        .WithMany("Suscripciones")
+                        .HasForeignKey("ClienteId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AuthAPI903.Models.PlanSuscripcion", "PlanSuscripcion")
+                        .WithMany("Suscripciones")
+                        .HasForeignKey("PlanId")
+                        .OnDelete(DeleteBehavior.Restrict)
+                        .IsRequired();
+
+                    b.Navigation("Cliente");
+
+                    b.Navigation("PlanSuscripcion");
                 });
 
             modelBuilder.Entity("AuthAPI903.Models.Usuario", b =>
@@ -955,9 +1294,21 @@ namespace AuthAPI903.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("AuthAPI903.Models.Cliente", b =>
+                {
+                    b.Navigation("MetodosPago");
+
+                    b.Navigation("Suscripciones");
+                });
+
             modelBuilder.Entity("AuthAPI903.Models.Entrada", b =>
                 {
                     b.Navigation("Mediciones");
+                });
+
+            modelBuilder.Entity("AuthAPI903.Models.ListaPrecios", b =>
+                {
+                    b.Navigation("ListaDePrecios");
                 });
 
             modelBuilder.Entity("AuthAPI903.Models.Paciente", b =>
@@ -984,6 +1335,11 @@ namespace AuthAPI903.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("AuthAPI903.Models.PlanSuscripcion", b =>
+                {
+                    b.Navigation("Suscripciones");
+                });
+
             modelBuilder.Entity("AuthAPI903.Models.Profesional", b =>
                 {
                     b.Navigation("AsignacionPacientes");
@@ -994,6 +1350,16 @@ namespace AuthAPI903.Migrations
             modelBuilder.Entity("AuthAPI903.Models.Rol", b =>
                 {
                     b.Navigation("Usuarios");
+                });
+
+            modelBuilder.Entity("AuthAPI903.Models.Suscripcion", b =>
+                {
+                    b.Navigation("Pagos");
+                });
+
+            modelBuilder.Entity("AuthAPI903.Models.TipoMetodoPago", b =>
+                {
+                    b.Navigation("MetodosPago");
                 });
 
             modelBuilder.Entity("AuthAPI903.Models.Usuario", b =>
