@@ -3,6 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\dashboardcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\clientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\controllers\\tablerorendimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\tablerorendimientocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\models\\plansuscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\models\\plansuscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\models\\suscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\models\\suscripcion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\models\\cotizaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\models\\cotizaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\migrations\\20241123085633_cotizaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\migrations\\20241123085633_cotizaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -21,10 +45,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\models\\cotizaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\models\\cotizaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\javier\\documents\\escuela\\ing\\repoback\\authapi903\\controllers\\cotizacionescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,7 +66,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 301,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -58,33 +78,80 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "20241123085633_Cotizaciones.cs",
-              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Migrations\\20241123085633_Cotizaciones.cs",
-              "RelativeDocumentMoniker": "AuthAPI903\\Migrations\\20241123085633_Cotizaciones.cs",
-              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Migrations\\20241123085633_Cotizaciones.cs",
-              "RelativeToolTip": "AuthAPI903\\Migrations\\20241123085633_Cotizaciones.cs",
-              "ViewState": "AQIAABkAAAAAAAAAAAAgwDYAAAAvAAAA",
+              "DocumentIndex": 1,
+              "Title": "ClienteController.cs",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\ClienteController.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\ClienteController.cs",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\ClienteController.cs",
+              "RelativeToolTip": "AuthAPI903\\Controllers\\ClienteController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T08:56:33.725Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T12:58:18.047Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "AuthAPI903\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "AuthAPI903\\Data\\AppDbContext.cs",
-              "ViewState": "AQIAAL0AAAAAAAAAAAAUwMwAAAAxAAAA",
+              "DocumentIndex": 0,
+              "Title": "DashboardController.cs",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\DashboardController.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\DashboardController.cs",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\DashboardController.cs",
+              "RelativeToolTip": "AuthAPI903\\Controllers\\DashboardController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAgwAcAAAATAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T08:48:46.464Z",
+              "WhenOpened": "2024-11-23T12:57:57.478Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "TableroRendimientoController.cs",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\TableroRendimientoController.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\TableroRendimientoController.cs",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\TableroRendimientoController.cs",
+              "RelativeToolTip": "AuthAPI903\\Controllers\\TableroRendimientoController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T12:56:44.578Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlanSuscripcion.cs",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Models\\PlanSuscripcion.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Models\\PlanSuscripcion.cs",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Models\\PlanSuscripcion.cs",
+              "RelativeToolTip": "AuthAPI903\\Models\\PlanSuscripcion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T12:55:15.325Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Suscripcion.cs",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Models\\Suscripcion.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Models\\Suscripcion.cs",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Models\\Suscripcion.cs",
+              "RelativeToolTip": "AuthAPI903\\Models\\Suscripcion.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T12:54:33.333Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "20241123085633_Cotizaciones.cs",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Migrations\\20241123085633_Cotizaciones.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Migrations\\20241123085633_Cotizaciones.cs",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Migrations\\20241123085633_Cotizaciones.cs",
+              "RelativeToolTip": "AuthAPI903\\Migrations\\20241123085633_Cotizaciones.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T08:56:33.725Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "20241122221831_CambiosRuben_2.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Migrations\\20241122221831_CambiosRuben_2.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Migrations\\20241122221831_CambiosRuben_2.cs",
@@ -92,60 +159,30 @@
               "RelativeToolTip": "AuthAPI903\\Migrations\\20241122221831_CambiosRuben_2.cs",
               "ViewState": "AQIAAA0AAAAAAAAAAAAgwB0AAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T08:47:07.227Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T08:47:07.227Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 7,
               "Title": "AppDbContextModelSnapshot.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Migrations\\AppDbContextModelSnapshot.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Migrations\\AppDbContextModelSnapshot.cs",
               "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Migrations\\AppDbContextModelSnapshot.cs",
               "RelativeToolTip": "AuthAPI903\\Migrations\\AppDbContextModelSnapshot.cs",
-              "ViewState": "AQIAALAEAAAAAAAAAAAAAMEEAAArAAAA",
+              "ViewState": "AQIAAK0EAAAAAAAAAIBJwMEEAAArAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T08:47:07.862Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T08:47:07.862Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 9,
               "Title": "20241123085037_Cotizaciones.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Migrations\\20241123085037_Cotizaciones.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Migrations\\20241123085037_Cotizaciones.cs",
               "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Migrations\\20241123085037_Cotizaciones.cs",
               "RelativeToolTip": "AuthAPI903\\Migrations\\20241123085037_Cotizaciones.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAgwAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T08:50:37.873Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CotizacionesDto.cs",
-              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Dtos\\CotizacionesDto.cs",
-              "RelativeDocumentMoniker": "AuthAPI903\\Dtos\\CotizacionesDto.cs",
-              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Dtos\\CotizacionesDto.cs",
-              "RelativeToolTip": "AuthAPI903\\Dtos\\CotizacionesDto.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T08:47:28.339Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CotizacionesController.cs",
-              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\CotizacionesController.cs",
-              "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\CotizacionesController.cs",
-              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\CotizacionesController.cs",
-              "RelativeToolTip": "AuthAPI903\\Controllers\\CotizacionesController.cs",
-              "ViewState": "AQIAACUAAAAAAAAAAAAwwDwAAAASAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T08:48:03.506Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T08:50:37.873Z"
             },
             {
               "$type": "Document",
@@ -155,14 +192,49 @@
               "RelativeDocumentMoniker": "AuthAPI903\\Models\\Cotizaciones.cs",
               "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Models\\Cotizaciones.cs",
               "RelativeToolTip": "AuthAPI903\\Models\\Cotizaciones.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAFAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T08:48:18.026Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T08:48:18.026Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Data\\AppDbContext.cs",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "AuthAPI903\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAL0AAAAAAAAAAAAUwMwAAAAxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T08:48:46.464Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "CotizacionesDto.cs",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Dtos\\CotizacionesDto.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Dtos\\CotizacionesDto.cs",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Dtos\\CotizacionesDto.cs",
+              "RelativeToolTip": "AuthAPI903\\Dtos\\CotizacionesDto.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T08:47:28.339Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CotizacionesController.cs",
+              "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\CotizacionesController.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\CotizacionesController.cs",
+              "ToolTip": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Controllers\\CotizacionesController.cs",
+              "RelativeToolTip": "AuthAPI903\\Controllers\\CotizacionesController.cs",
+              "ViewState": "AQIAACUAAAAAAAAAAAAwwDwAAAASAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-23T08:48:03.506Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "20241122203046_cambios_ruben.cs",
               "DocumentMoniker": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\Migrations\\20241122203046_cambios_ruben.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Migrations\\20241122203046_cambios_ruben.cs",
@@ -170,8 +242,7 @@
               "RelativeToolTip": "AuthAPI903\\Migrations\\20241122203046_cambios_ruben.cs",
               "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T08:47:20.138Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-23T08:47:20.138Z"
             }
           ]
         }
