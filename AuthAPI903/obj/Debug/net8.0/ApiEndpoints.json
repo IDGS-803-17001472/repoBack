@@ -73,6 +73,26 @@
   },
   {
     "ContainingType": "API.Controllers.AccountController",
+    "Method": "GetUserDetailCuenta",
+    "RelativePath": "api/Account/detailCuenta",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "AuthAPI903.Dtos.UserDetailDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.AccountController",
     "Method": "ForgotPassword",
     "RelativePath": "api/Account/forgot-password",
     "HttpMethod": "POST",
