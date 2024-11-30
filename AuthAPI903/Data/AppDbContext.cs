@@ -76,18 +76,18 @@ namespace AuthAPI903.Data
                 .HasOne(e => e.Paciente)
                 .WithMany(u => u.Entradas)
                 .HasForeignKey(e => e.IdPaciente)
-                .OnDelete(DeleteBehavior.Restrict);
+                .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<Medicion>()
+            .HasOne(m => m.Entrada)
+            .WithMany(e => e.Mediciones)
+            .HasForeignKey(m => m.IdEntrada)
+            .OnDelete(DeleteBehavior.Cascade);
 
             modelBuilder.Entity<Medicion>()
                 .HasOne(m => m.Emocion)
                 .WithMany()
                 .HasForeignKey(m => m.IdEmocion)
-                .OnDelete(DeleteBehavior.Restrict);
-
-            modelBuilder.Entity<Medicion>()
-                .HasOne(m => m.Entrada)
-                .WithMany()
-                .HasForeignKey(m => m.IdEntrada)
                 .OnDelete(DeleteBehavior.Restrict);
 
             modelBuilder.Entity<Notificacion>()

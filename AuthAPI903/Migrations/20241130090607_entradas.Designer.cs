@@ -4,6 +4,7 @@ using AuthAPI903.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AuthAPI903.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241130090607_entradas")]
+    partial class entradas
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -396,6 +399,9 @@ namespace AuthAPI903.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int?>("EntradaId")
+                        .HasColumnType("int");
+
                     b.Property<int?>("IdEmocion")
                         .HasColumnType("int");
 
@@ -406,6 +412,8 @@ namespace AuthAPI903.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
+
+                    b.HasIndex("EntradaId");
 
                     b.HasIndex("IdEmocion");
 
@@ -1082,13 +1090,17 @@ namespace AuthAPI903.Migrations
 
             modelBuilder.Entity("AuthAPI903.Models.Medicion", b =>
                 {
+                    b.HasOne("AuthAPI903.Models.Entrada", null)
+                        .WithMany("Mediciones")
+                        .HasForeignKey("EntradaId");
+
                     b.HasOne("AuthAPI903.Models.Emocion", "Emocion")
                         .WithMany()
                         .HasForeignKey("IdEmocion")
                         .OnDelete(DeleteBehavior.Restrict);
 
                     b.HasOne("AuthAPI903.Models.Entrada", "Entrada")
-                        .WithMany("Mediciones")
+                        .WithMany()
                         .HasForeignKey("IdEntrada")
                         .OnDelete(DeleteBehavior.Cascade);
 

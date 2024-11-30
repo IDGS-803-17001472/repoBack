@@ -5,6 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Linq;
 
 namespace AuthAPI903.Controllers
 {
@@ -29,6 +30,107 @@ namespace AuthAPI903.Controllers
             _configuration = configuration;
             this._context = context;
 
+        }
+
+        [Authorize]
+        [HttpPost("sincronizar")]
+        public async Task<ActionResult> SincronizarEntradas([FromBody] List<EntradaDto> entradasDto)
+        {
+            // Obtener el ID del usuario loggeado
+            var userId = _userManager.GetUserId(User);
+
+            // Buscar el paciente asociado al usuario loggeado
+            var paciente = await _context.Pacientes
+                                         .Include(p => p.Persona)
+                                         .FirstOrDefaultAsync(p => p.Persona.Usuario.IdAppUser == userId);
+
+            if (paciente == null)
+            {
+                return BadRequest("Paciente no encontrado.");
+            }
+
+            // Obtener todas las entradas existentes del paciente
+            var entradasExistentes = _context.Entradas
+                                              .Where(e => e.IdPaciente == paciente.Id)
+                                              .ToList();
+
+            // Obtener las mediciones asociadas a esas entradas
+            var mediciones = _context.Mediciones
+                                     .Where(m => entradasExistentes.Select(e => (int?)e.Id).Contains(m.IdEntrada))
+                                     .ToList();
+
+            // Eliminar primero las mediciones asociadas
+            _context.Mediciones.RemoveRange(mediciones);
+
+            await _context.SaveChangesAsync();
+
+            // Eliminar después las entradas existentes
+            _context.Entradas.RemoveRange(entradasExistentes);
+
+            // Agregar las nuevas entradas con sus mediciones
+            foreach (var entradaDto in entradasDto)
+            {
+                var nuevaEntrada = new Entrada
+                {
+                    Contenido = entradaDto.Contenido,
+                    Fecha = entradaDto.Fecha.ToLocalTime(),
+                    IdPaciente = paciente.Id,
+                    Mediciones = new List<Medicion>
+            {
+                new Medicion
+                {
+                    Nivel = entradaDto.NivelEmocion,
+                    IdEmocion = entradaDto.IdEmocion
+                }
+            }
+                };
+
+                _context.Entradas.Add(nuevaEntrada);
+            }
+
+            // Guardar los cambios en la base de datos
+            await _context.SaveChangesAsync();
+
+            return Ok("Entradas sincronizadas correctamente.");
+        }
+
+
+
+        [Authorize]
+        [HttpGet("paciente/diarios")]
+        public async Task<ActionResult<List<EntradaDto>>> ObtenerDiariosPorPaciente()
+        {
+            // Obtener el ID del usuario loggeado
+            var userId = _userManager.GetUserId(User);
+
+            // Buscar el paciente asociado al usuario loggeado
+            var paciente = await _context.Pacientes
+                                         .Include(p => p.Persona)
+                                         .FirstOrDefaultAsync(p => p.Persona.Usuario.IdAppUser == userId);
+
+            if (paciente == null)
+            {
+                return BadRequest("Paciente no encontrado.");
+            }
+
+            // Obtener las entradas con sus mediciones
+            var diarios = await _context.Entradas
+                .Where(e => e.IdPaciente == paciente.Id)
+                .Select(e => new EntradaDto
+                {
+                    Contenido = e.Contenido,
+                    Fecha = e.Fecha,
+                    NivelEmocion = e.Mediciones.FirstOrDefault().Nivel,
+                    IdEmocion = e.Mediciones.FirstOrDefault().IdEmocion
+                })
+                .ToListAsync();
+
+            if (diarios == null || !diarios.Any())
+            {
+                return NotFound("No se encontraron diarios asociados a este paciente.");
+            }
+
+            return Ok(diarios);
         }
 
         [Authorize]
