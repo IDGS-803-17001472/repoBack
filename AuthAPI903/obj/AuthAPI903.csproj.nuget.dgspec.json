@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\AuthAPI903.csproj": {}
+    "C:\\Users\\nano_\\Desktop\\newBackend\\AuthAPI903\\AuthAPI903.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\AuthAPI903.csproj": {
+    "C:\\Users\\nano_\\Desktop\\newBackend\\AuthAPI903\\AuthAPI903.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\AuthAPI903.csproj",
+        "projectUniqueName": "C:\\Users\\nano_\\Desktop\\newBackend\\AuthAPI903\\AuthAPI903.csproj",
         "projectName": "AuthAPI903",
-        "projectPath": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\AuthAPI903.csproj",
-        "packagesPath": "C:\\Users\\Javier\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Javier\\Documents\\Escuela\\ing\\repoBack\\AuthAPI903\\obj\\",
+        "projectPath": "C:\\Users\\nano_\\Desktop\\newBackend\\AuthAPI903\\AuthAPI903.csproj",
+        "packagesPath": "C:\\Users\\nano_\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\nano_\\Desktop\\newBackend\\AuthAPI903\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Javier\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\nano_\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -56,6 +56,12 @@
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[8.0.7, )"
+            },
+            "Microsoft.CodeAnalysis.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.11.0, )"
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
@@ -113,7 +119,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.404/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

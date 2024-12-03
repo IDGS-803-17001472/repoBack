@@ -887,7 +887,7 @@ namespace API.Controllers
 
         //api/account/detail
         [HttpGet("detail")]
-        public async Task<ActionResult<UserDetailDto>> GetUserDetail()
+        public async Task<ActionResult<UserDetailDto2>> GetUserDetail()
         {
             var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var user = await _userManager.FindByIdAsync(currentUserId!);
@@ -902,6 +902,34 @@ namespace API.Controllers
                 });
             }
 
+
+
+
+            var usuario = await _context.Usuarios
+                .FirstOrDefaultAsync(p => p.IdAppUser == user.Id);
+
+            if (usuario is null)
+            {
+                return NotFound(new AuthResponseDto
+                {
+                    IsSuccess = false,
+                    Message = "User not found"
+                });
+            }
+
+            var persona = await _context.Personas
+                .FirstOrDefaultAsync(p => p.Id == usuario.IdPersona);
+
+            if (persona is null)
+            {
+                return NotFound(new AuthResponseDto
+                {
+                    IsSuccess = false,
+                    Message = "Persona no encontrada"
+                });
+            }
+
+
             return Ok(new UserDetailDto
             {
                 Id = user.Id,
@@ -911,7 +939,81 @@ namespace API.Controllers
                 PhoneNumber = user.PhoneNumber,
                 PhoneNumberConfirmed = user.PhoneNumberConfirmed,
                 AccessFailedCount = user.AccessFailedCount,
+                Foto = persona.Foto
+            });
 
+        }
+
+
+
+        //api/account/detail
+        [HttpGet("detailCuenta")]
+        public async Task<ActionResult<UserDetailDto2>> GetUserDetailCuenta()
+        {
+            var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var user = await _userManager.FindByIdAsync(currentUserId!);
+
+
+            if (user is null)
+            {
+                return NotFound(new AuthResponseDto
+                {
+                    IsSuccess = false,
+                    Message = "User not found"
+                });
+            }
+
+
+
+
+            var usuario = await _context.Usuarios
+                .FirstOrDefaultAsync(p => p.IdAppUser == user.Id);
+
+            if (usuario is null)
+            {
+                return NotFound(new AuthResponseDto
+                {
+                    IsSuccess = false,
+                    Message = "User not found"
+                });
+            }
+
+            var persona = await _context.Personas
+                .FirstOrDefaultAsync(p => p.Id == usuario.IdPersona);
+
+            var profesional = await _context.Profesionales
+                .FirstOrDefaultAsync(p => p.IdUsuario == usuario.Id);
+
+            if (persona is null)
+            {
+                return NotFound(new AuthResponseDto
+                {
+                    IsSuccess = false,
+                    Message = "Persona no encontrada"
+                });
+            }
+            if (profesional is null)
+            {
+                return NotFound(new AuthResponseDto
+                {
+                    IsSuccess = false,
+                    Message = "profesional no encontrado"
+                });
+            }
+
+
+            return Ok(new UserDetailDto2
+            {
+                Id = user.Id,
+                Email = user.Email,
+                FullName = persona.Nombre + " " + persona.ApellidoPaterno + " " + persona.ApellidoMaterno,
+                Sexo = persona.Sexo,
+                FechadeNacimiento = persona.FechaNacimiento,
+                EstadoCivil = persona.EstadoCivil,
+                Titulo = profesional.Titulo,
+                Ocupacion = persona.Ocupacion,
+                Telefono = persona.Telefono,
+                Foto = persona.Foto
             });
 
         }
