@@ -355,6 +355,7 @@ namespace AuthAPI903.Controllers
             paciente.Persona.Sexo = updatePacienteDto.Sexo;
             paciente.Persona.EstadoCivil = updatePacienteDto.EstadoCivil;
             paciente.Persona.Ocupacion = updatePacienteDto.Ocupacion;
+            paciente.NotasAdicionales = updatePacienteDto.NotasAdicionales;
 
             // Marca las entidades como modificadas
             _context.Entry(paciente.Persona).State = EntityState.Modified;

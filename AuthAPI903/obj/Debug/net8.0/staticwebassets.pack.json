@@ -129,6 +129,22 @@
       "PackagePath": "staticwebassets\\styles-IXBXBCXN.css"
     },
     {
+      "Id": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\uploads\\images\\5b8185d1-c8f3-48bd-8bbd-ca0b116c4f69.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\images\\5b8185d1-c8f3-48bd-8bbd-ca0b116c4f69.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\uploads\\images\\9107e5c4-3270-48f0-bca9-6857e509c102.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\images\\9107e5c4-3270-48f0-bca9-6857e509c102.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\uploads\\images\\ec448c75-898a-4d06-bbc8-b3ee246b06ee.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\images\\ec448c75-898a-4d06-bbc8-b3ee246b06ee.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\uploads\\images\\ef019ea0-7fa8-4886-a750-34e762326693.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\images\\ef019ea0-7fa8-4886-a750-34e762326693.jpeg"
+    },
+    {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.AuthAPI903.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

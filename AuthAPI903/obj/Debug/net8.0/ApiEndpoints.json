@@ -457,6 +457,22 @@
   },
   {
     "ContainingType": "AuthAPI903.Controllers.CitaController",
+    "Method": "GetCitasDePaciente",
+    "RelativePath": "api/Cita/profesional/{idPaciente}/citas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "idPaciente",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.CitaController",
     "Method": "ObtenerCitasPorProfesional",
     "RelativePath": "api/Cita/profesional/citas",
     "HttpMethod": "GET",

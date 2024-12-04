@@ -241,6 +241,8 @@ namespace AuthAPI903.Controllers
                         Persona = new
                         {
                             e.Paciente.Persona.Nombre,
+                            e.Paciente.Persona.ApellidoMaterno,
+                            e.Paciente.Persona.ApellidoPaterno,
                         }
                     },
                     Mediciones = e.Mediciones.Select(m => new

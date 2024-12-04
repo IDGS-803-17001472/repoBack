@@ -57,6 +57,7 @@ namespace AuthAPI903.Controllers
                     Id = c.Id,
                     Title = "Cita con " + c.AsignacionPaciente.Paciente.Persona.Nombre,
                     Date = c.Fecha,
+                    Time = c.Horario,
                     Status = c.Estatus,
                 })
                 .ToListAsync();
@@ -70,6 +71,41 @@ namespace AuthAPI903.Controllers
         }
 
 
+        [Authorize(Roles = "profesional")]
+        [HttpGet("profesional/{idPaciente}/citas")]
+        public async Task<IActionResult> GetCitasDePaciente(int idPaciente)
+        {
+
+
+
+            // Obtener el ID del usuario loggeado
+            var userId = _userManager.GetUserId(User);
+
+            // Buscar el profesional asociado al usuario loggeado
+            var profesional = await _context.Profesionales
+                                            .FirstOrDefaultAsync(p => p.Usuario.IdAppUser == userId);
+
+            if (profesional == null)
+            {
+                return BadRequest("El profesional no fue encontrado.");
+            }
+            // Obtener el ID del profesional autenticado
+            var profesionalId = profesional.Id;
+
+
+
+            // Obtener las citas del paciente relacionadas con este profesional
+            var citas = await _context.Citas
+                .Where(c => c.AsignacionPaciente.IdPaciente == idPaciente && c.AsignacionPaciente.IdProfesional == profesionalId)
+                .ToListAsync();
+
+            if (citas == null || !citas.Any())
+            {
+                return NotFound("No se encontraron citas para este paciente con el profesional.");
+            }
+
+            return Ok(citas);
+        }
 
 
 
@@ -175,6 +211,8 @@ namespace AuthAPI903.Controllers
                                     Persona = new
                                     {
                                         c.AsignacionPaciente.Paciente.Persona.Nombre,
+                                        c.AsignacionPaciente.Paciente.Persona.ApellidoPaterno,
+                                        c.AsignacionPaciente.Paciente.Persona.ApellidoMaterno
                                     }
                                 }
                             }

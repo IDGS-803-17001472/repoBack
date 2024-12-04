@@ -83,7 +83,6 @@ namespace API.Controllers
             });
 
         }
-
         // api/account/register
         [AllowAnonymous]
         [HttpPost("register")]
@@ -97,7 +96,7 @@ namespace API.Controllers
             var user = new AppUser
             {
                 Email = registerDto.Email,
-                FullName = registerDto.Email, // Cambiar por el nombre completo si es necesario
+                FullName = registerDto.Email,
                 UserName = registerDto.Email
             };
 
@@ -120,8 +119,47 @@ namespace API.Controllers
                 }
             }
 
-            // AQUII
-            // 1. Crear la entidad Persona
+            // Crear la entidad Persona
+            string imagePath = null;
+
+            if (!string.IsNullOrEmpty(registerDto.Foto))
+            {
+                try
+                {
+                    // Verificar y extraer la extensión
+                    var base64Parts = registerDto.Foto.Split(',');
+                    if (base64Parts.Length != 2 || !base64Parts[0].StartsWith("data:image/"))
+                    {
+                        return BadRequest("Formato de imagen inválido.");
+                    }
+
+                    var mimeType = base64Parts[0].Split(';')[0].Split(':')[1]; // Obtiene algo como "image/jpeg"
+                    var extension = mimeType.Split('/')[1]; // Obtiene "jpeg"
+
+                    // Convertir Base64 a bytes
+                    var imageBytes = Convert.FromBase64String(base64Parts[1]);
+                    var fileName = $"{Guid.NewGuid()}.{extension}";
+                    var folderPath = Path.Combine("wwwroot", "uploads", "images");
+                    var fullPath = Path.Combine(folderPath, fileName);
+
+                    // Asegúrate de que la carpeta exista
+                    if (!Directory.Exists(folderPath))
+                    {
+                        Directory.CreateDirectory(folderPath);
+                    }
+
+                    // Guardar el archivo
+                    await System.IO.File.WriteAllBytesAsync(fullPath, imageBytes);
+
+                    // Asignar la ruta relativa
+                    imagePath = Path.Combine("uploads", "images", fileName).Replace("\\", "/");
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest($"Error al guardar la imagen: {ex.Message}");
+                }
+            }
+
             var persona = new Persona
             {
                 Nombre = registerDto.Nombre,
@@ -130,7 +168,7 @@ namespace API.Controllers
                 Telefono = registerDto.Telefono,
                 FechaNacimiento = registerDto.FechaNacimiento,
                 Sexo = registerDto.Sexo,
-                Foto = registerDto.Foto,
+                Foto = imagePath, // Guardar la ruta relativa
                 EstadoCivil = registerDto.EstadoCivil,
                 Ocupacion = registerDto.Ocupacion
             };
@@ -138,7 +176,7 @@ namespace API.Controllers
             await _context.Personas.AddAsync(persona);
             await _context.SaveChangesAsync();
 
-            // 2. Crear la entidad Usuario y vincularla con Persona y AppUser
+            // Crear la entidad Usuario y vincularla con Persona y AppUser
             var usuario = new Usuario
             {
                 IdAppUser = user.Id,
@@ -152,7 +190,7 @@ namespace API.Controllers
             await _context.Usuarios.AddAsync(usuario);
             await _context.SaveChangesAsync();
 
-            // 3. Crear la entidad Profesional y vincularla con Usuario
+            // Crear la entidad Profesional y vincularla con Usuario
             var profesional = new Profesional
             {
                 Titulo = registerDto.Titulo,
@@ -168,6 +206,7 @@ namespace API.Controllers
                 Message = "Account Created Successfully!"
             });
         }
+
 
         [Authorize(Roles = "profesional")]
         [HttpPost("registerPaciente")]
@@ -208,7 +247,46 @@ namespace API.Controllers
             // Asignar el rol 'Paciente' al usuario recién creado
             await _userManager.AddToRoleAsync(user, "paciente");
 
-            // 2. Crear la entidad Persona
+            // Crear la entidad Persona
+            string imagePath = null;
+
+            if (!string.IsNullOrEmpty(registerDto.Foto))
+            {
+                try
+                {
+                    // Verificar y extraer la extensión
+                    var base64Parts = registerDto.Foto.Split(',');
+                    if (base64Parts.Length != 2 || !base64Parts[0].StartsWith("data:image/"))
+                    {
+                        return BadRequest("Formato de imagen inválido.");
+                    }
+
+                    var mimeType = base64Parts[0].Split(';')[0].Split(':')[1]; // Obtiene algo como "image/jpeg"
+                    var extension = mimeType.Split('/')[1]; // Obtiene "jpeg"
+
+                    // Convertir Base64 a bytes
+                    var imageBytes = Convert.FromBase64String(base64Parts[1]);
+                    var fileName = $"{Guid.NewGuid()}.{extension}";
+                    var folderPath = Path.Combine("wwwroot", "uploads", "images");
+                    var fullPath = Path.Combine(folderPath, fileName);
+
+                    // Asegúrate de que la carpeta exista
+                    if (!Directory.Exists(folderPath))
+                    {
+                        Directory.CreateDirectory(folderPath);
+                    }
+
+                    // Guardar el archivo
+                    await System.IO.File.WriteAllBytesAsync(fullPath, imageBytes);
+
+                    // Asignar la ruta relativa
+                    imagePath = Path.Combine("uploads", "images", fileName).Replace("\\", "/");
+                }
+                catch (Exception ex)
+                {
+                    return BadRequest($"Error al guardar la imagen: {ex.Message}");
+                }
+            }
             var persona = new Persona
             {
                 Nombre = registerDto.Nombre,
@@ -217,7 +295,7 @@ namespace API.Controllers
                 Telefono = registerDto.Telefono,
                 FechaNacimiento = registerDto.FechaNacimiento,
                 Sexo = registerDto.Sexo,
-                Foto = registerDto.Foto,
+                Foto = imagePath,
                 EstadoCivil = registerDto.EstadoCivil,
                 Ocupacion = registerDto.Ocupacion
             };

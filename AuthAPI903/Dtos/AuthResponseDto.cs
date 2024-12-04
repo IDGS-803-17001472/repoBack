@@ -10,5 +10,6 @@
         public string Sexo { get; set; } = string.Empty;
         public string EstadoCivil { get; set; } = string.Empty;
         public string Ocupacion { get; set; } = string.Empty;
+        public string NotasAdicionales { get; set; } = string.Empty;
     }
 }
