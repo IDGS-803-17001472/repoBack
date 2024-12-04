@@ -1,6 +1,6 @@
 ﻿namespace AuthAPI903.Models
 {
-    public class Queja
+    public class QuejaProf
     {
         public int? Id { get; set; }
         public int? IdUsuarioSolicita { get; set; }

@@ -109,6 +109,26 @@
   },
   {
     "ContainingType": "API.Controllers.AccountController",
+    "Method": "GetInfoPaciente",
+    "RelativePath": "api/Account/infoPaciente",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "AuthAPI903.Dtos.PacienteDto",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "API.Controllers.AccountController",
     "Method": "Login",
     "RelativePath": "api/Account/login",
     "HttpMethod": "POST",
@@ -1531,6 +1551,42 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.QuejaController",
+    "Method": "GetQuejasByProfesional",
+    "RelativePath": "api/Queja/profesional/quejas",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AuthAPI903.Controllers.QuejaController",
+    "Method": "RegisterProfesionalQueja",
+    "RelativePath": "api/Queja/profesional/registrar",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "queja",
+        "Type": "AuthAPI903.Models.Queja",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "AuthAPI903.Models.Queja",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
   },
   {
     "ContainingType": "AuthAPI903.Controllers.QuejaController",

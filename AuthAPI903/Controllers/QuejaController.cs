@@ -1,6 +1,7 @@
 ﻿using AuthAPI903.Data;
 using AuthAPI903.Dtos;
 using AuthAPI903.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -29,6 +30,7 @@ namespace AuthAPI903.Controllers
         }
 
         // API para registrar una nueva queja
+        [Authorize(Roles = "profesional")]
         [HttpPost("registrar")]
         public async Task<ActionResult<Queja>> RegisterQueja(Queja queja)
         {
@@ -36,6 +38,99 @@ namespace AuthAPI903.Controllers
             await _context.SaveChangesAsync();
             return CreatedAtAction(nameof(GetQuejas), new { id = queja.Id }, queja);
         }
+
+        // API para registrar una nueva queja
+        [HttpPost("profesional/registrar")]
+        public async Task<ActionResult<Queja>> RegisterProfesionalQueja(Queja queja)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
+
+            // Obtener el ID del usuario loggeado
+            var userId = _userManager.GetUserId(User);
+
+            // Buscar el profesional asociado al usuario loggeado
+            var profesional = await _context.Profesionales
+                                            .FirstOrDefaultAsync(p => p.Usuario.IdAppUser == userId);
+
+            if (profesional == null)
+            {
+                return BadRequest("El profesional no fue encontrado.");
+            }
+
+            // Buscar el profesional asociado al usuario loggeado
+            var usuario = await _context.Usuarios
+                                            .FirstOrDefaultAsync(p => p.Id == profesional.IdUsuario);
+
+            if (usuario == null)
+            {
+                return BadRequest("El usuario no fue encontrado.");
+            }
+
+            // Buscar el profesional asociado al usuario loggeado
+            var persona = await _context.Personas
+                                            .FirstOrDefaultAsync(p => p.Id == usuario.IdPersona);
+
+            if (persona == null)
+            {
+                return BadRequest("La persona no fue encontrado.");
+            }
+
+            queja.IdUsuarioNecesita = persona.Id;
+            queja.IdUsuarioSolicita = persona.Id;
+
+            _context.Quejas.Add(queja);
+            await _context.SaveChangesAsync();
+            return CreatedAtAction(nameof(GetQuejas), new { id = queja.Id }, queja);
+        }
+
+
+        [Authorize(Roles = "profesional")]
+        [HttpGet("profesional/quejas")]
+        public async Task<IActionResult> GetQuejasByProfesional()
+        {
+            // Obtener el ID del usuario loggeado
+            var userId = _userManager.GetUserId(User);
+
+            // Buscar el profesional asociado al usuario loggeado
+            var profesional = await _context.Profesionales
+                .FirstOrDefaultAsync(p => p.Usuario.IdAppUser == userId);
+
+            if (profesional == null)
+            {
+                return BadRequest("El profesional no fue encontrado.");
+            }
+
+            // Buscar al usuario asociado al profesional
+            var usuario = await _context.Usuarios
+                .FirstOrDefaultAsync(u => u.Id == profesional.IdUsuario);
+
+            if (usuario == null)
+            {
+                return BadRequest("El usuario no fue encontrado.");
+            }
+
+            // Buscar la persona asociada al usuario
+            var persona = await _context.Personas
+                .FirstOrDefaultAsync(p => p.Id == usuario.IdPersona);
+
+            if (persona == null)
+            {
+                return BadRequest("La persona no fue encontrada.");
+            }
+
+            // Obtener las quejas relacionadas con la persona
+            var quejas = await _context.Quejas
+                .Where(q => q.IdUsuarioNecesita == persona.Id)
+                .ToListAsync();
+
+            return Ok(quejas);
+        }
+
+
+
 
         // API para traer todas las quejas
         [HttpGet("todas")]
