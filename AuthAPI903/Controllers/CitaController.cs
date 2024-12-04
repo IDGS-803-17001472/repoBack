@@ -32,6 +32,47 @@ namespace AuthAPI903.Controllers
 
         }
 
+
+
+        [Authorize(Roles = "profesional")]
+        [HttpGet("proximas")]
+        public async Task<ActionResult<List<CitaDto>>> ObtenerProximasCitasPorProfesional()
+        {
+            var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var profesional = await _context.Profesionales
+                                             .Include(p => p.Usuario)
+                                             .FirstOrDefaultAsync(p => p.Usuario.IdAppUser == currentUserId);
+
+            if (profesional == null)
+            {
+                return NotFound("Profesional no encontrado.");
+            }
+
+            var proximasCitas = await _context.Citas
+                .Where(c => c.AsignacionPaciente.IdProfesional == profesional.Id && c.Fecha > DateTime.Now)
+                .OrderBy(c => c.Fecha)
+                .Take(5)
+                .Select(c => new CitaDto
+                {
+                    Id = c.Id,
+                    Title = "Cita con " + c.AsignacionPaciente.Paciente.Persona.Nombre,
+                    Date = c.Fecha,
+                    Status = c.Estatus,
+                })
+                .ToListAsync();
+
+            if (!proximasCitas.Any())
+            {
+                return NotFound("No hay citas próximas.");
+            }
+
+            return Ok(proximasCitas);
+        }
+
+
+
+
+
         [Authorize]
         [HttpGet("profesional/citas")]
         public async Task<ActionResult<List<CitaDto>>> ObtenerCitasPorProfesional()

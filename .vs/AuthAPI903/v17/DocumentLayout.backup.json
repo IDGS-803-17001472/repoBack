@@ -1,50 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\",
+  "WorkspaceRootPath": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\desktop\\ultimorepoback\\authapi903\\dtos\\personapacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\dtos\\personapacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\desktop\\ultimorepoback\\authapi903\\controllers\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\desktop\\ultimorepoback\\authapi903\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\desktop\\ultimorepoback\\authapi903\\dtos\\userdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\dtos\\userdetaildto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\desktop\\ultimorepoback\\authapi903\\dtos\\userdetaildto2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\dtos\\userdetaildto2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\desktop\\ultimorepoback\\authapi903\\controllers\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\desktop\\ultimorepoback\\authapi903\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\desktop\\ultimorepoback\\authapi903\\models\\medicion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\models\\medicion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\desktop\\ultimorepoback\\authapi903\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\desktop\\ultimorepoback\\authapi903\\controllers\\diariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\onedrive\\escritorio\\back feelfinder\\authapi903\\controllers\\diariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\diariocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\desktop\\ultimorepoback\\authapi903\\migrations\\20241203214246_asdasd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\migrations\\20241203214246_asdasd.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\onedrive\\escritorio\\back feelfinder\\authapi903\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\onedrive\\escritorio\\back feelfinder\\authapi903\\controllers\\profesionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\profesionalcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\onedrive\\escritorio\\back feelfinder\\authapi903\\controllers\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\citacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\onedrive\\escritorio\\back feelfinder\\authapi903\\controllers\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\controllers\\pacientecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|c:\\users\\nano_\\onedrive\\escritorio\\back feelfinder\\authapi903\\dtos\\personapacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CC2DC5FB-178B-43F8-9CA7-ABE38802B0E6}|AuthAPI903\\AuthAPI903.csproj|solutionrelative:authapi903\\dtos\\personapacientedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -67,137 +47,79 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "PersonaPacienteDto.cs",
-              "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Dtos\\PersonaPacienteDto.cs",
-              "RelativeDocumentMoniker": "AuthAPI903\\Dtos\\PersonaPacienteDto.cs",
-              "ToolTip": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Dtos\\PersonaPacienteDto.cs",
-              "RelativeToolTip": "AuthAPI903\\Dtos\\PersonaPacienteDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAABAAAAAAAAAA==",
+              "Title": "DiarioController.cs",
+              "DocumentMoniker": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\Controllers\\DiarioController.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\DiarioController.cs",
+              "ToolTip": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\Controllers\\DiarioController.cs",
+              "RelativeToolTip": "AuthAPI903\\Controllers\\DiarioController.cs",
+              "ViewState": "AgIAADAAAAAAAAAAAAAQwDoAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-04T05:15:11.738Z",
+              "WhenOpened": "2024-12-04T06:17:59.832Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "ProfesionalController.cs",
+              "DocumentMoniker": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\Controllers\\ProfesionalController.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\ProfesionalController.cs",
+              "ToolTip": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\Controllers\\ProfesionalController.cs",
+              "RelativeToolTip": "AuthAPI903\\Controllers\\ProfesionalController.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T06:12:49.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "PersonaPacienteDto.cs",
+              "DocumentMoniker": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\Dtos\\PersonaPacienteDto.cs",
+              "RelativeDocumentMoniker": "AuthAPI903\\Dtos\\PersonaPacienteDto.cs",
+              "ToolTip": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\Dtos\\PersonaPacienteDto.cs",
+              "RelativeToolTip": "AuthAPI903\\Dtos\\PersonaPacienteDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-04T05:15:11.738Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PacienteController.cs",
-              "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Controllers\\PacienteController.cs",
+              "DocumentMoniker": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\Controllers\\PacienteController.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\PacienteController.cs",
-              "ToolTip": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Controllers\\PacienteController.cs*",
-              "RelativeToolTip": "AuthAPI903\\Controllers\\PacienteController.cs*",
-              "ViewState": "AgIAAHkAAAAAAAAAAIAwwH8AAAA8AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\Controllers\\PacienteController.cs",
+              "RelativeToolTip": "AuthAPI903\\Controllers\\PacienteController.cs",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAQwIsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-04T05:14:53.468Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UserDetailDto.cs",
-              "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Dtos\\UserDetailDto.cs",
-              "RelativeDocumentMoniker": "AuthAPI903\\Dtos\\UserDetailDto.cs",
-              "ToolTip": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Dtos\\UserDetailDto.cs",
-              "RelativeToolTip": "AuthAPI903\\Dtos\\UserDetailDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T21:55:49.85Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UserDetailDto2.cs",
-              "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Dtos\\UserDetailDto2.cs",
-              "RelativeDocumentMoniker": "AuthAPI903\\Dtos\\UserDetailDto2.cs",
-              "ToolTip": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Dtos\\UserDetailDto2.cs",
-              "RelativeToolTip": "AuthAPI903\\Dtos\\UserDetailDto2.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T21:56:32.211Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "AccountController.cs",
-              "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Controllers\\AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\Controllers\\AccountController.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\AccountController.cs",
-              "ToolTip": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\Controllers\\AccountController.cs",
               "RelativeToolTip": "AuthAPI903\\Controllers\\AccountController.cs",
-              "ViewState": "AgIAAMQDAAAAAAAAAAAwwKQDAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAOwDAAAAAAAAAAAgwAUEAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-03T21:42:17.138Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\appsettings.json",
-              "RelativeDocumentMoniker": "AuthAPI903\\appsettings.json",
-              "ToolTip": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\appsettings.json",
-              "RelativeToolTip": "AuthAPI903\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-12-03T21:43:12.26Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "20241203214246_asdasd.cs",
-              "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Migrations\\20241203214246_asdasd.cs",
-              "RelativeDocumentMoniker": "AuthAPI903\\Migrations\\20241203214246_asdasd.cs",
-              "ToolTip": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Migrations\\20241203214246_asdasd.cs",
-              "RelativeToolTip": "AuthAPI903\\Migrations\\20241203214246_asdasd.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-03T21:42:46.974Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Medicion.cs",
-              "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Models\\Medicion.cs",
-              "RelativeDocumentMoniker": "AuthAPI903\\Models\\Medicion.cs",
-              "ToolTip": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Models\\Medicion.cs",
-              "RelativeToolTip": "AuthAPI903\\Models\\Medicion.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T09:19:50.821Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
               "Title": "CitaController.cs",
-              "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Controllers\\CitaController.cs",
+              "DocumentMoniker": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\Controllers\\CitaController.cs",
               "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\CitaController.cs",
-              "ToolTip": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Controllers\\CitaController.cs",
+              "ToolTip": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\Controllers\\CitaController.cs",
               "RelativeToolTip": "AuthAPI903\\Controllers\\CitaController.cs",
-              "ViewState": "AgIAAFAAAAAAAAAAAAAawEgAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-30T08:42:16.233Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DiarioController.cs",
-              "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Controllers\\DiarioController.cs",
-              "RelativeDocumentMoniker": "AuthAPI903\\Controllers\\DiarioController.cs",
-              "ToolTip": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Controllers\\DiarioController.cs",
-              "RelativeToolTip": "AuthAPI903\\Controllers\\DiarioController.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAASwDoAAABwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-29T19:48:40.625Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "AuthAPI903\\Data\\AppDbContext.cs",
-              "ToolTip": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "AuthAPI903\\Data\\AppDbContext.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAASwFcAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-23T08:48:46.464Z"
+              "WhenOpened": "2024-11-30T08:42:16.233Z",
+              "EditorCaption": ""
             }
           ]
         }

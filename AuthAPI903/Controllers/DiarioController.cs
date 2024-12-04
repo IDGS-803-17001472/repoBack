@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using System.Linq;
+using System.Security.Claims;
 
 namespace AuthAPI903.Controllers
 {
@@ -31,6 +32,58 @@ namespace AuthAPI903.Controllers
             this._context = context;
 
         }
+
+
+        [Authorize]
+        [HttpGet("profesional/ultimos")]
+        public async Task<ActionResult<List<object>>> ObtenerUltimosDiariosPorProfesional()
+        {
+            var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var profesional = await _context.Profesionales
+                                             .Include(p => p.Usuario)
+                                             .FirstOrDefaultAsync(p => p.Usuario.IdAppUser == currentUserId);
+
+            if (profesional == null)
+            {
+                return NotFound("Profesional no encontrado.");
+            }
+
+            var ultimosDiarios = await _context.Entradas
+                .Where(e => e.Paciente.AsignacionPacientes.Any(a => a.IdProfesional == profesional.Id))
+                .OrderByDescending(e => e.Fecha)
+                .Take(5)
+                .Select(e => new
+                {
+                    e.Id,
+                    e.Contenido,
+                    e.Fecha,
+                    Paciente = new
+                    {
+                        e.Paciente.Id,
+                        Persona = new
+                        {
+                            e.Paciente.Persona.Nombre,
+                        }
+                    },
+                    Medicion = new
+                    {
+                        e.Mediciones
+                    }
+                })
+                .ToListAsync();
+
+            if (!ultimosDiarios.Any())
+            {
+                return NotFound("No se encontraron diarios.");
+            }
+
+            return Ok(ultimosDiarios);
+        }
+
+
+
+
+
 
         [Authorize]
         [HttpPost("sincronizar")]

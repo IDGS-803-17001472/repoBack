@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "k8DZIx03pE2lWkwvYr51++2PqyBcxquGfR2IaY09cMk=",
+  "Hash": "tXaJqqEWfanbHsUisWrOGJRgzI7bn/whywC0c+1EcBA=",
   "Source": "AuthAPI903",
   "BasePath": "_content/AuthAPI903",
   "Mode": "Default",
@@ -10,619 +10,3309 @@
     {
       "Name": "AuthAPI903\\wwwroot",
       "Source": "AuthAPI903",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\1.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\1.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/1.png",
+      "RelativePath": "assets/imagen/1#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "7y4zzvfspy",
+      "Integrity": "MS2K3J0sSpXeOWnmkC5jpKO9hqABIkDUfCOdbGRP0RE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\1.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\10.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\10.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/10.png",
+      "RelativePath": "assets/imagen/10#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "bmi2k0nw7q",
+      "Integrity": "PTG8KXuO5VuA3dYDRxOy1+ecO8etD3QJWCnxHt+TW0I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\10.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\11.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\11.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/11.png",
+      "RelativePath": "assets/imagen/11#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "kiyvdp2lx4",
+      "Integrity": "hK735hUjVFbByuDHou+Hy0mMf00jpP91iTCC4XaMjEQ=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\11.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\12.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\12.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/12.png",
+      "RelativePath": "assets/imagen/12#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "r2sbsjj8go",
+      "Integrity": "HaVvm2knjlb89/HVgSwaX+uguSY/ZvXDRnTb06gkLS8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\12.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\13.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\13.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/13.png",
+      "RelativePath": "assets/imagen/13#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "aexfyjmlvs",
+      "Integrity": "0oTiNNGh3n8M/mP9daGq6BWK6Jc7r8uQreIF3P2HnjE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\13.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\14.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\14.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/14.png",
+      "RelativePath": "assets/imagen/14#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "uq8ev5qhur",
+      "Integrity": "OkkyRgND7wyVbkxKpiu2agg6ndUJxBQjM+dXqgWUQXw=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\14.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\15.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\15.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/15.png",
+      "RelativePath": "assets/imagen/15#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "clkwwv5hpq",
+      "Integrity": "QLxDsZ4d7W1vDvWbXI34Bm7/gGxoj0go02vOHrDWmgE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\15.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\16.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\16.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/16.png",
+      "RelativePath": "assets/imagen/16#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "h3shvrzl38",
+      "Integrity": "fePjpzojc6x/9AcSbV+c3ywBHGkbLf+hRQ6GpKgGrbE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\16.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\17.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\17.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/17.png",
+      "RelativePath": "assets/imagen/17#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ch4paukg56",
+      "Integrity": "8KT/QpNM/XcY+s/MNvlyyEXGl/q4V+3ZKZCUUPnI7+E=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\17.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\18.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\18.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/18.png",
+      "RelativePath": "assets/imagen/18#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "bnu3oxyors",
+      "Integrity": "5xlq2/mVrCYoRSxmC30s2u3fPgUDPf7Npy5Il510+tY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\18.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\19.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\19.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/19.png",
+      "RelativePath": "assets/imagen/19#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "drlx51xz34",
+      "Integrity": "aYWJeFIUq95wiO3AmDQZ6Xg8xAKG/0y9F5LNGXL0AJE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\19.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\2.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\2.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/2.png",
+      "RelativePath": "assets/imagen/2#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "73kmvr20p2",
+      "Integrity": "M/rYT3vv2JVhj+pYELwxXZZLfsHhXs1DYoAuhJx8BbE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\2.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\20.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\20.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/20.png",
+      "RelativePath": "assets/imagen/20#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "v65aksw4hk",
+      "Integrity": "x7w9WjPOIWohn7KbyNIRTbOtZ4fRNG3OJ63B5sThXgk=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\20.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\3.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\3.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/3.png",
+      "RelativePath": "assets/imagen/3#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "266oz2gqpw",
+      "Integrity": "xv8rnxYqCLjk+yhi/pyWiukaIuvEjT73Za4q9+zslCc=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\3.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\4.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\4.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/4.png",
+      "RelativePath": "assets/imagen/4#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "wsfz2c3rjf",
+      "Integrity": "QOPmmG+0obiR/XObd4jwa/CoKFTrYEg2cs9HPWM1RQs=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\4.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\5.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\5.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/5.png",
+      "RelativePath": "assets/imagen/5#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "9qnc73l72r",
+      "Integrity": "35kl5NWCG9vKkaWP/S6L94quij6yhUANx/H1U/rzO0I=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\5.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\6.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\6.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/6.png",
+      "RelativePath": "assets/imagen/6#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "co4uotknus",
+      "Integrity": "LB/0rHHpl+94wJoTGAS4PXqS70QF5ec/LJgF2N8Gu+c=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\6.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\7.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\7.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/7.png",
+      "RelativePath": "assets/imagen/7#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "qnxmg3msxe",
+      "Integrity": "GlDyqaL/ENv2Gj926TQB4w4zvid0ItiMgASXHjqmf4w=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\7.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\8.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\8.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/8.png",
+      "RelativePath": "assets/imagen/8#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "fkpzey5y7w",
+      "Integrity": "0S2vmOhz6g/qjd+QqJlXXEqcepHUOmyZq5dgluXI2nY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\8.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\9.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\9.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/9.png",
+      "RelativePath": "assets/imagen/9#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ht7yb5nxzv",
+      "Integrity": "69Qon8pNOz30qGBy1B5yqnsox28IH1GQX8730SQBVn0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\9.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\banner.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\banner.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/banner.png",
+      "RelativePath": "assets/imagen/banner#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "qcy3acxvpu",
+      "Integrity": "qppOWKyKootcGB3a7lQ3wMRG8E7l8CoY9iaILG81N4o=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\banner.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\assets\\imagen\\logo.png",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\logo.png",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "assets/imagen/logo.png",
+      "RelativePath": "assets/imagen/logo#[.{fingerprint}]?.png",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "zj2v7qxt8d",
+      "Integrity": "UYI3TVKYqzXmCFzK7ZoUktuulybQSBqw1/ExuwQKXtE=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\assets\\imagen\\logo.png"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\chunk-5VVV3HHE.js",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\chunk-5VVV3HHE.js",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "chunk-5VVV3HHE.js",
+      "RelativePath": "chunk-5VVV3HHE#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "jn6is735hc",
+      "Integrity": "0YW1r7RHLBat6TbwewfXVe3Zu8uF8ojZ6XNgOHfH6jU=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\chunk-5VVV3HHE.js"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\chunk-UHHJFPUF.js",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\chunk-UHHJFPUF.js",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "chunk-UHHJFPUF.js",
+      "RelativePath": "chunk-UHHJFPUF#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "3h682s4r8y",
+      "Integrity": "xwRwvC+xC9JvCmEUKamn2rGwGrFZ/iT+CS00zXV4ofA=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\chunk-UHHJFPUF.js"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\favicon.ico",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "favicon.ico",
+      "RelativePath": "favicon#[.{fingerprint}]?.ico",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "vagikyz9qx",
+      "Integrity": "+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\index.html",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "index.html",
+      "RelativePath": "index#[.{fingerprint}]?.html",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "ph5as1gnde",
+      "Integrity": "TTpdgJG3UCIxCrumZSaFpV+WCL6gHe/jO971TRmnaCI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\main-H2EU7BPN.js",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\main-H2EU7BPN.js",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "main-H2EU7BPN.js",
+      "RelativePath": "main-H2EU7BPN#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "u2h95h9e9n",
+      "Integrity": "Sihwty7mx6qBaxGgmR32aQjlaDCYopazypY6KF/CXhI=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\main-H2EU7BPN.js"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\media\\bootstrap-icons-OCU552PF.woff",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\media\\bootstrap-icons-OCU552PF.woff",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "media/bootstrap-icons-OCU552PF.woff",
+      "RelativePath": "media/bootstrap-icons-OCU552PF#[.{fingerprint}]?.woff",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "lssqqxhxcq",
+      "Integrity": "ux3pibg5cPb05U3hzZdMXLpVtzWC2l4bIlptDt8ClIM=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\media\\bootstrap-icons-OCU552PF.woff"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\media\\bootstrap-icons-X6UQXWUS.woff2",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\media\\bootstrap-icons-X6UQXWUS.woff2",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "media/bootstrap-icons-X6UQXWUS.woff2",
+      "RelativePath": "media/bootstrap-icons-X6UQXWUS#[.{fingerprint}]?.woff2",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "xeyugjpn2t",
+      "Integrity": "R2rfQrQDJQmPz6izarPnaRhrtPbOaiSXU+LhqcIr+Z4=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\media\\bootstrap-icons-X6UQXWUS.woff2"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\polyfills-N6LQB2YD.js",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\polyfills-N6LQB2YD.js",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "polyfills-N6LQB2YD.js",
+      "RelativePath": "polyfills-N6LQB2YD#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "51hn1lwmyd",
+      "Integrity": "+UqLONzIeih1eKY3wIx1L7p3eBVb64kzpHulEVVtsn8=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\polyfills-N6LQB2YD.js"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\scripts-EEEIPNC3.js",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\scripts-EEEIPNC3.js",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "scripts-EEEIPNC3.js",
+      "RelativePath": "scripts-EEEIPNC3#[.{fingerprint}]?.js",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "iuyjx7ofyd",
+      "Integrity": "1kt0uVtMG1z0BCYbaXBPKR9owi7VDmO46GnQ1elwyDY=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\scripts-EEEIPNC3.js"
     },
     {
-      "Identity": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\styles-IXBXBCXN.css",
+      "Identity": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\styles-IXBXBCXN.css",
       "SourceId": "AuthAPI903",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\",
       "BasePath": "_content/AuthAPI903",
-      "RelativePath": "styles-IXBXBCXN.css",
+      "RelativePath": "styles-IXBXBCXN#[.{fingerprint}]?.css",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Primary",
-      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeBehavior": "",
       "AssetMergeSource": "",
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
+      "Fingerprint": "dn106c5zbn",
+      "Integrity": "WY5uJJ0fuNNkBdvyMn/zl7jp/dAW2UeWNtQEdW5Iwko=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\styles-IXBXBCXN.css"
+    }
+  ],
+  "Endpoints": [
+    {
+      "Route": "assets/imagen/1.7y4zzvfspy.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "835135"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MS2K3J0sSpXeOWnmkC5jpKO9hqABIkDUfCOdbGRP0RE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "7y4zzvfspy"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/1.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-MS2K3J0sSpXeOWnmkC5jpKO9hqABIkDUfCOdbGRP0RE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/1.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\1.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "835135"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"MS2K3J0sSpXeOWnmkC5jpKO9hqABIkDUfCOdbGRP0RE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-MS2K3J0sSpXeOWnmkC5jpKO9hqABIkDUfCOdbGRP0RE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/10.bmi2k0nw7q.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\10.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "260584"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PTG8KXuO5VuA3dYDRxOy1+ecO8etD3QJWCnxHt+TW0I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bmi2k0nw7q"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/10.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-PTG8KXuO5VuA3dYDRxOy1+ecO8etD3QJWCnxHt+TW0I="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/10.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\10.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "260584"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"PTG8KXuO5VuA3dYDRxOy1+ecO8etD3QJWCnxHt+TW0I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-PTG8KXuO5VuA3dYDRxOy1+ecO8etD3QJWCnxHt+TW0I="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/11.kiyvdp2lx4.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\11.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "518375"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hK735hUjVFbByuDHou+Hy0mMf00jpP91iTCC4XaMjEQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "kiyvdp2lx4"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/11.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-hK735hUjVFbByuDHou+Hy0mMf00jpP91iTCC4XaMjEQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/11.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\11.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "518375"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"hK735hUjVFbByuDHou+Hy0mMf00jpP91iTCC4XaMjEQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-hK735hUjVFbByuDHou+Hy0mMf00jpP91iTCC4XaMjEQ="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/12.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\12.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182159"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HaVvm2knjlb89/HVgSwaX+uguSY/ZvXDRnTb06gkLS8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HaVvm2knjlb89/HVgSwaX+uguSY/ZvXDRnTb06gkLS8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/12.r2sbsjj8go.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\12.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "182159"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HaVvm2knjlb89/HVgSwaX+uguSY/ZvXDRnTb06gkLS8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "r2sbsjj8go"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/12.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HaVvm2knjlb89/HVgSwaX+uguSY/ZvXDRnTb06gkLS8="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/13.aexfyjmlvs.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\13.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "482192"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0oTiNNGh3n8M/mP9daGq6BWK6Jc7r8uQreIF3P2HnjE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "aexfyjmlvs"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/13.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0oTiNNGh3n8M/mP9daGq6BWK6Jc7r8uQreIF3P2HnjE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/13.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\13.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "482192"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0oTiNNGh3n8M/mP9daGq6BWK6Jc7r8uQreIF3P2HnjE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0oTiNNGh3n8M/mP9daGq6BWK6Jc7r8uQreIF3P2HnjE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/14.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\14.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "177777"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OkkyRgND7wyVbkxKpiu2agg6ndUJxBQjM+dXqgWUQXw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-OkkyRgND7wyVbkxKpiu2agg6ndUJxBQjM+dXqgWUQXw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/14.uq8ev5qhur.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\14.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "177777"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"OkkyRgND7wyVbkxKpiu2agg6ndUJxBQjM+dXqgWUQXw=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "uq8ev5qhur"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/14.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-OkkyRgND7wyVbkxKpiu2agg6ndUJxBQjM+dXqgWUQXw="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/15.clkwwv5hpq.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\15.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "350820"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QLxDsZ4d7W1vDvWbXI34Bm7/gGxoj0go02vOHrDWmgE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "clkwwv5hpq"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/15.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QLxDsZ4d7W1vDvWbXI34Bm7/gGxoj0go02vOHrDWmgE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/15.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\15.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "350820"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QLxDsZ4d7W1vDvWbXI34Bm7/gGxoj0go02vOHrDWmgE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QLxDsZ4d7W1vDvWbXI34Bm7/gGxoj0go02vOHrDWmgE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/16.h3shvrzl38.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\16.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "151203"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fePjpzojc6x/9AcSbV+c3ywBHGkbLf+hRQ6GpKgGrbE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "h3shvrzl38"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/16.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-fePjpzojc6x/9AcSbV+c3ywBHGkbLf+hRQ6GpKgGrbE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/16.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\16.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "151203"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"fePjpzojc6x/9AcSbV+c3ywBHGkbLf+hRQ6GpKgGrbE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-fePjpzojc6x/9AcSbV+c3ywBHGkbLf+hRQ6GpKgGrbE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/17.ch4paukg56.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\17.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "378757"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8KT/QpNM/XcY+s/MNvlyyEXGl/q4V+3ZKZCUUPnI7+E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ch4paukg56"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/17.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-8KT/QpNM/XcY+s/MNvlyyEXGl/q4V+3ZKZCUUPnI7+E="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/17.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\17.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "378757"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"8KT/QpNM/XcY+s/MNvlyyEXGl/q4V+3ZKZCUUPnI7+E=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-8KT/QpNM/XcY+s/MNvlyyEXGl/q4V+3ZKZCUUPnI7+E="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/18.bnu3oxyors.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\18.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "584616"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5xlq2/mVrCYoRSxmC30s2u3fPgUDPf7Npy5Il510+tY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "bnu3oxyors"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/18.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-5xlq2/mVrCYoRSxmC30s2u3fPgUDPf7Npy5Il510+tY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/18.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\18.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "584616"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"5xlq2/mVrCYoRSxmC30s2u3fPgUDPf7Npy5Il510+tY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-5xlq2/mVrCYoRSxmC30s2u3fPgUDPf7Npy5Il510+tY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/19.drlx51xz34.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\19.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "619323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aYWJeFIUq95wiO3AmDQZ6Xg8xAKG/0y9F5LNGXL0AJE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "drlx51xz34"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/19.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-aYWJeFIUq95wiO3AmDQZ6Xg8xAKG/0y9F5LNGXL0AJE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/19.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\19.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "619323"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"aYWJeFIUq95wiO3AmDQZ6Xg8xAKG/0y9F5LNGXL0AJE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-aYWJeFIUq95wiO3AmDQZ6Xg8xAKG/0y9F5LNGXL0AJE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/2.73kmvr20p2.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110835"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M/rYT3vv2JVhj+pYELwxXZZLfsHhXs1DYoAuhJx8BbE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "73kmvr20p2"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/2.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-M/rYT3vv2JVhj+pYELwxXZZLfsHhXs1DYoAuhJx8BbE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/2.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\2.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "110835"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"M/rYT3vv2JVhj+pYELwxXZZLfsHhXs1DYoAuhJx8BbE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-M/rYT3vv2JVhj+pYELwxXZZLfsHhXs1DYoAuhJx8BbE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/20.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\20.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "376289"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x7w9WjPOIWohn7KbyNIRTbOtZ4fRNG3OJ63B5sThXgk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-x7w9WjPOIWohn7KbyNIRTbOtZ4fRNG3OJ63B5sThXgk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/20.v65aksw4hk.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\20.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "376289"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"x7w9WjPOIWohn7KbyNIRTbOtZ4fRNG3OJ63B5sThXgk=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "v65aksw4hk"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/20.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-x7w9WjPOIWohn7KbyNIRTbOtZ4fRNG3OJ63B5sThXgk="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/3.266oz2gqpw.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "495441"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xv8rnxYqCLjk+yhi/pyWiukaIuvEjT73Za4q9+zslCc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "266oz2gqpw"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/3.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xv8rnxYqCLjk+yhi/pyWiukaIuvEjT73Za4q9+zslCc="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/3.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\3.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "495441"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xv8rnxYqCLjk+yhi/pyWiukaIuvEjT73Za4q9+zslCc=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xv8rnxYqCLjk+yhi/pyWiukaIuvEjT73Za4q9+zslCc="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/4.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "282605"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QOPmmG+0obiR/XObd4jwa/CoKFTrYEg2cs9HPWM1RQs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-QOPmmG+0obiR/XObd4jwa/CoKFTrYEg2cs9HPWM1RQs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/4.wsfz2c3rjf.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\4.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "282605"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"QOPmmG+0obiR/XObd4jwa/CoKFTrYEg2cs9HPWM1RQs=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "wsfz2c3rjf"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/4.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-QOPmmG+0obiR/XObd4jwa/CoKFTrYEg2cs9HPWM1RQs="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/5.9qnc73l72r.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111668"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"35kl5NWCG9vKkaWP/S6L94quij6yhUANx/H1U/rzO0I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "9qnc73l72r"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/5.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-35kl5NWCG9vKkaWP/S6L94quij6yhUANx/H1U/rzO0I="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/5.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\5.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "111668"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"35kl5NWCG9vKkaWP/S6L94quij6yhUANx/H1U/rzO0I=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-35kl5NWCG9vKkaWP/S6L94quij6yhUANx/H1U/rzO0I="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/6.co4uotknus.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1321223"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LB/0rHHpl+94wJoTGAS4PXqS70QF5ec/LJgF2N8Gu+c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "co4uotknus"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/6.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-LB/0rHHpl+94wJoTGAS4PXqS70QF5ec/LJgF2N8Gu+c="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/6.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\6.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1321223"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"LB/0rHHpl+94wJoTGAS4PXqS70QF5ec/LJgF2N8Gu+c=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-LB/0rHHpl+94wJoTGAS4PXqS70QF5ec/LJgF2N8Gu+c="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/7.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\7.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "204906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GlDyqaL/ENv2Gj926TQB4w4zvid0ItiMgASXHjqmf4w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-GlDyqaL/ENv2Gj926TQB4w4zvid0ItiMgASXHjqmf4w="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/7.qnxmg3msxe.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\7.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "204906"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"GlDyqaL/ENv2Gj926TQB4w4zvid0ItiMgASXHjqmf4w=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qnxmg3msxe"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/7.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-GlDyqaL/ENv2Gj926TQB4w4zvid0ItiMgASXHjqmf4w="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/8.fkpzey5y7w.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\8.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "663893"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0S2vmOhz6g/qjd+QqJlXXEqcepHUOmyZq5dgluXI2nY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fkpzey5y7w"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/8.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0S2vmOhz6g/qjd+QqJlXXEqcepHUOmyZq5dgluXI2nY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/8.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\8.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "663893"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0S2vmOhz6g/qjd+QqJlXXEqcepHUOmyZq5dgluXI2nY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0S2vmOhz6g/qjd+QqJlXXEqcepHUOmyZq5dgluXI2nY="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/9.ht7yb5nxzv.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\9.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "103723"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"69Qon8pNOz30qGBy1B5yqnsox28IH1GQX8730SQBVn0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ht7yb5nxzv"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/9.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-69Qon8pNOz30qGBy1B5yqnsox28IH1GQX8730SQBVn0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/9.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\9.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "103723"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"69Qon8pNOz30qGBy1B5yqnsox28IH1GQX8730SQBVn0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-69Qon8pNOz30qGBy1B5yqnsox28IH1GQX8730SQBVn0="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/banner.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\banner.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136798"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qppOWKyKootcGB3a7lQ3wMRG8E7l8CoY9iaILG81N4o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-qppOWKyKootcGB3a7lQ3wMRG8E7l8CoY9iaILG81N4o="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/banner.qcy3acxvpu.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\banner.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "136798"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"qppOWKyKootcGB3a7lQ3wMRG8E7l8CoY9iaILG81N4o=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qcy3acxvpu"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/banner.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-qppOWKyKootcGB3a7lQ3wMRG8E7l8CoY9iaILG81N4o="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/logo.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24180"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UYI3TVKYqzXmCFzK7ZoUktuulybQSBqw1/ExuwQKXtE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-UYI3TVKYqzXmCFzK7ZoUktuulybQSBqw1/ExuwQKXtE="
+        }
+      ]
+    },
+    {
+      "Route": "assets/imagen/logo.zj2v7qxt8d.png",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\assets\\imagen\\logo.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "24180"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"UYI3TVKYqzXmCFzK7ZoUktuulybQSBqw1/ExuwQKXtE=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "zj2v7qxt8d"
+        },
+        {
+          "Name": "label",
+          "Value": "assets/imagen/logo.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-UYI3TVKYqzXmCFzK7ZoUktuulybQSBqw1/ExuwQKXtE="
+        }
+      ]
+    },
+    {
+      "Route": "chunk-5VVV3HHE.jn6is735hc.js",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\chunk-5VVV3HHE.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63577"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0YW1r7RHLBat6TbwewfXVe3Zu8uF8ojZ6XNgOHfH6jU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jn6is735hc"
+        },
+        {
+          "Name": "label",
+          "Value": "chunk-5VVV3HHE.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-0YW1r7RHLBat6TbwewfXVe3Zu8uF8ojZ6XNgOHfH6jU="
+        }
+      ]
+    },
+    {
+      "Route": "chunk-5VVV3HHE.js",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\chunk-5VVV3HHE.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "63577"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"0YW1r7RHLBat6TbwewfXVe3Zu8uF8ojZ6XNgOHfH6jU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-0YW1r7RHLBat6TbwewfXVe3Zu8uF8ojZ6XNgOHfH6jU="
+        }
+      ]
+    },
+    {
+      "Route": "chunk-UHHJFPUF.3h682s4r8y.js",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\chunk-UHHJFPUF.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "188607"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xwRwvC+xC9JvCmEUKamn2rGwGrFZ/iT+CS00zXV4ofA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "3h682s4r8y"
+        },
+        {
+          "Name": "label",
+          "Value": "chunk-UHHJFPUF.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-xwRwvC+xC9JvCmEUKamn2rGwGrFZ/iT+CS00zXV4ofA="
+        }
+      ]
+    },
+    {
+      "Route": "chunk-UHHJFPUF.js",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\chunk-UHHJFPUF.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "188607"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"xwRwvC+xC9JvCmEUKamn2rGwGrFZ/iT+CS00zXV4ofA=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-xwRwvC+xC9JvCmEUKamn2rGwGrFZ/iT+CS00zXV4ofA="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.vagikyz9qx.ico",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "15086"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "vagikyz9qx"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+RAr6AKXwFKSB2B75Sd7T5C8qJ1lmI+hdxuRx4lOgV8="
+        }
+      ]
+    },
+    {
+      "Route": "index.html",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60325"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TTpdgJG3UCIxCrumZSaFpV+WCL6gHe/jO971TRmnaCI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-TTpdgJG3UCIxCrumZSaFpV+WCL6gHe/jO971TRmnaCI="
+        }
+      ]
+    },
+    {
+      "Route": "index.ph5as1gnde.html",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\index.html",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "60325"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/html"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"TTpdgJG3UCIxCrumZSaFpV+WCL6gHe/jO971TRmnaCI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "ph5as1gnde"
+        },
+        {
+          "Name": "label",
+          "Value": "index.html"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-TTpdgJG3UCIxCrumZSaFpV+WCL6gHe/jO971TRmnaCI="
+        }
+      ]
+    },
+    {
+      "Route": "main-H2EU7BPN.js",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\main-H2EU7BPN.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "683879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Sihwty7mx6qBaxGgmR32aQjlaDCYopazypY6KF/CXhI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Sihwty7mx6qBaxGgmR32aQjlaDCYopazypY6KF/CXhI="
+        }
+      ]
+    },
+    {
+      "Route": "main-H2EU7BPN.u2h95h9e9n.js",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\main-H2EU7BPN.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "683879"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Sihwty7mx6qBaxGgmR32aQjlaDCYopazypY6KF/CXhI=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "u2h95h9e9n"
+        },
+        {
+          "Name": "label",
+          "Value": "main-H2EU7BPN.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Sihwty7mx6qBaxGgmR32aQjlaDCYopazypY6KF/CXhI="
+        }
+      ]
+    },
+    {
+      "Route": "media/bootstrap-icons-OCU552PF.lssqqxhxcq.woff",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\media\\bootstrap-icons-OCU552PF.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176032"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ux3pibg5cPb05U3hzZdMXLpVtzWC2l4bIlptDt8ClIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "lssqqxhxcq"
+        },
+        {
+          "Name": "label",
+          "Value": "media/bootstrap-icons-OCU552PF.woff"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-ux3pibg5cPb05U3hzZdMXLpVtzWC2l4bIlptDt8ClIM="
+        }
+      ]
+    },
+    {
+      "Route": "media/bootstrap-icons-OCU552PF.woff",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\media\\bootstrap-icons-OCU552PF.woff",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "176032"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/font-woff"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"ux3pibg5cPb05U3hzZdMXLpVtzWC2l4bIlptDt8ClIM=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-ux3pibg5cPb05U3hzZdMXLpVtzWC2l4bIlptDt8ClIM="
+        }
+      ]
+    },
+    {
+      "Route": "media/bootstrap-icons-X6UQXWUS.woff2",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\media\\bootstrap-icons-X6UQXWUS.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "130396"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R2rfQrQDJQmPz6izarPnaRhrtPbOaiSXU+LhqcIr+Z4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-R2rfQrQDJQmPz6izarPnaRhrtPbOaiSXU+LhqcIr+Z4="
+        }
+      ]
+    },
+    {
+      "Route": "media/bootstrap-icons-X6UQXWUS.xeyugjpn2t.woff2",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\media\\bootstrap-icons-X6UQXWUS.woff2",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "130396"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "font/woff2"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"R2rfQrQDJQmPz6izarPnaRhrtPbOaiSXU+LhqcIr+Z4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "xeyugjpn2t"
+        },
+        {
+          "Name": "label",
+          "Value": "media/bootstrap-icons-X6UQXWUS.woff2"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-R2rfQrQDJQmPz6izarPnaRhrtPbOaiSXU+LhqcIr+Z4="
+        }
+      ]
+    },
+    {
+      "Route": "polyfills-N6LQB2YD.51hn1lwmyd.js",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\polyfills-N6LQB2YD.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35533"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+UqLONzIeih1eKY3wIx1L7p3eBVb64kzpHulEVVtsn8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "51hn1lwmyd"
+        },
+        {
+          "Name": "label",
+          "Value": "polyfills-N6LQB2YD.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+UqLONzIeih1eKY3wIx1L7p3eBVb64kzpHulEVVtsn8="
+        }
+      ]
+    },
+    {
+      "Route": "polyfills-N6LQB2YD.js",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\polyfills-N6LQB2YD.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "35533"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+UqLONzIeih1eKY3wIx1L7p3eBVb64kzpHulEVVtsn8=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+UqLONzIeih1eKY3wIx1L7p3eBVb64kzpHulEVVtsn8="
+        }
+      ]
+    },
+    {
+      "Route": "scripts-EEEIPNC3.iuyjx7ofyd.js",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\scripts-EEEIPNC3.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80341"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1kt0uVtMG1z0BCYbaXBPKR9owi7VDmO46GnQ1elwyDY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "iuyjx7ofyd"
+        },
+        {
+          "Name": "label",
+          "Value": "scripts-EEEIPNC3.js"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1kt0uVtMG1z0BCYbaXBPKR9owi7VDmO46GnQ1elwyDY="
+        }
+      ]
+    },
+    {
+      "Route": "scripts-EEEIPNC3.js",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\scripts-EEEIPNC3.js",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "80341"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/javascript"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1kt0uVtMG1z0BCYbaXBPKR9owi7VDmO46GnQ1elwyDY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-1kt0uVtMG1z0BCYbaXBPKR9owi7VDmO46GnQ1elwyDY="
+        }
+      ]
+    },
+    {
+      "Route": "styles-IXBXBCXN.css",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\styles-IXBXBCXN.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "386097"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WY5uJJ0fuNNkBdvyMn/zl7jp/dAW2UeWNtQEdW5Iwko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-WY5uJJ0fuNNkBdvyMn/zl7jp/dAW2UeWNtQEdW5Iwko="
+        }
+      ]
+    },
+    {
+      "Route": "styles-IXBXBCXN.dn106c5zbn.css",
+      "AssetFile": "C:\\Users\\nano_\\OneDrive\\Escritorio\\back feelfinder\\AuthAPI903\\wwwroot\\styles-IXBXBCXN.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "386097"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"WY5uJJ0fuNNkBdvyMn/zl7jp/dAW2UeWNtQEdW5Iwko=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Wed, 04 Dec 2024 05:35:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "dn106c5zbn"
+        },
+        {
+          "Name": "label",
+          "Value": "styles-IXBXBCXN.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-WY5uJJ0fuNNkBdvyMn/zl7jp/dAW2UeWNtQEdW5Iwko="
+        }
+      ]
     }
   ]
 }
