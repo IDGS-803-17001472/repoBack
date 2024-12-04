@@ -79,7 +79,7 @@ namespace API.Controllers
             return Ok(new AuthResponseDto
             {
                 IsSuccess = true,
-                Message = "Account Created Sucessfully!"
+                Message = "Cuenta creada exitosamente!"
             });
 
         }
@@ -435,7 +435,7 @@ namespace API.Controllers
                 return Unauthorized(new AuthResponseDto
                 {
                     IsSuccess = false,
-                    Message = "User not found with this email",
+                    Message = "Email de usuario no encontrado.",
                 });
             }
 
@@ -446,7 +446,7 @@ namespace API.Controllers
                 return Unauthorized(new AuthResponseDto
                 {
                     IsSuccess = false,
-                    Message = "Invalid Password."
+                    Message = "Contraseña inválida."
                 });
             }
 
@@ -462,7 +462,7 @@ namespace API.Controllers
             {
                 Token = token,
                 IsSuccess = true,
-                Message = "Login Success.",
+                Message = "Sesión iniciada.",
                 RefreshToken = refreshToken
 
             });
@@ -579,7 +579,7 @@ namespace API.Controllers
                 return Unauthorized(new AuthResponseDto
                 {
                     IsSuccess = false,
-                    Message = "User not found with this email",
+                    Message = "usuario no encontrado con este mail",
                 });
             }
 
@@ -590,7 +590,7 @@ namespace API.Controllers
                 return Unauthorized(new AuthResponseDto
                 {
                     IsSuccess = false,
-                    Message = "Invalid Password."
+                    Message = "Contraseña inválida."
                 });
             }
 
@@ -606,7 +606,7 @@ namespace API.Controllers
             {
                 Token = token,
                 IsSuccess = true,
-                Message = "Login Success.",
+                Message = "Sesión iniciada.",
                 RefreshToken = refreshToken
 
             });
@@ -941,19 +941,13 @@ namespace API.Controllers
                 AccessFailedCount = user.AccessFailedCount,
                 Foto = persona.Foto
             });
-
         }
-
-
-
         //api/account/detail
         [HttpGet("detailCuenta")]
-        public async Task<ActionResult<UserDetailDto2>> GetUserDetailCuenta()
+        public async Task<ActionResult<UserDetailDto>> GetUserDetailCuenta()
         {
             var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var user = await _userManager.FindByIdAsync(currentUserId!);
-
-
             if (user is null)
             {
                 return NotFound(new AuthResponseDto
@@ -962,13 +956,8 @@ namespace API.Controllers
                     Message = "User not found"
                 });
             }
-
-
-
-
             var usuario = await _context.Usuarios
                 .FirstOrDefaultAsync(p => p.IdAppUser == user.Id);
-
             if (usuario is null)
             {
                 return NotFound(new AuthResponseDto
@@ -977,13 +966,8 @@ namespace API.Controllers
                     Message = "User not found"
                 });
             }
-
             var persona = await _context.Personas
                 .FirstOrDefaultAsync(p => p.Id == usuario.IdPersona);
-
-            var profesional = await _context.Profesionales
-                .FirstOrDefaultAsync(p => p.IdUsuario == usuario.Id);
-
             if (persona is null)
             {
                 return NotFound(new AuthResponseDto
@@ -992,16 +976,16 @@ namespace API.Controllers
                     Message = "Persona no encontrada"
                 });
             }
+            var profesional = await _context.Profesionales
+                .FirstOrDefaultAsync(p => p.IdUsuario == usuario.Id);
             if (profesional is null)
             {
                 return NotFound(new AuthResponseDto
                 {
                     IsSuccess = false,
-                    Message = "profesional no encontrado"
+                    Message = "Profesional no encontrada"
                 });
             }
-
-
             return Ok(new UserDetailDto2
             {
                 Id = user.Id,

@@ -1,4 +1,5 @@
-﻿namespace AuthAPI903.Dtos
+﻿
+namespace AuthAPI903.Dtos
 {
     public class UserDetailDto2
     {
@@ -14,9 +15,6 @@
         public string? Direccion { get; set; }
         public string? Foto { get; set; }
         public PersonaDto? Persona { get; set; }
-
-
-
         public ProfesionalDto? Profesional { get; set; }
     }
 }

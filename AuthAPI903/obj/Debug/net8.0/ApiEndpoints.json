@@ -81,7 +81,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "AuthAPI903.Dtos.UserDetailDto2",
+        "Type": "AuthAPI903.Dtos.UserDetailDto",
         "MediaTypes": [
           "text/plain",
           "application/json",

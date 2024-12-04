@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "icgTtCRW/Tk=",
+  "dgSpecHash": "rES4Ji//1yM=",
   "success": true,
-  "projectFilePath": "C:\\Users\\nano_\\Desktop\\newBackend\\AuthAPI903\\AuthAPI903.csproj",
+  "projectFilePath": "C:\\Users\\nano_\\Desktop\\ultimoRepoBack\\AuthAPI903\\AuthAPI903.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\nano_\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\nano_\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

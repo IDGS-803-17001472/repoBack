@@ -109,13 +109,23 @@ namespace AuthAPI903.Controllers
                 .Include(p => p.Paciente.Persona) // Incluye la información de Persona
                 .ToListAsync();
 
-            if (pacientes == null || !pacientes.Any())
+            var usuarios = await _context.Usuarios.ToListAsync();
+
+            if (usuarios == null || !usuarios.Any())
+            {
+                return NotFound("No se encontraron pacientes asignados a este profesional.");
+            }
+            var personas = await _context.Personas.ToListAsync();
+
+            if (personas == null || !personas.Any())
             {
                 return NotFound("No se encontraron pacientes asignados a este profesional.");
             }
 
+
+
             // Extraer la lista de pacientes a partir de las asignaciones y devolver solo la información de Persona
-            var pacientes2 = pacientes.Select(ap => new PersonaPacienteDto
+            var pacientes2 = pacientes.Select(ap => new     
             {
                 IdPaciente = ap.Paciente.Id,
                 Nombre = ap.Paciente.Persona.Nombre,
@@ -124,10 +134,15 @@ namespace AuthAPI903.Controllers
                 Telefono = ap.Paciente.Persona.Telefono,
                 FechaNacimiento = ap.Paciente.Persona.FechaNacimiento,
                 Sexo = ap.Paciente.Persona.Sexo,
+                Foto = ap.Paciente.Persona.Foto
             }).ToList();
+
+
+
 
             return Ok(pacientes2);
         }
+
 
 
 
