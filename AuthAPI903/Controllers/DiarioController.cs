@@ -80,11 +80,6 @@ namespace AuthAPI903.Controllers
             return Ok(ultimosDiarios);
         }
 
-
-
-
-
-
         [Authorize]
         [HttpPost("sincronizar")]
         public async Task<ActionResult> SincronizarEntradas([FromBody] List<EntradaDto> entradasDto)
@@ -112,13 +107,17 @@ namespace AuthAPI903.Controllers
                                      .Where(m => entradasExistentes.Select(e => (int?)e.Id).Contains(m.IdEntrada))
                                      .ToList();
 
+
             // Eliminar primero las mediciones asociadas
             _context.Mediciones.RemoveRange(mediciones);
+
 
             await _context.SaveChangesAsync();
 
             // Eliminar después las entradas existentes
             _context.Entradas.RemoveRange(entradasExistentes);
+
+            await _context.SaveChangesAsync();
 
             // Agregar las nuevas entradas con sus mediciones
             foreach (var entradaDto in entradasDto)
@@ -129,13 +128,13 @@ namespace AuthAPI903.Controllers
                     Fecha = entradaDto.Fecha.ToLocalTime(),
                     IdPaciente = paciente.Id,
                     Mediciones = new List<Medicion>
-            {
-                new Medicion
-                {
-                    Nivel = entradaDto.NivelEmocion,
-                    IdEmocion = entradaDto.IdEmocion
-                }
-            }
+                    {
+                        new Medicion
+                        {
+                            Nivel = entradaDto.NivelEmocion,
+                            IdEmocion = entradaDto.IdEmocion
+                        }
+                    }
                 };
 
                 _context.Entradas.Add(nuevaEntrada);

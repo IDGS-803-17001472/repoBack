@@ -83,6 +83,44 @@ namespace API.Controllers
             });
 
         }
+
+        [Authorize]
+        [HttpGet("infoPaciente")]
+        public async Task<ActionResult<PacienteDto>> GetInfoPaciente()
+        {
+            // Obtener el ID del usuario loggeado
+            var userId = _userManager.GetUserId(User);
+
+            // Buscar el paciente asociado al usuario loggeado
+            var paciente = await _context.Pacientes
+                .Include(p => p.Persona) // Incluye la información de Persona
+                .Where(p => p.Persona.Usuario.IdAppUser == userId)
+                .Select(p => new PacienteDto
+                {
+                    Email = p.Persona.Usuario.Email,
+                    IdPaciente = p.Id,
+                    Nombre = p.Persona.Nombre,
+                    ApellidoMaterno = p.Persona.ApellidoMaterno,
+                    ApellidoPaterno = p.Persona.ApellidoPaterno,
+                    Telefono = p.Persona.Telefono,
+                    FechaNacimiento = p.Persona.FechaNacimiento,
+                    Sexo = p.Persona.Sexo,
+                    Foto = p.Persona.Foto,
+                    EstadoCivil = p.Persona.EstadoCivil,
+                    Ocupacion = p.Persona.Ocupacion,
+                    NotasAdicionales = p.NotasAdicionales,
+                    FechaRegistro = p.FechaRegistro
+                })
+                .FirstOrDefaultAsync();
+
+            if (paciente == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(paciente);
+        }
+
         // api/account/register
         [AllowAnonymous]
         [HttpPost("register")]
