@@ -65,6 +65,51 @@ namespace AuthAPI903.Controllers
             return Ok(citas);
         }
 
+        [Authorize]
+        [HttpGet("paciente/citas")]
+        public async Task<ActionResult<List<CitaPacienteDto>>> ObtenerCitasPorPaciente()
+        {
+            // Obtener el ID del usuario loggeado
+            var userId = _userManager.GetUserId(User);
+
+            // Buscar el paciente asociado al usuario loggeado
+            var paciente = await _context.Pacientes
+                                         .Include(p => p.Persona)
+                                         .FirstOrDefaultAsync(p => p.Persona.Usuario.IdAppUser == userId);
+
+            if (paciente == null)
+            {
+                return BadRequest("Paciente no encontrado.");
+            }
+
+            // Obtener las citas asociadas al paciente
+            var citas = await _context.Citas
+                .Where(c => c.AsignacionPaciente.IdPaciente == paciente.Id)
+                .Select(c => new CitaPacienteDto
+                {
+                    Id = c.Id,
+                    Title = c.Notas ?? "Cita asignada",
+                    Date = c.Fecha ?? DateTime.MinValue, // Usa un valor por defecto para fechas nulas
+                    Time = c.Horario ?? TimeSpan.Zero,   // Usa un valor por defecto para horas nulas
+                    Status = c.Estatus,
+                    Profesional = new ProfesionalCitaDto
+                    {
+                        Nombre = c.AsignacionPaciente.Profesional.Usuario.Persona.Nombre,
+                        ApellidoPaterno = c.AsignacionPaciente.Profesional.Usuario.Persona.ApellidoPaterno,
+                        ApellidoMaterno = c.AsignacionPaciente.Profesional.Usuario.Persona.ApellidoMaterno,
+                        Titulo = c.AsignacionPaciente.Profesional.Titulo,
+                    }
+                })
+                .ToListAsync();
+
+            if (!citas.Any())
+            {
+                return NotFound("No se encontraron citas para este paciente.");
+            }
+
+            return Ok(citas);
+        }
+
 
         [Authorize]
         [HttpGet("cita/{id}")]

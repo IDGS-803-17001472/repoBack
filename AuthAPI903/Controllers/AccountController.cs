@@ -79,7 +79,7 @@ namespace API.Controllers
             return Ok(new AuthResponseDto
             {
                 IsSuccess = true,
-                Message = "Account Created Sucessfully!"
+                Message = "Cuenta creada exitosamente!"
             });
 
         }
@@ -435,7 +435,7 @@ namespace API.Controllers
                 return Unauthorized(new AuthResponseDto
                 {
                     IsSuccess = false,
-                    Message = "User not found with this email",
+                    Message = "Email de usuario no encontrado.",
                 });
             }
 
@@ -446,7 +446,7 @@ namespace API.Controllers
                 return Unauthorized(new AuthResponseDto
                 {
                     IsSuccess = false,
-                    Message = "Invalid Password."
+                    Message = "Contraseña inválida."
                 });
             }
 
@@ -462,7 +462,7 @@ namespace API.Controllers
             {
                 Token = token,
                 IsSuccess = true,
-                Message = "Login Success.",
+                Message = "Sesión iniciada.",
                 RefreshToken = refreshToken
 
             });
@@ -579,7 +579,7 @@ namespace API.Controllers
                 return Unauthorized(new AuthResponseDto
                 {
                     IsSuccess = false,
-                    Message = "User not found with this email",
+                    Message = "usuario no encontrado con este mail",
                 });
             }
 
@@ -590,7 +590,7 @@ namespace API.Controllers
                 return Unauthorized(new AuthResponseDto
                 {
                     IsSuccess = false,
-                    Message = "Invalid Password."
+                    Message = "Contraseña inválida."
                 });
             }
 
@@ -606,7 +606,7 @@ namespace API.Controllers
             {
                 Token = token,
                 IsSuccess = true,
-                Message = "Login Success.",
+                Message = "Sesión iniciada.",
                 RefreshToken = refreshToken
 
             });
@@ -651,9 +651,37 @@ namespace API.Controllers
                 Message = "Refreshed token successfully"
             });
 
+        }
 
 
+        [AllowAnonymous]
+        [HttpPost("refresh-token-2")]
+        public async Task<ActionResult<AuthResponseDto>> RefreshToken2(TokenDto tokenDto)
+        {
+            if (!ModelState.IsValid)
+            {
+                return BadRequest(ModelState);
+            }
 
+            var principal = GetPrincipalFromExpiredToken(tokenDto.Token);
+            var user = await _userManager.FindByEmailAsync(tokenDto.Email);
+
+            var newJwtToken = GenerateToken(user);
+            var newRefreshToken = GenerateRefreshToken();
+            _ = int.TryParse(_configuration.GetSection("JWTSetting").GetSection("RefreshTokenValidityIn").Value!, out int RefreshTokenValidityIn);
+
+            user.RefreshToken = newRefreshToken;
+            user.RefreshTokenExpiryTime = DateTime.UtcNow.AddMinutes(RefreshTokenValidityIn);
+
+            await _userManager.UpdateAsync(user);
+
+            return Ok(new AuthResponseDto
+            {
+                IsSuccess = true,
+                Token = newJwtToken,
+                RefreshToken = newRefreshToken,
+                Message = "Refreshed token successfully"
+            });
         }
 
         private ClaimsPrincipal? GetPrincipalFromExpiredToken(string token)
@@ -859,7 +887,7 @@ namespace API.Controllers
 
         //api/account/detail
         [HttpGet("detail")]
-        public async Task<ActionResult<UserDetailDto>> GetUserDetail()
+        public async Task<ActionResult<UserDetailDto2>> GetUserDetail()
         {
             var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
             var user = await _userManager.FindByIdAsync(currentUserId!);
@@ -874,6 +902,34 @@ namespace API.Controllers
                 });
             }
 
+
+
+
+            var usuario = await _context.Usuarios
+                .FirstOrDefaultAsync(p => p.IdAppUser == user.Id);
+
+            if (usuario is null)
+            {
+                return NotFound(new AuthResponseDto
+                {
+                    IsSuccess = false,
+                    Message = "User not found"
+                });
+            }
+
+            var persona = await _context.Personas
+                .FirstOrDefaultAsync(p => p.Id == usuario.IdPersona);
+
+            if (persona is null)
+            {
+                return NotFound(new AuthResponseDto
+                {
+                    IsSuccess = false,
+                    Message = "Persona no encontrada"
+                });
+            }
+
+
             return Ok(new UserDetailDto
             {
                 Id = user.Id,
@@ -883,7 +939,65 @@ namespace API.Controllers
                 PhoneNumber = user.PhoneNumber,
                 PhoneNumberConfirmed = user.PhoneNumberConfirmed,
                 AccessFailedCount = user.AccessFailedCount,
-
+                Foto = persona.Foto
+            });
+        }
+        //api/account/detail
+        [HttpGet("detailCuenta")]
+        public async Task<ActionResult<UserDetailDto>> GetUserDetailCuenta()
+        {
+            var currentUserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var user = await _userManager.FindByIdAsync(currentUserId!);
+            if (user is null)
+            {
+                return NotFound(new AuthResponseDto
+                {
+                    IsSuccess = false,
+                    Message = "User not found"
+                });
+            }
+            var usuario = await _context.Usuarios
+                .FirstOrDefaultAsync(p => p.IdAppUser == user.Id);
+            if (usuario is null)
+            {
+                return NotFound(new AuthResponseDto
+                {
+                    IsSuccess = false,
+                    Message = "User not found"
+                });
+            }
+            var persona = await _context.Personas
+                .FirstOrDefaultAsync(p => p.Id == usuario.IdPersona);
+            if (persona is null)
+            {
+                return NotFound(new AuthResponseDto
+                {
+                    IsSuccess = false,
+                    Message = "Persona no encontrada"
+                });
+            }
+            var profesional = await _context.Profesionales
+                .FirstOrDefaultAsync(p => p.IdUsuario == usuario.Id);
+            if (profesional is null)
+            {
+                return NotFound(new AuthResponseDto
+                {
+                    IsSuccess = false,
+                    Message = "Profesional no encontrada"
+                });
+            }
+            return Ok(new UserDetailDto2
+            {
+                Id = user.Id,
+                Email = user.Email,
+                FullName = persona.Nombre + " " + persona.ApellidoPaterno + " " + persona.ApellidoMaterno,
+                Sexo = persona.Sexo,
+                FechadeNacimiento = persona.FechaNacimiento,
+                EstadoCivil = persona.EstadoCivil,
+                Titulo = profesional.Titulo,
+                Ocupacion = persona.Ocupacion,
+                Telefono = persona.Telefono,
+                Foto = persona.Foto
             });
 
         }
